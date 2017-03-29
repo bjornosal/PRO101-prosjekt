@@ -20,7 +20,7 @@ body {
 .nav-container {
     width:5%;
     height:100%;
-    margin-left: 1%;
+    margin-left: 3%;
     margin-top:auto;    
     display: inline-flex;
     align-items: center;
@@ -35,21 +35,21 @@ body {
 .nav-button {
     width:90%;
     height:90%;
-    
+    position: relative;
+    cursor: pointer;
 }
 
 .nav-button-line {
     width:90%;
-    height:12.5%;
+    height:17.5%;
     background-color:#0F0F0F;
     margin: 1vh auto;
-    margin-left:2.5%;
+    margin-left:5%;
 }
 
 .logo-container {
     width:50%;
     height:100%;
-    
 }
 
 .language-container {
@@ -58,14 +58,46 @@ body {
 }
 
 .filler-container {
-    width:19%;
+    width:17%;
     height:100%;
 }
 
 .logo-container p{
-    
     text-align: center;
     font-size: 10vh;
     line-height: 15vh;
     margin-top: -15px;
+}
+.nav-dropdown {
+    display:none;
+    position: absolute;
+    z-index:2;
+    box-shadow: 0px 8px 16px 0px #000;
+    min-width: 160px;
+    max-width:250px;
+    top:100%;
+}
+
+.nav-dropdown a {
+    color: #000;
+    background-color: #FFF;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-dropdown a:hover{
+    background-color:#51BBFE; 
+}
+
+.linedivider {
+    position: relative;
+    width:5%;
+    height:100%;
+    background-color: #51BBFE;
+    left:22.22%;
+}
+
+.nav-container:hover .nav-dropdown {
+    display: block;
 }
