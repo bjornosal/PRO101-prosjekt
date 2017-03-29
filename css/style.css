@@ -1,18 +1,27 @@
+/*#FECE60 - yellow*/
+/*#51BBFE - blue*/
+
 body {
     margin: 0; 
     padding: 0;
+    
+    background-color: #FCFCFC;
 }
 .header-container {
     width:100%;
-    height:15vh;
+    height:10vh;
     margin: auto;
-    border-bottom: 2px solid #000;
+    border-bottom: 0.4vh solid #000;
+    display: inline-flex;
+    align-items: center;
+    background-color: #51BBFE;
 }
 
 .nav-container {
-    width:150px;
+    width:5%;
     height:100%;
-    padding: 0;
+    margin-left: 3%;
+    margin-top:auto;    
     display: inline-flex;
     align-items: center;
 }
@@ -26,12 +35,69 @@ body {
 .nav-button {
     width:90%;
     height:90%;
-    
+    position: relative;
+    cursor: pointer;
 }
 
 .nav-button-line {
-    width:100%;
-    height:2%;
-    background-color:#000;
+    width:90%;
+    height:17.5%;
+    background-color:#0F0F0F;
     margin: 1vh auto;
+    margin-left:5%;
+}
+
+.logo-container {
+    width:50%;
+    height:100%;
+}
+
+.language-container {
+    width: 25%;
+    height:100%;
+}
+
+.filler-container {
+    width:17%;
+    height:100%;
+}
+
+.logo-container p{
+    text-align: center;
+    font-size: 10vh;
+    line-height: 15vh;
+    margin-top: -15px;
+}
+.nav-dropdown {
+    display:none;
+    position: absolute;
+    z-index:2;
+    box-shadow: 0px 8px 16px 0px #000;
+    min-width: 160px;
+    max-width:250px;
+    top:100%;
+}
+
+.nav-dropdown a {
+    color: #000;
+    background-color: #FFF;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-dropdown a:hover{
+    background-color:#51BBFE; 
+}
+
+.linedivider {
+    position: relative;
+    width:5%;
+    height:100%;
+    background-color: #51BBFE;
+    left:22.22%;
+}
+
+.nav-container:hover .nav-dropdown {
+    display: block;
 }
