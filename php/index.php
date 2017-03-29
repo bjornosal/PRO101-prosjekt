@@ -8,12 +8,13 @@
         <meta name="author" content="">
         <link href="../css/style.css" rel="stylesheet" type="text/css">
         <title>Wevent</title>
-        
+
     </head>
-    <body>
-        
-        <?php
-            require 'header.php';
-        ?>
+    <body>  
+        <div class="container">
+            <?php
+                require 'header.php';
+            ?>
+        </div>
     </body>
 </html>
