@@ -1,0 +1,45 @@
+
+/*
+omOss.php under.
+*/
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+p {
+    font: Arial;
+}
+
+.contactBox {
+    position: absolute;
+    bottom: 3%;
+    left: 10%;
+    right: 10%;
+    height: 18%;
+    background-color: lightblue;
+    font-size: 1.5em;
+    padding: 1%;
+}
+
+.textBox {
+    background-color: lightblue;
+    left: 10%; 
+}
+
+.photoBox {
+    background-color: lightslategray;
+    right: 10%;
+    
+}
+
+.textBox, .photoBox {
+    position: absolute;
+    width: 39.60%;
+    height: 55%;
+    bottom: 27%;
+    padding: 0.5%;
+}
