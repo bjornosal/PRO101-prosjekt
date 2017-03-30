@@ -1,0 +1,76 @@
+html, body 
+{
+    height: 100%;
+    
+    background-color: #Fece60;
+}
+
+
+
+
+
+.container4, .container8, .container12, .container16, .container20, .container24, .container28, .container32, .container36, .container40{
+                  left: 1200px;
+                  width: 195px;
+                  background-color: yellow;
+          }
+  
+              .container1, .container5, .container9, .container13, .container17, .container21, .container25, .container29, .container33, .container37{
+                  left: 200px;
+                  width: 195px;
+                  background-color: rgb(200, 100, 200);
+          }
+          
+               .container2, .container6, .container10, .container14, .container18, .container22, .container26, .container30, .container34, .container38{
+                  left: 400px;
+                  width: 195px;
+                  background-color: aqua;
+          }
+  
+              .container3, .container7, .container11, .container15, .container19, .container23, .container27, .container31, .container35, .container39{
+                  left: 600px;
+                  width: 595px;
+                  background-color: chartreuse;
+          }
+
+          .container1, .container2, .container3, .container4{
+              top: 250px;
+          }
+
+          
+          .container5, .container6, .container7, .container8{
+              top: 380px;
+          }
+
+
+          .container9, .container10, .container11, .container12{
+              top: 510px;
+          }
+          
+          .container13, .container14, .container15, .container16{
+              top: 640px;
+          }
+          
+          .container17, .container18, .container19, .container20{
+              top: 770px;
+          }
+          
+          .container21, .container22, .container23, .container24{
+              top: 900px;
+          }
+          
+          .container25, .container26, .container27, .container28{
+              top: 1030px;
+          }
+          
+           .container29, .container30, .container31, .container32{
+              top: 1160px;
+          }
+          
+          .container33, .container34, .container35, .container36{
+              top: 1290px;
+          }
+          
+          .container37, .container38, .container39, .container40{
+              top: 1420px;
+          }
