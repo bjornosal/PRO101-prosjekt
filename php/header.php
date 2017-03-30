@@ -22,7 +22,7 @@
     </div>
     <div class="filler-container"></div> 
     <div class="logo-container">
-        <p>WEVENT</p>
+        <p><strong>WEVENT</strong></p>
 
     </div>
     <div class="language-container"></div>
