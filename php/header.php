@@ -25,5 +25,6 @@
         <p><strong>WEVENT</strong></p>
 
     </div>
-    <div class="language-container"></div>
+    <div class="language-container">
+    </div>
 </div>

@@ -19,9 +19,8 @@ body {
 }
 
 .nav-container {
-    width:5%;
+    width:10%;
     height:100%;
-    margin-left: 3%;
     margin-top:auto;    
     display: inline-flex;
     align-items: center;
@@ -36,14 +35,15 @@ body {
 .nav-button {
     width:90%;
     height:50%;
+    margin-left:50%;
+    max-width: 150px;
     position: relative;
     cursor: pointer;
     top: 0;
 }
 
 .nav-button-line {
-    width:80%;
-    min-width: 80px;
+    width:100%;
     height:15%;
     background-color:#0F0F0F;
     margin: 1vh auto;
@@ -61,7 +61,7 @@ body {
 }
 
 .filler-container {
-    width:17%;
+    width:15%;
     height:100%;
 }
 
@@ -77,10 +77,12 @@ body {
     display:none;
     position: absolute;
     z-index:2;
-    box-shadow: 0px 8px 16px 0px #000;
-    min-width: 160px;
-    max-width:250px;
-    bottom:-225%;
+    width:50vh;
+    text-align: center;
+    box-shadow: 0px 8px 30px 0px #000;
+    bottom: -430%;
+    left: -75%;
+    font-size: 4vh;
 }
 
 .nav-dropdown a {
@@ -103,9 +105,8 @@ body {
     left:22.22%;
 }
 
-.nav-button:hover .nav-dropdown {
+.nav-container:hover .nav-dropdown {
     display: block;
 }
-
 
 
