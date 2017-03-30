@@ -1,0 +1,10 @@
+.container {
+    margin:auto;
+    width:100%;
+}
+
+.header {
+    font-family: monospace;
+    font-size: 30px;
+    color: #FFD678;
+}
