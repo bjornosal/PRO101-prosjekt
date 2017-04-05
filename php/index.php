@@ -7,6 +7,8 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <link href="../css/style.css" rel="stylesheet" type="text/css">
+        <!--Importing JQUERY lib-->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <title>Wevent</title>
 
     </head>
