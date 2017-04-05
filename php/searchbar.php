@@ -26,9 +26,11 @@
   <div class="dropdown2">
     <button class="dropbtn">Kategori</button>
     <div class="dropdown2-content">
-        <a href="link1">Uteliv</a>
+        <a href="link1">Mat</a>
          <a href="link2">Kultur</a>
-         <a href="link3">Dans</a>
+         <a href="link3">Uteliv</a>
+         <a href="link4">Sport</a>
+         <a href="link5">Teknologi</a>
     </div>
     </div>
 
