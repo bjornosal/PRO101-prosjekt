@@ -7,7 +7,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
     
-    <link rel="stylesheet" type="text/css" href="../css/test01.css">
+    <link rel="stylesheet" type="text/css" href="../css/forside.css">
 
     
 <title>Forside</title>
@@ -17,6 +17,11 @@
 </head>
 
 <body>
+    
+<?php
+    require 'header.php'; 
+                
+?>
 
 
     <div class="slideshow-container" style="max-width:800px">
@@ -25,8 +30,6 @@
         
 <img class="mySlides" src="insert img" style="width:100%">       
         
-<img class="mySlides" src="insert img" style="width:100%">
-
 <img class="mySlides" src="insert img" style="width:100%">
         
 <div class="display-bottomleft">
