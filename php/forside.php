@@ -7,24 +7,49 @@
 <meta name="description" content="">
 <meta name="author" content="">
     
-    <link rel="stylesheet" type="text/css" href="../css/forside.css">
+    <link rel="stylesheet" type="text/css" href="../css/test01.css">
+
     
-<title>Forside</title>    
-    
+<title>Forside</title>
+
+
+
 </head>
 
-    
-    <body>
+<body>
+
+
+    <div class="slideshow-container" style="max-width:800px">
         
-        <div class="bottomContainer"></div>
+<img class="mySlides" src="insert img" style="width:100%">
+        
+<img class="mySlides" src="insert img" style="width:100%">       
+        
+<img class="mySlides" src="insert img" style="width:100%">
+
+<img class="mySlides" src="insert img" style="width:100%">
+        
+<div class="display-bottomleft">
+    <a href="www.facebook.com"> Tips oss om event </a>
+</div> 
+        
+<button class="left" onclick="plusDivs(-1)">❮ Prev</button>
+<button class="right" onclick="plusDivs(+1)">Next ❯</button>
+        
+  
+    
+    </div>
+
         
 
-    
-    
 
-    
-    
-    
-</body>
 
+
+
+
+
+
+
+
+    </body>
 </html>
