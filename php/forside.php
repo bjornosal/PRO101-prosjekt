@@ -18,41 +18,32 @@
 
 <body>
     
-<?php
-    require 'header.php'; 
-                
+<?php 
+        require 'header.php'; 
+        
+        
 ?>
 
-
-    <div class="slideshow-container" style="max-width:800px">
-        
-<img class="mySlides" src="insert img" style="width:100%">
-        
-<img class="mySlides" src="insert img" style="width:100%">       
-        
-<img class="mySlides" src="insert img" style="width:100%">
-        
-<div class="display-bottomleft">
-    <a href="www.facebook.com"> Tips oss om event </a>
-</div> 
-        
-<button class="left" onclick="plusDivs(-1)">❮ Prev</button>
-<button class="right" onclick="plusDivs(+1)">Next ❯</button>
-        
-  
-    
+<div class='slideshow'>
+  <div class='social'>FB TW Email</div>
+  <div class='slide'>
+    <div class='image'>1</div>
+    <div class='info'> Hei </div>
     </div>
+  <div class='slide'>
+    <div class='image'>2</div>
+    <div class='info'> Halla </div>
+  </div>
+  <div class='slide'>
+    <div class='image'>3</div>
+    <div class='info'> Yo </div>
+  </div>
+  
+  <div class='button back'>Back</div>
+  <div class='button forward'>Forward</div>
+  </div>
+    
 
-        
-
-
-
-
-
-
-
-
-
-
+    
     </body>
 </html>
