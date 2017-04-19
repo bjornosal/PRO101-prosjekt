@@ -6,6 +6,7 @@ body {
     margin: 0; 
     padding: 0;
     background-color: #FCFCFC;
+    min-height: 100%;
     
 }
 .header-container {
@@ -115,4 +116,10 @@ body {
 }
 .dropdown-container {
     height:100%;
+}
+
+.overlay {
+    width:100%;
+    height:100%;
+    background-color: blue;
 }
