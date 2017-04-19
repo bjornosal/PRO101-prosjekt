@@ -12,7 +12,7 @@
 
         <title>Event Kalender</title>
         
-      <link rel="stylesheet" href="stil.css">
+      <link href="../css/style.css" rel="stil.css" type="text/css">
         
 		
 	</head>
