@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+}
+
+.slideshow {
+  border: 5px solid yellow;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 300px;
+}
+
+.slide {
+  position: relative;
+  height: 300px;
+  display: flex;
+}
+
+.social {
+  position: absolute;
+  bottom: 0;
+}
+
+.image {
+  width: 70%;
+  background: red;
+}
+
+.info {
+  width: 30%;
+  background: green;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  height: 20px;
+  background: blue;
+  transform: translateY(-50%);
+}
+
+.forward {
+  right: 0;
+}
