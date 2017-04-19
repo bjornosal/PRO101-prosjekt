@@ -13,7 +13,7 @@ html, body
 
 
 
-.container4 {
+.container3 {
                   position: absolute;
                   top: 22%;
                   left: 73%;
@@ -28,19 +28,13 @@ html, body
                   left: 14%;
                   width: 13%;
                   height: 20%;
-                  background-color: rgb(200, 100, 200);
+                  background-image: url(bjorn.jpeg);
+                  overflow: hidden;
           }
+
           
-.container2 {
-                  position: absolute;
-                  top: 22%;
-                  left: 28%;
-                  width: 13%;
-                  height: 20%;
-                  background-color: aqua;
-          }
   
-.container3 {
+.container2 {
                   position: absolute;
                   top: 22%;
                   left: 42%;
@@ -48,6 +42,18 @@ html, body
                   height: 20%;
                   background-color: chartreuse;
           }
+
+        
+#map {
+    position: absolute;
+    top: 22%;
+    left: 28%;
+    width: 13%;
+    height: 20%;
+    
+}      
+        
+
 
         
           
