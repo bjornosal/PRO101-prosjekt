@@ -30,7 +30,7 @@
             </div>
         </div>
         
-        <div class="cantactInfo">
+        <div class="contactInfo">
             <ul id="infoList">
                 <li>Telefon: 12738123</li>
                 <li>E-mail: gruppe25@westerdals.no</li>
