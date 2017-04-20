@@ -18,21 +18,52 @@
     </div>
 </div>
 <div class="menu-dropdown">
-    <a href="#">CAMPUS</a>
-    <a href="#">EVENTS</a>
-    <a href="#">OM OSS</a>                
-    <a href="#">KALENDER</a>
+    <a href="#">
+        <div class="navigation-container">
+            <div class="icon">
+                <img src="../photos/university-icon.png">
+            </div>
+            <div class="menu-choice-text">CAMPUS</div>
+        </div>
+    </a>
+    <a href="#">
+        <div class="navigation-container">
+            <div class="icon">
+                <img src="../photos/university-icon.png">
+            </div>
+            <div class="menu-choice-text">EVENTS</div>
+        </div>
+    </a>
+    <a href="#">
+        <div class="navigation-container">
+            <div class="icon">
+                <img src="../photos/university-icon.png">
+            </div>
+            <div class="menu-choice-text">KALENDER</div>
+        </div>
+    </a>
+    <a href="#">
+        <div class="navigation-container">
+            <div class="icon">
+                <img src="../photos/university-icon.png">
+            </div>
+            <div class="menu-choice-text">OM OSS</div>
+        </div>
+    </a>
 </div>
 
 
 <script>
     /**Make changes to js so that it animates the movement to be more clean. Also add gray overlay on rest of screen when dropdown is shown.*/
+
+    //Shows the menu on toggle of the button
     $(document).ready(function(){
         $('.menu-button').click(function() {
             $('.menu-dropdown').toggle();
         });
     });
 
+    //Takes the menu away if one clicks outside the dropdown menu
     $(document).mouseup(function (e) {
         var container = $(".menu-dropdown");
 
