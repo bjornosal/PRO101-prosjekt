@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
+    <head>
 
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
-<title>Hvem er Wevent</title>
-    
-    <link rel="stylesheet" type="text/css" href="../css/omOss_midlertidig.css">
+        <title>Hvem er Wevent</title>
 
-</head>
+        <link rel="stylesheet" type="text/css" href="../css/omOss_midlertidig.css">
+
+    </head>
     <body>
 
-         
-    <?php include 'header.php' ?>
-    
-        
-    
-    
+
+        <?php require 'header.php'; ?>
+
+
+
+
         <div class="infoBox">
             <div id="infoText">
                 <h1>Om oss i Wevent</h1>
@@ -29,34 +30,34 @@
                 <p>Nunc et sapien quam. Ut vitae dolor viverra, luctus ipsum quis, congue nibh. Pellentesque ac ligula quis turpis suscipit varius ut id nulla. Etiam eu blandit nibh. Integer ultrices sollicitudin suscipit. Proin tincidunt posuere dui. In hac habitasse platea dictumst. Phasellus vulputate porttitor dapibus. Integer eleifend odio sit amet dolor faucibus cursus. Sed semper magna porta, varius diam et, pharetra dui. Vestibulum leo ante, euismod a tristique eu, finibus vitae eros. Nulla malesuada ornare sem.</p>
             </div>
         </div>
-        
-        <div class="contactInfo">
+
+        <div class="cantactInfo">
             <ul id="infoList">
                 <li>Telefon: 12738123</li>
                 <li>E-mail: gruppe25@westerdals.no</li>
                 <li>Instagram: @Wevent</li>
             </ul>
         </div>
-        
-        
+
+
         <div class="exampleImage">
             <img id="photo1" src="../Bilder/Example_image.jpg">
         </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-        
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </body>
 </html>
