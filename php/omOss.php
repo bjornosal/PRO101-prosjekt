@@ -1,58 +1,63 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
+    <head>
 
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="../css/omOss_midlertidig.css">
-    
-<title>Om oss</title>
-    
+        <title>Hvem er Wevent</title>
 
-</head>
-    
-    
+        <link rel="stylesheet" type="text/css" href="../css/omOss_midlertidig.css">
+
+    </head>
     <body>
-        
-        <?php 
-        require 'header.php'; 
-        
-        
-        ?>
-        
 
-        <div class="container"></div>
-        
-        <div class="photoBox"></div>
-        
-        <div class="textBox">
-            
-            <h1>Om oss:</h1>
-            
-            <p>
-            LLorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut magna dolor. Ut auctor metus in ligula volutpat, in vulputate urna maximus. Ut id quam sed tortor placerat facilisis non malesuada felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam efficitur, dolor ac vulputate aliquam, urna ante malesuada enim, sed dignissim urna quam et ex. Mauris a velit pharetra, molestie ligula sit amet, malesuada enim. Nullam dapibus varius ipsum dictum bibendum. Duis a massa turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque dolor, tristique eget elementum et, varius elementum lectus. Nunc efficitur viverra convallis. Donec tempus, dui semper interdum auctor, ex ex vestibulum lorem, sed porttitor urna lectus sed nisl. Nulla iaculis viverra suscipit. Aenean quis enim id sapien pharetra consequat eu nec sapien. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-            </p>
-            
+
+        <?php require 'header.php'; ?>
+
+
+
+
+        <div class="infoBox">
+            <div id="infoText">
+                <h1>Om oss i Wevent</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisi massa, tempor non rutrum et, auctor eget elit. Nam porta est eget porttitor sodales. Sed in dictum risus. Donec vitae rhoncus orci, eget accumsan ante. Sed ullamcorper tortor erat, quis auctor velit luctus non. Pellentesque vitae nibh ut nibh auctor lobortis. Suspendisse a sagittis eros, quis luctus tortor. Maecenas magna nibh, laoreet ut elit ut, placerat viverra lorem.</p>
+
+                <p>Nunc et sapien quam. Ut vitae dolor viverra, luctus ipsum quis, congue nibh. Pellentesque ac ligula quis turpis suscipit varius ut id nulla. Etiam eu blandit nibh. Integer ultrices sollicitudin suscipit. Proin tincidunt posuere dui. In hac habitasse platea dictumst. Phasellus vulputate porttitor dapibus. Integer eleifend odio sit amet dolor faucibus cursus. Sed semper magna porta, varius diam et, pharetra dui. Vestibulum leo ante, euismod a tristique eu, finibus vitae eros. Nulla malesuada ornare sem.</p>
+            </div>
         </div>
-        
-        <div class="contactBox">
-            <h2>Kontakt oss:</h2>
-            <ul>
-                <li>Instagram: oewrj2@instagram.com</li>
-                <li>Telefon: 9274897</li>
-                <li>Mail: gruppe25@mailserver.com</li>  
-            </ul>     
+
+        <div class="cantactInfo">
+            <ul id="infoList">
+                <li>Telefon: 12738123</li>
+                <li>E-mail: gruppe25@westerdals.no</li>
+                <li>Instagram: @Wevent</li>
+            </ul>
         </div>
-    
-        
-        
-    
-    
-    
-    
+
+
+        <div class="exampleImage">
+            <img id="photo1" src="../Bilder/Example_image.jpg">
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </body>
 </html>
