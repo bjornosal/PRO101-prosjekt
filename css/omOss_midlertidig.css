@@ -42,7 +42,7 @@
     font-family: sans-serif;
 }
 
-.cantactInfo {
+.contactInfo {
     position: fixed;
     background-color: lightgray;
     width:80%;
@@ -54,6 +54,10 @@
 
 
 /* Tilhører header.php */
+
+/*#FECE60 - yellow*/
+/*#51BBFE - blue*/
+
 body {
     margin: 0; 
     padding: 0;

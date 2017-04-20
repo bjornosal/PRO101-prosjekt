@@ -37,7 +37,6 @@
     <a href="#">KALENDER</a>
 </div>
 <div class="overlay"></div>
-
 <script>
     /**Make changes to js so that it animates the movement to be more clean. Also add gray overlay on rest of screen when dropdown is shown.*/
     $(document).ready(function(){
