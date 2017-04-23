@@ -18,6 +18,7 @@
                 require 'header2.php'; 
             #   require 'header.php';
                 require 'tip-box.php';
+                require 'go-to-top.php';
             ?>
             
         

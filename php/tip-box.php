@@ -1,7 +1,8 @@
 <div class="tip-container">
     <div class="tip-bar">TIPS OSS OM ET ARRANGEMENT!</div>
     <form method="post" id="tip-form">
-        <br>Event-navn:<br>
+        <br>
+        Event-navn:<br>
         <input class="form-input" type="text" name="event-name">
         <br><br>
         Event-lenke:<br>
@@ -13,8 +14,5 @@
 
         <br><br>
         <input class="form-button" type="submit" value="Send">
-
     </form>
-
-
 </div>
