@@ -129,20 +129,30 @@ background-color: blue;
 
 
 /*HEADER2 CSS*/
+.header-container, .logo-container, .menu-dropdown {
+    background-color: #595959;
+}
+
+.menu-container, .tip-bar, .form-button, .back-to-top-button {
+    background-color: #404040;
+}
+
+.menu-line, .navigation-container:hover{    
+    background-color:#808080;
+}
+
 .header-container {
     height:90px;
     width:100%;
     margin: auto;
     display: inline-flex;
     align-items: center;
-    background-color: #595959;
     box-shadow: 0px 0px 6px 1px #000;
     position: relative;
     z-index:3;
 }
 
 .menu-container {
-    background-color: #404040;
     width:90px;
     height:90px;
     min-width: 90px;
@@ -159,9 +169,8 @@ background-color: blue;
 }
 
 .menu-line {
-    width:100%;
+    width: 100%;
     height: 20%;
-    background-color:#808080;
     cursor: pointer;
 }
 
@@ -172,7 +181,6 @@ background-color: blue;
 .logo-container {
     height: 100%;
     width: 800px;
-    background-color:#595959;
 }
 
 .logo-container *{
@@ -200,7 +208,7 @@ background-color: blue;
 .tag-line-container p{
     position: relative;
     top: 10%;
-    color:#808080;
+    color: #808080;
 }
 
 .menu-dropdown {
@@ -212,7 +220,6 @@ background-color: blue;
     top:90px;
     bottom:0;
     left: 0;
-    background-color: #595959;
     z-index: 2;
 }
 
@@ -223,9 +230,6 @@ background-color: blue;
     font-size: 1.3em;
 }
 
-.navigation-container:hover{
-    background-color: #808080;
-}
 
 .icon {
     float: left;
@@ -277,7 +281,6 @@ background-color: blue;
     font-size: 1.1em;
     line-height: 30px;
     cursor: pointer;    
-    background-color:#404040;
     color: #FFF;
     
 }
@@ -301,7 +304,6 @@ background-color: blue;
 
 
 .form-button {    
-    background-color:#404040;
     color: #FFF;
     cursor: pointer;
 }
@@ -320,7 +322,6 @@ background-color: blue;
     
     width: 5%;
     height: 9.5%;
-    background-color: #404040;
     border-radius: 100%;
 }
 

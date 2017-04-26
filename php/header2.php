@@ -63,7 +63,7 @@
         });
     });
 
-    //Takes the menu away if one clicks outside the dropdown menu
+    //Takes the menu away if one clicks outside the dropdown menu/menu bar
     $(document).mouseup(function (e) {
         var container = $(".menu-dropdown");
 
