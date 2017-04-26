@@ -2,8 +2,10 @@
 body {
     margin: 0; 
     padding: 0;
-    background-color: #FCFCFC;
+    /*background-color: #FCFCFC;*/
+    background-image: url(../Bilder/testBackground.jpg);
     min-height: 100%;
+    max-width: 100%;
 }
 
 /*HEADER CSS*/

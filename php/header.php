@@ -18,7 +18,7 @@
     </div>
 </div>
 <div class="menu-dropdown">
-    <a href="#">
+    <a href="index.php">
         <div class="navigation-container">
             <div class="icon">
                 <img src="../photos/icons/home-icon.png">
@@ -26,7 +26,7 @@
             <div class="menu-choice-text">HJEM</div>
         </div>
     </a>
-    <a href="#">
+    <a href="campusInfo.php">
         <div class="navigation-container">
             <div class="icon">
                 <img src="../photos/icons/uni-icon.png">
@@ -34,7 +34,7 @@
             <div class="menu-choice-text">CAMPUS</div>
         </div>
     </a>
-    <a href="#">
+    <a href="eventside.php">
         <div class="navigation-container">
             <div class="icon">
                 <img src="../photos/icons/cal-icon.png">
@@ -42,7 +42,7 @@
             <div class="menu-choice-text">KALENDER</div>
         </div>
     </a>
-    <a href="#">
+    <a href="omOss.php">
         <div class="navigation-container">
             <div class="icon">
                 <img src="../photos/icons/about-us.png">
@@ -53,21 +53,19 @@
 </div>
 
 
+
 <script>
     /**Make changes to js so that it animates the movement to be more clean. Also add gray overlay on rest of screen when dropdown is shown.*/
-
     //Shows the menu on toggle of the button
     $(document).ready(function(){
         $('.menu-button').click(function() {
             $('.menu-dropdown').toggle();
         });
     });
-
     //Takes the menu away if one clicks outside the dropdown menu/menu bar
-    $(document).mouseup(function (e) {
+    $(document).mouseup(function (ev) {
         var container = $(".menu-dropdown");
-
-        if (!container.is(e.target) && container.has(e.target).length === 0) 
+        if (!container.is(ev.target) && container.has(ev.target).length === 0) 
         {
             container.hide();
         }
