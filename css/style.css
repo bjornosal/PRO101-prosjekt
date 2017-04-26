@@ -127,6 +127,7 @@ body {
     width:70%;
     left: 10px;
     top:15%;
+    max-width: 100%;
 }
 
 .navigation-container {
@@ -134,6 +135,10 @@ body {
     height:50px;
     border-bottom: 1px solid #000;
 }
+
+/*HEADER CSS ENDS*/
+
+/*TIP BOX CSS STARTS*/
 
 .tip-container {
     position: fixed;
@@ -179,8 +184,6 @@ body {
     resize: none;
 }
 
-
-
 .form-button {    
     color: #FFF;
     cursor: pointer;
@@ -190,7 +193,9 @@ body {
     bottom: 0;
 }
 
+/*TIP BOX CSS ENDS*/
 
+/*RETURN TO TOP BUTTON CSS STARTS*/
 .back-to-top-button {
     position: fixed;
     cursor: pointer;
@@ -234,7 +239,4 @@ body {
     
     display: none;
 }
-
-.icon img{
-    max-width: 100%;
-}
+/*RETURN TO TOP BUTTON CSS ENDS*/
