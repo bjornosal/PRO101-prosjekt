@@ -21,7 +21,15 @@
     <a href="#">
         <div class="navigation-container">
             <div class="icon">
-                <img src="../photos/university-icon.png">
+                <img src="../photos/icons/home-icon.png">
+            </div>
+            <div class="menu-choice-text">HJEM</div>
+        </div>
+    </a>
+    <a href="#">
+        <div class="navigation-container">
+            <div class="icon">
+                <img src="../photos/icons/uni-icon.png">
             </div>
             <div class="menu-choice-text">CAMPUS</div>
         </div>
@@ -29,15 +37,7 @@
     <a href="#">
         <div class="navigation-container">
             <div class="icon">
-                <img src="../photos/university-icon.png">
-            </div>
-            <div class="menu-choice-text">EVENTS</div>
-        </div>
-    </a>
-    <a href="#">
-        <div class="navigation-container">
-            <div class="icon">
-                <img src="../photos/university-icon.png">
+                <img src="../photos/icons/cal-icon.png">
             </div>
             <div class="menu-choice-text">KALENDER</div>
         </div>
@@ -45,9 +45,9 @@
     <a href="#">
         <div class="navigation-container">
             <div class="icon">
-                <img src="../photos/university-icon.png">
+                <img src="../photos/icons/about-us.png">
             </div>
-            <div class="menu-choice-text">OM OSS</div>
+            <div class="menu-choice-text">OM WEVENT</div>
         </div>
     </a>
 </div>
