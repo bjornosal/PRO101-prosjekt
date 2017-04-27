@@ -25,13 +25,14 @@
 
         <div class="event-container">
             <div class="event-background">
+                <!--Start event showcase-->
                 <div class="event-inner-container">
                     <div class="event-photo-container">
                         <img class="event-photo" src="../Bilder/Example_image.jpg">
                     </div>
                     <div id="ev1-map" class="event-map-container"></div>
                     <div class="event-description-container">
-                        <h3 class="event-description-title">GENERISK TITTEL</h3>
+                        <h3 class="event-description-title">GENERISK TITTEL</h3>    
                         <p class="event-description-text">Generisk beskrivelse av et event.<br>Nisi occaecat iis efflorescere est eram expetendis non culpa dolore ita quem 
                             quibusdam ne elit cillum nam laborum cohaerescant nam pariatur. Qui dolore 
                             fidelissimae, id in imitarentur. Ex de consectetur, ea arbitror si laboris in 
@@ -44,19 +45,108 @@
                             culpa excepteur eiusmod, pariatur elit fugiat pariatur illum, ingeniis malis 
                             lorem est tamen a vidisse sint incididunt cernantur, qui ne fugiat sint labore 
                             iis id enim malis qui singulis.</p>
-                    
+
                     </div>
                     <div class="event-social-container">
-                        <div class="event-facebook"></div>
-                        
+                        <a href="#">
+                            <div class="copy-event-btn">
+                                <img class="event-btn-img" src="../photos/icons/copy-icon-black.png">
+                                <p><strong>KOPIER LENKE</strong></p>
+                            </div>
+                            <a href="#">
+                                <div class="ticket-event-btn">
+                                    <img class="event-btn-img" src="../photos/icons/ticket-icon-black.png">
+                                    <p><strong>BILLETTER</strong></p>
+
+                                </div>
+                            </a>
+                        </a>
                     </div>
                 </div>
+                <!--End event showcase-->
+                
+                <!--Start event showcase-->
                 <div class="event-inner-container">
-                    <div class="event-photo-container"></div>
-                    <div id="ev1-map" class="event-map-container" ></div>
-                    <div class="event-description-container"></div>
-                    <div class="event-social-container"></div>
+                    <div class="event-photo-container">
+                        <img class="event-photo" src="../Bilder/Example_image.jpg">
+                    </div>
+                    <div id="ev2-map" class="event-map-container"></div>
+                    <div class="event-description-container">
+                        <h3 class="event-description-title">GENERISK TITTEL</h3>    
+                        <p class="event-description-text">Generisk beskrivelse av et event.<br>Nisi occaecat iis efflorescere est eram expetendis non culpa dolore ita quem 
+                            quibusdam ne elit cillum nam laborum cohaerescant nam pariatur. Qui dolore 
+                            fidelissimae, id in imitarentur. Ex de consectetur, ea arbitror si laboris in 
+                            irure ingeniis in aliqua cillum, cernantur do quid. Senserit quis dolore do 
+                            veniam, incurreret si cernantur ut te minim laboris, ut dolore nisi non 
+                            arbitror, ut nisi se lorem ex multos proident quo comprehenderit, labore 
+                            sempiternum cernantur quorum iudicem sed ubi mentitum ne excepteur. Admodum anim 
+                            id cernantur graviterque, sed arbitror si nescius. Laborum varias laborum. Amet 
+                            graviterque eiusmod veniam proident e officia dolore fugiat hic elit o nescius 
+                            culpa excepteur eiusmod, pariatur elit fugiat pariatur illum, ingeniis malis 
+                            lorem est tamen a vidisse sint incididunt cernantur, qui ne fugiat sint labore 
+                            iis id enim malis qui singulis.</p>
+
+                    </div>
+                    <div class="event-social-container">
+                        <a href="#">
+                            <div class="copy-event-btn">
+                                <img class="event-btn-img" src="../photos/icons/copy-icon-black.png">
+                                <p><strong>KOPIER LENKE</strong></p>
+                            </div>
+                            <a href="#">
+                                <div class="ticket-event-btn">
+                                    <img class="event-btn-img" src="../photos/icons/ticket-icon-black.png">
+                                    <p><strong>BILLETTER</strong></p>
+
+                                </div>
+                            </a>
+                        </a>
+                    </div>
                 </div>
+                <!--End event showcase-->
+                
+                <!--Start event showcase-->
+                <div class="event-inner-container">
+                    <div class="event-photo-container">
+                        <img class="event-photo" src="../Bilder/Example_image.jpg">
+                    </div>
+                    <div id="ev3-map" class="event-map-container"></div>
+                    <div class="event-description-container">
+                        <h3 class="event-description-title">GENERISK TITTEL</h3>    
+                        <p class="event-description-text">Generisk beskrivelse av et event.<br>Nisi occaecat iis efflorescere est eram expetendis non culpa dolore ita quem 
+                            quibusdam ne elit cillum nam laborum cohaerescant nam pariatur. Qui dolore 
+                            fidelissimae, id in imitarentur. Ex de consectetur, ea arbitror si laboris in 
+                            irure ingeniis in aliqua cillum, cernantur do quid. Senserit quis dolore do 
+                            veniam, incurreret si cernantur ut te minim laboris, ut dolore nisi non 
+                            arbitror, ut nisi se lorem ex multos proident quo comprehenderit, labore 
+                            sempiternum cernantur quorum iudicem sed ubi mentitum ne excepteur. Admodum anim 
+                            id cernantur graviterque, sed arbitror si nescius. Laborum varias laborum. Amet 
+                            graviterque eiusmod veniam proident e officia dolore fugiat hic elit o nescius 
+                            culpa excepteur eiusmod, pariatur elit fugiat pariatur illum, ingeniis malis 
+                            lorem est tamen a vidisse sint incididunt cernantur, qui ne fugiat sint labore 
+                            iis id enim malis qui singulis.</p>
+
+                    </div>
+                    <div class="event-social-container">
+                        <a href="#">
+                            <div class="copy-event-btn">
+                                <img class="event-btn-img" src="../photos/icons/copy-icon-black.png">
+                                <p><strong>KOPIER LENKE</strong></p>
+                            </div>
+                            <a href="#">
+                                <div class="ticket-event-btn">
+                                    <img class="event-btn-img" src="../photos/icons/ticket-icon-black.png">
+                                    <p><strong>BILLETTER</strong></p>
+
+                                </div>
+                            </a>
+                        </a>
+                    </div>
+                </div>
+                <!--End event showcase-->
+                
+                
+                
             </div>
         </div>
 
