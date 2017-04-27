@@ -72,15 +72,13 @@ body {
 .logo {
     line-height: 90px;  
     font-size: 3.1em;
-    width:33.33%;
     float: left;
-    left: 5%;
 
 }
 
 .tag-line-container {
     height: 100%;
-    width: 40%;
+    width: 40px;
     float: left;
 
 }
@@ -237,12 +235,12 @@ body {
     top: 0%;
     width: 100%;
 }
-#top-button {
-    
+#top-button {    
     display: none;
 }
 /*RETURN TO TOP BUTTON CSS ENDS*/
 
+/*START OFF SEARCH CSS*/
 .search-container {
     width:100%;
     height:300px;
@@ -251,8 +249,8 @@ body {
 .search-box {
     position: relative;
     max-width: 100%;
-    width: 1000px;    
-    min-width: 1000px;
+    width: 800px;    
+    min-width: 800px;
     height: 25%;
     margin: auto;
     top: 30%;
@@ -261,8 +259,11 @@ body {
 .search-criteria {
     float:left;
     height: 100%;
-    width: 20%;
-    margin-left: 0.5%
+    width: 25%;
+    margin-left: 0.5%;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px 1px #000;
+    border: none;
 }
 
 .search-criteria, .search-button {
@@ -270,31 +271,22 @@ body {
     text-align: center;
     line-height: 2.5em;
     font-family: sans-serif;
-    cursor: pointer;
     font-size: 1.5em;
-}
-
-.campus-dropdown {
-    height: 100%;
-    width:320%;
-}
-
-.campus-options {
-    width:33%;
-    height:100%;
-    float:left;
-    font-size: 0.9em;
-    line-height: 3em;
-    position: relative;
 }
 
 .search-button {
     position: relative;
-    float: right;
-    width:17.5%;
+    float: left;
+    width:22.5%;
     top: 9%;
     margin-left: .5%;
     height: 80%;
     box-shadow: 2px 2px 5px 1px #000;
 }
+/*SEARCH CSS ENDS*/
 
+.logo-filler {
+    float: left; 
+    width: 5%;
+    height: 100%;
+}

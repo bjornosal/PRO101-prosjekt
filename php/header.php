@@ -12,9 +12,13 @@
         </div>
     </div>
 
+
     <div class="logo-container">
-        <div class="logo"><strong>WEVENT</strong></div>
-        <div class="tag-line-container"><p>event<br>finder</p></div>
+        <div class="logo-filler"></div>
+        <a href="index.php">
+            <div class="logo"><strong>WEVENT</strong></div>
+            <div class="tag-line-container"><p>event<br>finder</p></div>
+        </a>
     </div>
 </div>
 <div class="menu-dropdown">
