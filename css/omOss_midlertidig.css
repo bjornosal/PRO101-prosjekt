@@ -1,20 +1,24 @@
-.infoBox .exampleImage {
-    position: absolute;
+.infoBox, .exampleImage, .contactInfo {
+    float: left;
+    margin-top: 5%;
 }
 
-
 .infoBox {
-    left: 5%;
-    width: 35%;
-    top: 15%;
-    bottom: 25%;
+    width: 40%;
+    margin-left: 10%;
     background-color: rgba(0,0,0,0.1);
     box-shadow: 0px 0px 1px 0px #000;
+    
+}
+
+#infoText {
+    
+    padding: 0% 5% .75% 5%;
 }
 
 #infoText p {
     font-family: sans-serif;
-    font-size: 1em;
+    font-size: 1.2em;
 }
     
 #infoText h1 {
@@ -24,10 +28,7 @@
 }
 
 .exampleImage {
-    right: 5%;
-    width: 55%;
-    top: 15%;
-    bottom: 25%;
+    width: 40%;
     background-color: #595959;
     box-shadow: 0px 0px 1px 0px #000;
     
@@ -35,7 +36,7 @@
 
 #photo1 {
     width: 100%;
-    height: 100%;77
+    height: 100%;
     max-width: 100%;
 }
 
@@ -45,7 +46,6 @@
 }
 
 .contactInfo {
-    position: absolute;
     width:25%;
     height: 19%;
     left: 4%;
@@ -54,28 +54,21 @@
 
 
 
-
-/* Tilhører header.php */
-
-/*#FECE60 - yellow*/
-/*#51BBFE - blue*/
-
-/*#FECE60 - yellow*/
-/*#51BBFE - blue*/
-
 body {
     margin: 0; 
     padding: 0;
+    /*background-color: #FCFCFC;*/
     background-image: url(../Bilder/testBackground.jpg);
     min-height: 100%;
+    max-width: 100%;
 }
 
 /*HEADER CSS*/
-.header-container, .logo-container, .menu-dropdown {
+.header-container, .logo-container, .menu-dropdown, option{
     background-color: #595959;
 }
 
-.menu-container, .tip-bar, .form-button, .back-to-top-button {
+.menu-container, .tip-bar, .form-button, .back-to-top-button, .search-criteria, .search-button, .language-button {
     background-color: #404040;
 }
 
@@ -95,6 +88,7 @@ body {
 }
 
 .menu-container {
+    float:left; 
     width:90px;
     height:90px;
     min-width: 90px;
@@ -121,8 +115,9 @@ body {
 }
 
 .logo-container {
+    float:left;
     height: 100%;
-    width: 800px;
+    width: 300px;
 }
 
 .logo-container *{
@@ -134,18 +129,22 @@ body {
 .logo {
     line-height: 90px;  
     font-size: 3.1em;
-    width:33.33%;
     float: left;
-    left: 5%;
 
+}
+
+.logo-filler {
+    float: left; 
+    width: 10%;
+    height: 100%;
 }
 
 .tag-line-container {
     height: 100%;
-    width: 40%;
+    width: 40px;
     float: left;
     position: relative;
-    left: 50px;
+    left: 1%;
 
 }
 
@@ -268,6 +267,7 @@ body {
     bottom: 20px;
     right: 20px;
     z-index: 5;
+    
     width: 5%;
     height: 9.5%;
     border-radius: 100%;
@@ -300,8 +300,115 @@ body {
     top: 0%;
     width: 100%;
 }
-#top-button {
-    
+#top-button {    
     display: none;
 }
 /*RETURN TO TOP BUTTON CSS ENDS*/
+
+/*START OFF SEARCH CSS*/
+.search-container {
+    width:100%;
+    height:300px;
+}
+
+.search-box {
+    position: relative;
+    max-width: 100%;
+    width: 1000px;    
+    min-width: 800px;
+    height: 25%;
+    margin: auto;
+    top: 30%;
+}
+
+.search-criteria {
+    height: 100%;
+    width: 20%;
+    margin-left: 2.5%;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px 1px #000;
+    border: none;
+}
+
+.search-criteria, .search-button {
+    color: white;
+    text-align: center;
+    line-height: 2.5em;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    float: left;
+}
+
+.search-button {
+    position: relative;
+    width:17.5%;
+    top: 9%;
+    margin-left: 2.5%;
+    height: 80%;
+    box-shadow: 2px 2px 5px 1px #000;
+
+}
+/*SEARCH CSS ENDS*/
+
+.language-container {
+    position: absolute;
+    right: 0;
+    width: 150px;
+    height: 100%;
+}
+
+.language-button {
+    height: 50%;
+    width: 80%;
+    color: #FFF;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    box-shadow: 2px 2px 5px 1px #000;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 1em;
+    line-height: 2.5em;
+}
+
+.eventsidecontainer1 {
+                  position: absolute;
+                  top: 45%;
+                  left: 14%;
+                  width: 13%;
+                  height: 20%;
+                  background-image: url(../Bilder/bjorn.jpeg);
+                  overflow: hidden;
+                  box-shadow: 0px 5px 20px 0px #000;
+          }
+
+
+.eventsidecontainer2 {
+                  position: absolute;
+                  top: 45%;
+                  left: 42%;
+                  width: 30%;
+                  height: 20%;
+              
+                  box-shadow: 0px 5px 20px 0px #000;
+          }
+
+.eventsidecontainer3 {
+                  position: absolute;
+                  top: 45%;
+                  left: 73%;
+                  width: 13%;
+                  height: 20%;
+
+                  box-shadow: 0px 5px 20px 0px #000;
+}
+
+        
+#eventsidemap {
+                  position: absolute;
+                  top: 45%;
+                  left: 28%;
+                  width: 13%;
+                  height: 20%;
+                  box-shadow: 0px 5px 20px 0px #000;
+}
