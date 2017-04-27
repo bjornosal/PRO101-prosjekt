@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
 	<head>
@@ -10,15 +9,26 @@
 
         <title>Event Kalender</title>
         
-      <link href="../css/stil.css" rel="stylesheet" type="text/css">
+      <link href="../css/style.css" rel="stylesheet" type="text/css">
         
 		
 	</head>
 		<body>
+            
+
+            <?php
+                require 'header.php';
+                require 'search.php';
+                require 'tip-box.php';
+                require 'go-to-top.php';
+            ?>
+          
 	
             
             <div class="eventsidecontainer1"></div>
-            <div class="eventsidecontainer2"></div>
+            <div class="eventsidecontainer2">
+             <h1>overskrift</h1><p>asdasdsadsafasfsafa</p>
+            </div>
             <div class="eventsidecontainer3">
                 <a href="https://www.google.no/">Bestil her</a>
                 <a href="https://www.facebook.com">Facebook</a>
