@@ -30,9 +30,9 @@
         <div class="infoBox">
             <div id="infoText">
                 <h1>OM WEVENT</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisi massa, tempor non rutrum et, auctor eget elit. Nam porta est eget porttitor sodales. Sed in dictum risus. Donec vitae rhoncus orci, eget accumsan ante. Sed ullamcorper tortor erat, quis auctor velit luctus non. Pellentesque vitae nibh ut nibh auctor lobortis. Suspendisse a sagittis eros, quis luctus tortor. Maecenas magna nibh, laoreet ut elit ut, placerat viverra lorem.</p>
-
-                <p>Nunc et sapien quam. Ut vitae dolor viverra, luctus ipsum quis, congue nibh. Pellentesque ac ligula quis turpis suscipit varius ut id nulla. Etiam eu blandit nibh. Integer ultrices sollicitudin suscipit. Proin tincidunt posuere dui.</p>
+                <p>Vi i Wevent jobber for at du som student ved Westerdals Oslo ACT skal få en enklere sosial hverdag. Det er mange som lurer på hva slags eventer og happenings som finner sted i området rundt WOACT sine campuser. Vi ønsker derfor å gi deg en enkel og god måte å lete frem de arrangementene som passer deg best! </p>
+                <p>Wevent er sammensatt av 5 studenter ved avdeling for teknologi. Wevent startet opp som et prosjekt i faget Webprosjekt PRO101, vi opplevde selv å gå glipp av morsomme events og gatherings som kunne gjort hverdagen og fritiden vår mer innholdsrik! Det er flere av studentene på WOACT som har flyttet til Oslo for å studere, uten å ha kjennskap til byen. Det skjer noe hele tiden i byen vår, men hvor mange er det som faktisk får med seg det som skjer?  .</p>
+                <p>På vår nettside vil du kunne søke opp eventer i nærområdet som passer dine kriterier. Vi oppdaterer event-kalenderen vår løpende, og du kan velge mellom flere event-kategorier du ønsker å ta en nærmere titt på. Vil du på dansekurs, eller kanskje øl-smaking? Sjekk ut vår event-database og se om det er noe som passer dine ønsker!</p>
             </div>
         </div>
 

@@ -1,6 +1,9 @@
+.infoBox .exampleImage {
+    position: absolute;
+}
+
 
 .infoBox {
-    position: absolute;
     left: 5%;
     width: 35%;
     top: 15%;
@@ -9,19 +12,11 @@
     box-shadow: 0px 0px 1px 0px #000;
 }
 
-
-#infoText {
-    position: absolute;
-    width: 90%;
-    left: 5%;
-}
-
 #infoText p {
     font-family: sans-serif;
-    font-size: 1.5em;
-    
+    font-size: 1em;
 }
-
+    
 #infoText h1 {
     font-family: sans-serif;
     font-size: 2.5em;
@@ -29,13 +24,11 @@
 }
 
 .exampleImage {
-    position: absolute;
     right: 5%;
     width: 55%;
     top: 15%;
     bottom: 25%;
     background-color: #595959;
-    
     box-shadow: 0px 0px 1px 0px #000;
     
 }
@@ -56,8 +49,7 @@
     width:25%;
     height: 19%;
     left: 4%;
-    bottom: 2.5%;
-    
+    bottom: 2.5%;   
 }
 
 
@@ -274,7 +266,6 @@ body {
     bottom: 20px;
     right: 20px;
     z-index: 5;
-    
     width: 5%;
     height: 9.5%;
     border-radius: 100%;
