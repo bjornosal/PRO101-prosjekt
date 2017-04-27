@@ -86,13 +86,12 @@ html, body {
 
 
 
-
 /*HEADER CSS*/
 .header-container, .logo-container, .menu-dropdown, option{
     background-color: #595959;
 }
 
-.menu-container, .tip-bar, .form-button, .back-to-top-button, .search-criteria, .search-button {
+.menu-container, .tip-bar, .form-button, .back-to-top-button, .search-criteria, .search-button, .language-button {
     background-color: #404040;
 }
 
@@ -112,6 +111,7 @@ html, body {
 }
 
 .menu-container {
+    float:left; 
     width:90px;
     height:90px;
     min-width: 90px;
@@ -138,8 +138,9 @@ html, body {
 }
 
 .logo-container {
+    float:left;
     height: 100%;
-    width: 800px;
+    width: 300px;
 }
 
 .logo-container *{
@@ -155,10 +156,18 @@ html, body {
 
 }
 
+.logo-filler {
+    float: left; 
+    width: 10%;
+    height: 100%;
+}
+
 .tag-line-container {
     height: 100%;
     width: 40px;
     float: left;
+    position: relative;
+    left: 1%;
 
 }
 
@@ -281,6 +290,7 @@ html, body {
     bottom: 20px;
     right: 20px;
     z-index: 5;
+    
     width: 5%;
     height: 9.5%;
     border-radius: 100%;
@@ -327,7 +337,7 @@ html, body {
 .search-box {
     position: relative;
     max-width: 100%;
-    width: 800px;    
+    width: 1000px;    
     min-width: 800px;
     height: 25%;
     margin: auto;
@@ -335,11 +345,11 @@ html, body {
 }
 
 .search-criteria {
-    float:left;
     height: 100%;
-    width: 25%;
-    margin-left: 0.5%;
+    width: 20%;
+    margin-left: 2.5%;
     cursor: pointer;
+    box-shadow: 2px 2px 5px 1px #000;
     border: none;
 }
 
@@ -349,21 +359,82 @@ html, body {
     line-height: 2.5em;
     font-family: sans-serif;
     font-size: 1.5em;
+    float: left;
 }
 
 .search-button {
     position: relative;
-    float: left;
-    width: 22.5%;
+    width:17.5%;
     top: 9%;
-    margin-left: .5%;
+    margin-left: 2.5%;
     height: 80%;
-    border-radius: 2.5%;
+    box-shadow: 2px 2px 5px 1px #000;
 }
 /*SEARCH CSS ENDS*/
 
-.logo-filler {
-    float: left; 
-    width: 5%;
+.language-container {
+    position: absolute;
+    right: 0;
+    width: 150px;
     height: 100%;
 }
+<<<<<<< HEAD
+
+.language-button {
+    height: 50%;
+    width: 80%;
+    color: #FFF;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    box-shadow: 2px 2px 5px 1px #000;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 1em;
+    line-height: 2.5em;
+}
+
+.eventsidecontainer1 {
+                  position: absolute;
+                  top: 45%;
+                  left: 14%;
+                  width: 13%;
+                  height: 20%;
+                  background-image: url(../Bilder/bjorn.jpeg);
+                  overflow: hidden;
+                  box-shadow: 0px 5px 20px 0px #000;
+          }
+
+
+.eventsidecontainer2 {
+                  position: absolute;
+                  top: 45%;
+                  left: 42%;
+                  width: 30%;
+                  height: 20%;
+              
+                  box-shadow: 0px 5px 20px 0px #000;
+          }
+
+.eventsidecontainer3 {
+                  position: absolute;
+                  top: 45%;
+                  left: 73%;
+                  width: 13%;
+                  height: 20%;
+
+                  box-shadow: 0px 5px 20px 0px #000;
+}
+
+        
+#eventsidemap {
+                  position: absolute;
+                  top: 45%;
+                  left: 28%;
+                  width: 13%;
+                  height: 20%;
+                  box-shadow: 0px 5px 20px 0px #000;
+}
+
+=======
+>>>>>>> b320d6edc5d813070e792c39931860615472d8f5

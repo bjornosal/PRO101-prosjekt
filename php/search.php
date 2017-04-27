@@ -1,5 +1,4 @@
-<div class="search-container">
-    <div class="search-box">
+   <div class="search-box">
         <!--<select name="campus" class="search-criteria">
             <option selected disabled hidden>CAMPUS</option>
             <option value="fjerdingen">FJERDINGEN</option>
@@ -9,9 +8,11 @@
 
         <select name="category" class="search-criteria">
             <option selected disabled hidden>KATEGORI</option>
-            <option value="fjerdingen">LEK</option>
-            <option value="vulkan">MORO</option>
-            <option value="brenneriveien">TING</option>
+            <option value="mat">MAT</option>
+            <option value="kultur">KULTUR</option>
+            <option value="uteliv">UTELIV</option>
+            <option value="sport">SPORT</option>
+            <option value="teknologi">TEKNOLOGI</option>
         </select>
 
         <select name="from-month" class="search-criteria">
@@ -45,6 +46,6 @@
             <option value="november">NOVEMBER</option>
             <option value="desember">DESEMBER</option>
         </select>
-        <a href="#"><div class="search-button">SØK</div></a>
+        <a><div class="search-button">SØK</div></a>
     </div>
 </div>
