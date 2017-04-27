@@ -45,6 +45,6 @@
             <option value="november">NOVEMBER</option>
             <option value="desember">DESEMBER</option>
         </select>
-        <a><div class="search-button">SØK</div></a>
+        <a href="#"><div class="search-button">SØK</div></a>
     </div>
 </div>

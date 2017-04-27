@@ -1,5 +1,4 @@
 <div class="header-container">
-
     <!--Container with hamburgermenu-->
     <!--Disappears if viewport too small-->
     <div class="menu-container"> 
@@ -20,7 +19,15 @@
             <div class="tag-line-container"><p>event<br>finder</p></div>
         </a>
     </div>
+
+    <div class="language-container">
+        <a href=""><div class="language-button">ENGLISH</div></a>
+    </div>
+
+
 </div>
+
+<!--MenuDropdown-->
 <div class="menu-dropdown">
     <a href="index.php">
         <div class="navigation-container">
@@ -61,6 +68,7 @@
 <script>
     /**Make changes to js so that it animates the movement to be more clean. Also add gray overlay on rest of screen when dropdown is shown.*/
     //Shows the menu on toggle of the button
+    // Possibly rewrite this?
     $(document).ready(function(){
         $('.menu-button').click(function() {
             $('.menu-dropdown').toggle();
