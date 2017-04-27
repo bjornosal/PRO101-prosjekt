@@ -5,8 +5,7 @@
 h1  {
     font-family: sans-serif;
     padding: 0.75em;
-    text-align: left;
-    
+    text-align: left; 
 }
 
 p {
@@ -38,7 +37,7 @@ html, body {
 
 .text {
     height: 50%;
-    background-color: beige;
+    background-color: white;
     text-align: left;
 }
 
