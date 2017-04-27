@@ -18,7 +18,7 @@
     <body>
 
 
-        <?php   require 'header2.php'; 
+        <?php   require 'header.php'; 
             #   require 'header.php';
                 require 'tip-box.php';
                 require 'go-to-top.php';
