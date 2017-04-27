@@ -1,6 +1,4 @@
-<?php
-    require 'db-login.php';
-?>
+
 
 <!DOCTYPE html>
 <html lang="no">

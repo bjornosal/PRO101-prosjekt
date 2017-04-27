@@ -38,39 +38,45 @@ Du kan eventuelt ha faste størrelser på det.
 
 -->
         <div class='slideshow'>
+            <div class='slideshow-info'> Quisque consectetur eget nisi ut porta. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent tincidunt ornare enim, nec auctor magna pellentesque ut. Mauris vulputate lectus ac ultrices placerat. Nam lobortis orci vel maximus semper. Maecenas dictum porttitor enim, et egestas erat convallis sed. Nam rhoncus rhoncus dapibus. Pellentesque semper arcu in ligula elementum, non ultrices turpis porta. Duis quis scelerisque arcu, non aliquet justo. Curabitur consectetur consequat accumsan. Phasellus eget nisi nunc. Quisque consectetur eget nisi ut porta. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent tincidunt ornare enim, nec auctor magna pellentesque ut. Mauris vulputate lectus ac ultrices placerat. Nam lobortis orci vel maximus semper. Maecenas dictum porttitor enim, et egestas erat convallis sed. Nam rhoncus rhoncus dapibus. Pellentesque semper arcu in ligula elementum, non ultrices turpis porta. Duis quis scelerisque arcu, non aliquet justo. Curabitur consectetur consequat accumsan. Phasellus eget nisi nunc.
             <div class='social-fb'>
                 <a href="https://www.facebook.com/sharer/sharer.php?u=">
                     <img src="../photos/facebook-icon.svg" alt="Facebook"> 
                 </a>
             </div>
+            
 
+            
             <div class='social-tw'>
                 <a href="https://twitter.com/home?status=">
                     <img src="../photos/twitter-icon-square-logo.png" alt="Twitter"> 
                 </a>
             </div>
+            
 
+            
             <div class='social-email'>
                 <a href="#">
                     <img src="../photos/email-icon.svg" alt="Email"> 
                 </a>
 
             </div>
+            </div>
+        
 
 
             <div class='slide'>
                 <div class='image01'>
                     <img src="../photos/we-event01.jpg">
                 </div>
-                <div class='info'> Fusce id gravida quam. Donec justo augue, dictum non luctus eget, eleifend eget justo. Nam interdum, ex ut vestibulum malesuada, lacus purus tincidunt eros, nec eleifend sapien leo sed leo. Suspendisse et mauris egestas tellus finibus laoreet non sed magna. Pellentesque porttitor elit vitae imperdiet pretium. Cras a accumsan purus, quis bibendum arcu. </div>
             </div>
 
             <div class='slide'>
-                <div class='image02'>2</div>
+                <div class='image02'> </div>
                 <div class='info'> Halla </div>
             </div>
             <div class='slide'>
-                <div class='image03'>3</div>
+                <div class='image03'> </div>
                 <div class='info'> Yo </div>
             </div>
 
