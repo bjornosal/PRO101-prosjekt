@@ -14,20 +14,25 @@
         <link rel="stylesheet" type="text/css" href="../css/omOss_midlertidig.css">
 
     </head>
+    
     <body>
 
 
-        <?php require 'header.php'; ?>
+        <?php   require 'header2.php'; 
+            #   require 'header.php';
+                require 'tip-box.php';
+                require 'go-to-top.php';
+        ?>
 
 
 
 
         <div class="infoBox">
             <div id="infoText">
-                <h1>Om oss i Wevent</h1>
+                <h1>OM WEVENT</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisi massa, tempor non rutrum et, auctor eget elit. Nam porta est eget porttitor sodales. Sed in dictum risus. Donec vitae rhoncus orci, eget accumsan ante. Sed ullamcorper tortor erat, quis auctor velit luctus non. Pellentesque vitae nibh ut nibh auctor lobortis. Suspendisse a sagittis eros, quis luctus tortor. Maecenas magna nibh, laoreet ut elit ut, placerat viverra lorem.</p>
 
-                <p>Nunc et sapien quam. Ut vitae dolor viverra, luctus ipsum quis, congue nibh. Pellentesque ac ligula quis turpis suscipit varius ut id nulla. Etiam eu blandit nibh. Integer ultrices sollicitudin suscipit. Proin tincidunt posuere dui. In hac habitasse platea dictumst. Phasellus vulputate porttitor dapibus. Integer eleifend odio sit amet dolor faucibus cursus. Sed semper magna porta, varius diam et, pharetra dui. Vestibulum leo ante, euismod a tristique eu, finibus vitae eros. Nulla malesuada ornare sem.</p>
+                <p>Nunc et sapien quam. Ut vitae dolor viverra, luctus ipsum quis, congue nibh. Pellentesque ac ligula quis turpis suscipit varius ut id nulla. Etiam eu blandit nibh. Integer ultrices sollicitudin suscipit. Proin tincidunt posuere dui.</p>
             </div>
         </div>
 
@@ -41,11 +46,11 @@
 
 
         <div class="exampleImage">
-            <img id="photo1" src="../Bilder/Example_image.jpg">
+            <img id="photo1" src="../Bilder/westerdals1.jpg">
         </div>
 
 
-
+        
 
 
 

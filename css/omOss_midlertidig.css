@@ -1,56 +1,66 @@
 
 .infoBox {
-    position: fixed;
-    left: 10%;
-    width: 40%;
-    top: 20%;
+    position: absolute;
+    left: 5%;
+    width: 35%;
+    top: 15%;
     bottom: 25%;
-    background-color: #D9853B;
-    box-shadow: 1px 0px 1px 0.5px #000;
+    background-color: rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 1px 0px #000;
 }
 
 
 #infoText {
-    position: relative;
+    position: absolute;
     width: 90%;
     left: 5%;
 }
 
 #infoText p {
     font-family: sans-serif;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    
+}
+
+#infoText h1 {
+    font-family: sans-serif;
+    font-size: 2.5em;
+    text-align: center;
 }
 
 .exampleImage {
-    position: fixed;
-    right: 10%;
-    width: 40%;
-    top: 20%;
+    position: absolute;
+    right: 5%;
+    width: 55%;
+    top: 15%;
     bottom: 25%;
-    background-color: #D9853B;
-    box-shadow: 1px 0px 1px 0.5px #000
+    background-color: #595959;
+    
+    box-shadow: 0px 0px 1px 0px #000;
+    
 }
 
 #photo1 {
     width: 100%;
-    height: 100%;
+    height: 100%;77
     max-width: 100%;
 }
 
 #infoList {
-    font-size: 2em;
+    font-size: 1.3em;
     font-family: sans-serif;
 }
 
 .contactInfo {
-    position: fixed;
-    background-color: #DCDOCO;
-    width:80%;
+    position: absolute;
+    width:25%;
     height: 19%;
-    left: 10%;
-    bottom: 5%;
-    box-shadow: 1px 0px 6px 0px #000
+    left: 4%;
+    bottom: 2.5%;
+    
 }
+
+
 
 
 /* Tilhører header.php */
@@ -58,126 +68,247 @@
 /*#FECE60 - yellow*/
 /*#51BBFE - blue*/
 
+/*#FECE60 - yellow*/
+/*#51BBFE - blue*/
+
 body {
     margin: 0; 
     padding: 0;
-    background-color: #ECECEA;
+    background-color: #FCFCFC;
     min-height: 100%;
-    
 }
+
+/*HEADER CSS*/
+.header-container, .logo-container, .menu-dropdown {
+    background-color: #595959;
+}
+
+.menu-container, .tip-bar, .form-button, .back-to-top-button {
+    background-color: #404040;
+}
+
+.menu-line, .navigation-container:hover{    
+    background-color:#808080;
+}
+
 .header-container {
+    height:90px;
     width:100%;
-    height:150px;
     margin: auto;
     display: inline-flex;
     align-items: center;
-    background-color: #ECECEA;
     box-shadow: 0px 0px 6px 1px #000;
     position: relative;
-    
-    
+    z-index:3;
 }
 
-.nav-container {
-    width:10%;
-    height:100%;
-    margin-top:auto;    
-    display: inline-flex;
-    align-items: center;
+.menu-container {
+    width:90px;
+    height:90px;
+    min-width: 90px;
+    min-height:90px;
+
 }
 
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    width:100%;
+.menu-button {
+    width:50%;
+    height:50%;
+    position: relative;
+    top: 25%;
+    left: 25%;
 }
 
-.nav-button {
-    width:30%;
-    margin-left:30%;
-    height:60%;
-    max-width: 150px;
-    text-align: center;
-    
+.menu-line {
+    width: 100%;
+    height: 20%;
+    cursor: pointer;
 }
 
-.nav-button-line {
-    width:100%;
-    height:5%;
-    background-color:#0F0F0F;
-    margin: 1vh auto;
-    min-width:50px;
+.filler {
+    background-color: transparent;
 }
 
 .logo-container {
-    width:50%;
-    height:100%;
+    height: 100%;
+    width: 800px;
 }
 
-.language-container {
-    width: 25%;
-    height:100%;
-}
-
-.filler-container {
-    width:15%;
-    height:100%;
-}
-
-.logo-container p{
-    text-align: center;
-    font-size: 4em;
+.logo-container *{
+    font-family: sans-serif;
+    color: #FFF;
     position: relative;
-    top: 0;
 }
 
-.nav-dropdown {
+.logo {
+    line-height: 90px;  
+    font-size: 3.1em;
+    width:33.33%;
+    float: left;
+    left: 5%;
+
+}
+
+.tag-line-container {
+    height: 100%;
+    width: 40%;
+    float: left;
+
+}
+
+.tag-line-container p{
+    position: relative;
+    top: 10%;
+    color: #808080;
+}
+
+.menu-dropdown {
     display:none;
     position: absolute;
-    width:250px;
-    text-align: center;
+    width:200px;
+    text-align: left;
     box-shadow: 0px 8px 30px 0px #000;
-    top:150px;
+    top:90px;
     bottom:0;
     left: 0;
-    background-color: #ECECEA;
+    z-index: 2;
 }
 
-.nav-dropdown a {
-    color: #000;
-    background-color: #ECECEA;
-    padding: 12px 16px;
+.menu-dropdown a{
+    color: #FFF;
+    font-family: sans-serif;
     text-decoration: none;
-    display: block;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
-.nav-dropdown a:hover{
-    background-color:#D9853B;
+
+.icon {
+    float: left;
+    width:25%;
+    height:100%;
 }
 
-.linedivider {
+.menu-choice-text {
+    float: left;
+    width:75%;
+    height: 100%;
+    line-height: 50px;
+}
+
+.icon img{
     position: relative;
-    width:5%;
-    height:100%;
-    background-color: #FDF3E7;
-    left:22.22%;
-}
-.nav-text {
-    width:100%;
-    height:30%;
-    margin-left: -25%;
+    width:70%;
+    left: 10px;
+    top:15%;
+    max-width: 100%;
 }
 
-.nav-text {
-    font-size: 2em;
-}
-.dropdown-container {
-    height:100%;
+.navigation-container {
+    width:100%;
+    height:50px;
+    border-bottom: 1px solid #000;
 }
 
-.overlay {
-    width:100%;
-    height:100%;
-    background-color: blue;
+/*HEADER CSS ENDS*/
+
+/*TIP BOX CSS STARTS*/
+
+.tip-container {
+    position: fixed;
+    bottom:-281px;
+    left:20px;
+    width: 300px;
+    height: 310px;
+    border: 1px solid #000;
+    background-color: #595959;
+    color: #FFF;    
+    transition: bottom linear 0.7s;
+    z-index: 55;
 }
+
+.tip-bar {
+    width: 100%;
+    height:30px;
+    border-bottom: 1px solid #000;
+    position: relative;
+    top: 0;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.1em;
+    line-height: 30px;
+    cursor: pointer;    
+    color: #FFF;
+    
+}
+
+#tip-form {
+    width:300px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.form-input {
+    width:90%;
+}
+
+.form-desc {
+    width:90%;
+    height: 70px;
+    resize: none;
+}
+
+.form-button {    
+    color: #FFF;
+    cursor: pointer;
+}
+
+.tip-container:hover {
+    bottom: 0;
+}
+
+/*TIP BOX CSS ENDS*/
+
+/*RETURN TO TOP BUTTON CSS STARTS*/
+.back-to-top-button {
+    position: fixed;
+    cursor: pointer;
+    bottom: 20px;
+    right: 20px;
+    z-index: 5;
+    
+    width: 5%;
+    height: 9.5%;
+    border-radius: 100%;
+}
+
+.fillbox {
+    width:100%;
+    height:2000px;
+}
+
+.up-icon {
+    position: relative;
+    top: 10%;
+    width: 80%;
+    max-width: 100%;
+    transition: all linear 0.5s;
+}
+
+.back-to-top-middle-area {
+    width:85%;
+    height: 85%;
+    background-color: #595959;
+    margin: auto;
+    border-radius: 100%;
+    position: relative;
+    top: 7.5%;
+}
+
+.back-to-top-button:hover .up-icon {
+    top: 0%;
+    width: 100%;
+}
+#top-button {
+    
+    display: none;
+}
+/*RETURN TO TOP BUTTON CSS ENDS*/

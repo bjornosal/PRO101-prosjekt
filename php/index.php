@@ -15,8 +15,10 @@
     <body>  
         <div class="container">
             <?php
-                require 'header2.php'; 
-            #   require 'header.php';
+                require 'header.php';
+                require 'search.php';
+                require 'tip-box.php';
+                require 'go-to-top.php';
             ?>
             
         
