@@ -37,6 +37,7 @@ Du kan eventuelt ha faste størrelser på det.
 
 
 -->
+        <div class="slideshow-main-container">
         <div class='slideshow'>
             <div class='slideshow-info'> Quisque consectetur eget nisi ut porta. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent tincidunt ornare enim, nec auctor magna pellentesque ut. Mauris vulputate lectus ac ultrices placerat. Nam lobortis orci vel maximus semper. Maecenas dictum porttitor enim, et egestas erat convallis sed. Nam rhoncus rhoncus dapibus. Pellentesque semper arcu in ligula elementum, non ultrices turpis porta. Duis quis scelerisque arcu, non aliquet justo. Curabitur consectetur consequat accumsan. Phasellus eget nisi nunc. Quisque consectetur eget nisi ut porta. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent tincidunt ornare enim, nec auctor magna pellentesque ut. Mauris vulputate lectus ac ultrices placerat. Nam lobortis orci vel maximus semper. Maecenas dictum porttitor enim, et egestas erat convallis sed. Nam rhoncus rhoncus dapibus. Pellentesque semper arcu in ligula elementum, non ultrices turpis porta. Duis quis scelerisque arcu, non aliquet justo. Curabitur consectetur consequat accumsan. Phasellus eget nisi nunc.
             <div class='social-fb'>
@@ -83,6 +84,7 @@ Du kan eventuelt ha faste størrelser på det.
             <div class='button back'>Back</div>
             <div class='button forward'>Forward</div>
         </div>
+            </div>
 
 
 

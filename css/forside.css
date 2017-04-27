@@ -2,13 +2,20 @@ body {
   margin: 0;
 }
 
+.slideshow-main-container {
+    width: 100%;
+    bottom: 0;
+    height: 300px;
+}
+
 .slideshow {
-    border: 1px solid darkgrey;
+    border: 2px solid darkgrey;
     width: 80%;
     bottom: 0;
     margin: 0 auto;
     overflow: hidden;
     height: 300px;
+    box-shadow: 0px 8px 30px 0px #000;
     
 }
 
@@ -117,9 +124,11 @@ body {
 .button {
     position: absolute;
     top: 50%;
+    right: 87.5%;
+    transform: translateY(1500%);
     height: 20px;
     background: blue;
-    transform: translateY(-50%);
+
 }
 
 .forward {
