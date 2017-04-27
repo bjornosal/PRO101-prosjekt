@@ -1,3 +1,7 @@
+<?php
+    require 'db-login.php';
+?>
+
 <!DOCTYPE html>
 <html lang="no">
     <head>
@@ -14,13 +18,13 @@
     <body>  
         <div class="container">
             <?php
-                require 'header.php';
-                require 'search.php';
-                require 'tip-box.php';
-                require 'go-to-top.php';
+            require 'header.php';
+            require 'search.php';
+            require 'tip-box.php';
+            require 'go-to-top.php';
             ?>
-            
-        
+
+
         </div>
     </body>
 </html>
