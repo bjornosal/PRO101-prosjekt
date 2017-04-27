@@ -13,7 +13,7 @@ body {
     background-color: #595959;
 }
 
-.menu-container, .tip-bar, .form-button, .back-to-top-button, .search-criteria, .search-button, .language-button {
+.menu-container, .tip-bar, .form-button, .back-to-top-button, .search-criteria, .search-button, .language-button  {
     background-color: #404040;
 }
 
@@ -21,6 +21,10 @@ body {
     background-color:#808080;
 }
 
+html * {
+    
+    font-family: sans-serif;
+}
 .header-container {
     height:90px;
     width:100%;
@@ -293,6 +297,25 @@ body {
     box-shadow: 2px 2px 5px 1px #000;
 
 }
+
+.search-info-container {
+    width: 900px;
+    height: 80%;
+    position: relative;
+    margin: auto;
+    top: 10%;
+    box-shadow: 3px 3px 10px 1px #000;   
+
+}
+
+.search-info-header {
+    text-align: center;
+    color: #FFF;
+    position: relative;
+    top:25%;
+    font-family: sans-serif;
+    font-size: 2em;
+}
 /*SEARCH CSS ENDS*/
 
 .language-container {
@@ -358,21 +381,69 @@ body {
     box-shadow: 0px 5px 20px 0px #000;
 }
 
-.search-info-container {
-    width: 900px;
-    height: 80%;
+
+.event-container {
+    width: 100%;
+    margin-top: 2.5%;
+}
+
+.event-inner-container {
+    width: 1300px;
+    height: 200px;
+    margin: auto 0 5% 0;
     position: relative;
-    margin: auto;
     top: 10%;
-    box-shadow: 3px 3px 10px 1px #000;   
-
+    
 }
 
-.search-info-header {
+.event-photo-container, .event-map-container,.event-description-container,.event-social-container {
+    float: left;
+    height: 100%;
+    width: 20%;
+    box-shadow: 0px 5px 20px 0px #000;
+    background-color: #FFF;
+}
+
+.event-map-container{
+    margin-left: 2.5%;
+}
+
+
+.event-description-container {
+    width: 40%;
+    margin-left: 2.5%;
+    overflow:scroll;
+    overflow-x: hidden;
+}
+
+.event-social-container {
+    width: 12.5%;
+    margin-left: 2.5%;
+}
+
+.event-background {
+    height: 100%;
+    width: 1300px;
+    margin: auto;
+    border-radius: 1%;
+    padding: 2.5%;
+    box-shadow: 0px 5px 20px 0px #000;
+    background-color: rgba(50,50,50,0.2);
+}
+.event-photo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.event-description-title, .event-description-text {
+    width:80%;
+    margin: auto;
     text-align: center;
-    color: #FFF;
-    position: relative;
-    top:25%;
-    font-family: sans-serif;
-    font-size: 2em;
 }
+
+.event-description-title {
+    height: 15%;
+    padding: 2.5% 0 2.5% 0;
+}
+
+
