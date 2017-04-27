@@ -3,43 +3,97 @@ body {
 }
 
 .slideshow {
-  border: 5px solid yellow;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  overflow: hidden;
-  height: 300px;
+    border: 1px solid blue;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 300px;
 }
 
 .slide {
-  position: relative;
-  height: 300px;
-  display: flex;
+    position: relative;
+    height: 300px;
+    display: flex;
 }
 
-.social {
-  position: absolute;
-  bottom: 0;
+.social-fb {
+    position: absolute;
+    bottom: 0;
+    padding: 3px;
+    border: 2px;
+    width: 50px;
+    height: 35px;
+    right: 24%;
+
 }
 
-.image {
-  width: 70%;
-  background: red;
+.social-fb img {
+    width:100%;
+    height:100%;
 }
+
+.social-tw {
+    position: absolute;
+    bottom: 0;
+    padding: 3px;
+    border: 2px;
+    width: 50px;
+    height: 35px;
+    right: 12%;
+    
+}
+
+.social-tw img {
+    width: 100%;
+    height: 100%;
+}
+
+.social-email {
+    position: absolute;
+    bottom: 0;
+    padding: 3px;
+    border: 2px;
+    width: 50px;
+    height: 35px;
+    right: 1%;
+    
+}
+
+.social-email img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.image01 {
+    position: relative;
+    width: 70%;
+    background: white;
+    padding: 0;
+    
+}
+
+.image01 img {
+    width: 100%;
+    height: 100%;
+} 
 
 .info {
-  width: 30%;
-  background: green;
+    width: 30%;
+    background: grey;
+    opacity: .3;
+    padding: 8px;
 }
 
 .button {
-  position: absolute;
-  top: 50%;
-  height: 20px;
-  background: blue;
-  transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    height: 20px;
+    background: blue;
+    transform: translateY(-50%);
 }
 
 .forward {
-  right: 0;
+    right: 0;
 }
