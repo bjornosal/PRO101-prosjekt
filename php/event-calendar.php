@@ -36,20 +36,13 @@
                 while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                     $events[] = $row;
                 }
-
-
-
-
-                /* echo '<pre>';
-                print_r($row);
-                die();*/
-
                 ?>
+
                 <?php foreach($events as $event) { ?>
                 <!--Start event showcase-->
                 <div class="event-inner-container">
                     <div class="event-photo-container">
-                        <img class="event-photo" src=$event['image_path'] alt="Bilde fra arrangement">
+                        <img class="event-photo" src="<?= $event['image_path']?>" alt="Bilde fra arrangement">
                     </div>
                     <div id="ev1-map" class="event-map-container"></div>
                     <div class="event-description-container">
