@@ -75,7 +75,7 @@ if(isset($_POST['search']) && $cat != 0 && $from_mon != 0 && $to_mon != 0)
 
     $res = $connection->query('SELECT COUNT(*) FROM results');
     $num_rows = $res->fetchColumn();
-    
+
     //If no events are found, sets no-events to true and prints out all events
     if($num_rows == 0) {
         $_SESSION["no-events"] = true;
@@ -89,7 +89,21 @@ if(isset($_POST['search']) && $cat != 0 && $from_mon != 0 && $to_mon != 0)
         $statement -> execute();
     }
 
-} else {
+} else if(($_POST['search']) && ($cat == 0 || $from_mon == 0 || $to_mon == 0)){    
+    $_SESSION["no-events"] = false;
+    $_SESSION["searched"] = true;
+
+    //Clears table    
+    $statement = $connection -> prepare("DELETE FROM results");
+    $statement -> execute();
+
+    //Puts all events in the results table so some information will be shown.
+    $statement = $connection -> prepare("INSERT INTO results SELECT * FROM event");
+    $statement -> execute();
+} else {    
+    $_SESSION["no-events"] = false;
+    $_SESSION["searched"] = false;
+
     //Clears table    
     $statement = $connection -> prepare("DELETE FROM results");
     $statement -> execute();
