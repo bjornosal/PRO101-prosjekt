@@ -7,11 +7,13 @@ body {
     max-width: 100%;
 }
 
-/*HEADER CSS*/
+/*COLOURS 1*/
+/*Slightly darker grey*/
 .header-container, .logo-container, .menu-dropdown, option, .tip-container, .back-to-top-middle-area{
     background-color: #595959;
 }
 
+/*DARKEST*/
 .menu-container, .tip-bar, .form-button, .back-to-top-button, .search-criteria, .search-button, .language-button  {
     background-color: #404040;
 }
@@ -20,10 +22,70 @@ body {
     background-color: #808080;
 }
 
+/*Slightly less dark grey*/
 .event-photo-container, .event-map-container,.event-description-container, .copy-event-btn, .ticket-event-btn {
     background-color: #FFF;
 }
 
+/*COLOURS 2*/
+
+/*Slightly darker grey*/
+.header-container, .logo-container, .menu-dropdown, option, .tip-container, .back-to-top-middle-area{
+    background-color:#393E46;
+}
+
+/*DARKEST*/
+.menu-container, .tip-bar, .form-button, .back-to-top-button, .search-criteria, .search-button, .language-button  {
+    background-color: #222831;
+}
+
+/*Slightly less dark grey*/
+.menu-line, .navigation-container:hover, .search-info-container, .copy-event-btn:hover, .ticket-event-btn:hover, .no-event{    
+    background-color: #00ADB5;
+}
+
+.event-photo-container, .event-map-container,.event-description-container, .copy-event-btn, .ticket-event-btn {
+    background-color: #FFF;
+}
+
+/*
+
+.header-container, .logo-container, .menu-dropdown, option, .tip-container, .back-to-top-middle-area{
+    background-color:#3EC1D3;
+}
+
+.menu-container, .tip-bar, .form-button, .back-to-top-button, .search-criteria, .search-button, .language-button  {
+    background-color: #FF9A00;
+}
+
+.menu-line, .navigation-container:hover, .search-info-container, .copy-event-btn:hover, .ticket-event-btn:hover, .no-event{    
+    background-color: #3EC1D3;
+}
+
+.event-photo-container, .event-map-container,.event-description-container, .copy-event-btn, .ticket-event-btn {
+    background-color: #FFF;
+}
+
+/*COLOURS 4*/
+/*
+.header-container, .logo-container, .menu-dropdown, option, .tip-container, .back-to-top-middle-area{
+    background-color:#1AA59A;
+}
+
+.menu-container, .tip-bar, .form-button, .back-to-top-button, .search-criteria, .search-button, .language-button  {
+    background-color: #1B5A7A;
+}
+
+.menu-line, .navigation-container:hover, .search-info-container, .copy-event-btn:hover, .ticket-event-btn:hover, .no-event{    
+    background-color: #A6ED8E;
+}
+
+.event-photo-container, .event-map-container,.event-description-container, .copy-event-btn, .ticket-event-btn {
+    background-color: #FFF;
+}*/
+
+
+/*HEADER CSS*/
 html * {
 
     font-family: sans-serif;
@@ -95,15 +157,14 @@ html * {
     height: 100%;
     width: 40px;
     float: left;
-    position: relative;
-    left: 1%;
-
+    margin-left: 5%;
 }
 
 .tag-line-container p{
     position: relative;
     top: 10%;
     color: #808080;
+    font-size: 1em;
 }
 
 .menu-dropdown {
@@ -122,7 +183,7 @@ html * {
     color: #FFF;
     font-family: sans-serif;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 
@@ -177,7 +238,7 @@ html * {
     top: 0;
     text-align: center;
     font-family: sans-serif;
-    font-size: 1.1em;
+    font-size: 1em;
     line-height: 30px;
     cursor: pointer;    
     color: #FFF;
@@ -287,7 +348,7 @@ html * {
     color: white;
     text-align: center;
     font-family: sans-serif;
-    font-size: 1.5em;
+    font-size: 1em;
     float: left;
     cursor: pointer;
 }
@@ -319,7 +380,8 @@ html * {
     position: relative;
     top:25%;
     font-family: sans-serif;
-    font-size: 2em;
+    font-size: 2.5em;
+    line-height: 0.4em;
 }
 /*SEARCH CSS ENDS*/
 
@@ -450,6 +512,14 @@ html * {
 
 .no-event-text {
     color: #FFF;
-    font-size: 2em;
-    line-height: 3.1em;
+    font-size: 2.5em;
+    
+}
+
+.one-line {
+    line-height: 2.5em;
+}
+
+.two-lines {
+    line-height: 1.45em;
 }
