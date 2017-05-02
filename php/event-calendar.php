@@ -48,11 +48,12 @@
                 </div>
                 <?php
                     $_SESSION["no-events"] = false;
-                } else if($_SESSION["no-events"] == false && $_SESSION["searched"] == true) {?>
+                } else if( $_SESSION["lack-criteria"] == true) {?>
                 <div class="no-event">
                     <strong class="no-event-text">Husk å fylle ut alle kriteriene!</strong>
                 </div>
                 <?php
+                    session_unset();
                 }
                 ?>
 
