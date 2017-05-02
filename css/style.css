@@ -18,7 +18,7 @@ body {
     background-color: #404040;
 }
 
-.menu-line, .navigation-container:hover, .search-info-container, .copy-event-btn:hover, .ticket-event-btn:hover, .no-event{    
+.menu-line, .navigation-container:hover, .search-info-container, .copy-event-btn:hover, .ticket-event-btn:hover, .no-event, .x-line{    
     background-color: #808080;
 }
 
@@ -40,7 +40,7 @@ body {
 }
 
 /*Slightly less dark grey*/
-.menu-line, .navigation-container:hover, .search-info-container, .copy-event-btn:hover, .ticket-event-btn:hover, .no-event{    
+.menu-line, .navigation-container:hover, .search-info-container, .copy-event-btn:hover, .ticket-event-btn:hover, .no-event, .x-line{    
     background-color: #00ADB5;
 }
 
@@ -110,12 +110,13 @@ html * {
 
 }
 
-.menu-button {
+.menu-button{
     width:50%;
     height:50%;
     position: relative;
     top: 25%;
     left: 25%;
+    cursor: pointer;
 }
 
 .menu-line {
@@ -523,3 +524,22 @@ html * {
 .two-lines {
     line-height: 1.45em;
 }
+
+.x-line {
+    width:20%;
+    height: 150%;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 40%;
+    bottom: -25%;
+}
+
+.x-line-two {
+    transform: rotate(-45deg);
+}
+
+.menu-x {
+    display: none;
+}
+
+
