@@ -2,14 +2,13 @@
 body {
     margin: 0; 
     padding: 0;
-    /*background-color: #FCFCFC;*/
     background-image: url(../Bilder/testBackground.jpg);
     min-height: 100%;
     max-width: 100%;
 }
 
 /*HEADER CSS*/
-.header-container, .logo-container, .menu-dropdown, option{
+.header-container, .logo-container, .menu-dropdown, option, .tip-container, .back-to-top-middle-area{
     background-color: #595959;
 }
 
@@ -17,12 +16,16 @@ body {
     background-color: #404040;
 }
 
-.menu-line, .navigation-container:hover, .search-info-container{    
-    background-color:#808080;
+.menu-line, .navigation-container:hover, .search-info-container, .copy-event-btn:hover, .ticket-event-btn:hover{    
+    background-color: #808080;
+}
+
+.event-photo-container, .event-map-container,.event-description-container, .copy-event-btn, .ticket-event-btn {
+    background-color: #FFF;
 }
 
 html * {
-    
+
     font-family: sans-serif;
 }
 .header-container {
@@ -161,7 +164,6 @@ html * {
     width: 300px;
     height: 310px;
     border: 1px solid #000;
-    background-color: #595959;
     color: #FFF;    
     transition: bottom linear 0.7s;
     z-index: 55;
@@ -238,7 +240,6 @@ html * {
 .back-to-top-middle-area {
     width:85%;
     height: 85%;
-    background-color: #595959;
     margin: auto;
     border-radius: 100%;
     position: relative;
@@ -300,7 +301,6 @@ html * {
     line-height: 2em;
     box-shadow: 2px 2px 5px 1px #000;
     border-style: none;
-
 }
 
 .search-info-container {
@@ -361,7 +361,6 @@ html * {
     margin: auto 0 5% 0;
     position: relative;
     top: 10%;
-    
 }
 
 .event-photo-container, .event-map-container,.event-description-container {
@@ -369,13 +368,11 @@ html * {
     height: 100%;
     width: 20%;
     box-shadow: 0px 5px 20px 0px #000;
-    background-color: #FFF;
 }
 
 .event-map-container{
     margin-left: 2.5%;
 }
-
 
 .event-description-container {
     width: 40%;
@@ -421,11 +418,9 @@ html * {
     height: 20%;
     box-shadow: 0px 5px 20px 0px #000;
     margin: auto;
-    background-color: #FFF;
     text-decoration: none;
     color: #000;
     margin-top: 20%;
-    
 }
 
 .copy-event-btn p, .ticket-event-btn p{
@@ -436,10 +431,6 @@ html * {
 
 .copy-event-btn *, .ticket-event-btn *{
     float: left;
-}
-
-.copy-event-btn:hover, .ticket-event-btn:hover {
-    background-color: #808080;
 }
 
 .event-btn-img {
