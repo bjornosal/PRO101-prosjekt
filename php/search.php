@@ -6,13 +6,13 @@
         <div class="search-box">
 
             <form method="post" action="event-calendar.php" class="search-form">
-                <select name="category" class="search-criteria">
+                <select name="category" class="search-criteria" id="category">
                     <option selected disabled hidden>KATEGORI</option>
-                    <option value="mat">MAT</option>
-                    <option value="kultur">KULTUR</option>
-                    <option value="uteliv">UTELIV</option>
-                    <option value="sport">SPORT</option>
-                    <option value="teknologi">TEKNOLOGI</option>
+                    <option value="1">MAT</option>
+                    <option value="2">KULTUR</option>
+                    <option value="3">UTELIV</option>
+                    <option value="4">SPORT</option>
+                    <option value="5">TEKNOLOGI</option>
                 </select>
 
                 <select name="from-month" class="search-criteria">
@@ -47,16 +47,22 @@
                     <option value="desember">DESEMBER</option>
                 </select>
                 <!--<a href="#"><div class="search-button">SØK</div></a>-->
-                <input type="submit" value="SØK" name="searchbtn" class="search-button">
+                <input type="submit" value="SØK" name="search" class="search-button">
             </form>
         </div>
     </div>
 </div>
+
 <?php 
-/*
-if(isset($_POST['searchbtn']))
+if(isset($_POST['search']))
 {
-    sendToTable();
+    $cat = $_POST["category"];
+    //Clears table    
+    $statement = $connection -> prepare("DELETE FROM results");
+    $statement -> execute();
+
+    $statement = $connection -> prepare("INSERT INTO results SELECT * FROM event WHERE category_id = '$cat'");
+    $statement -> execute();
 } else {
     echoTest();
 }
@@ -64,16 +70,7 @@ if(isset($_POST['searchbtn']))
 
 <?php 
 
-function sendToTable() {
-    $sql = "INSERT INTO results
-    SELECT * FROM event";
-    // use exec() because no results are returned
-    $connection->exec($sql);
-    echo "New record created successfully";
-}
-
 function echoTest() {
     echo "########################KNAPP IKKE TRYKKET PÅ###########################";
 }
-*/
 ?>
