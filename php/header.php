@@ -96,7 +96,7 @@
         var container = $(".menu-dropdown");
         if (!container.is(ev.target) && container.has(ev.target).length === 0) 
         {
-            container.slideUp("slow");
+            container.slideUp();
             $('.menu-hamburger').show();
             $('.menu-x').hide();
         }
