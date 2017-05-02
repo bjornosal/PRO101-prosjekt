@@ -13,6 +13,19 @@
         <textarea class="form-desc" name="description" form="tip-form"></textarea>
 
         <br><br>
-        <input class="form-button" type="submit" value="Send">
+        <input class="form-button" type="submit" name="submit" value="Send">
     </form>
 </div>
+
+<?php
+
+$event_name = $_POST['event-name'];
+$event_link = $_POST['hyperlink'];
+$event_desc = $_POST['description'];
+
+if(isset($_POST['submit'])) {
+    $statement = $connection -> prepare("INSERT INTO tips (event_name, event_link, event_description) VALUES('$event_name', '$event_link', '$event_desc')");
+
+    $statement -> execute();
+}
+?>

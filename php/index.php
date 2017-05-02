@@ -16,13 +16,12 @@
     <body>  
         <div class="container">
             <?php
+            require 'db-login.php';
             require 'header.php';
             require 'search.php';
             require 'tip-box.php';
             require 'go-to-top.php';
             ?>
-
-
         </div>
     </body>
 </html>
