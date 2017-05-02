@@ -29,7 +29,7 @@
             <div class="event-background">
 
                 <?php 
-                $statement = $connection -> prepare('SELECT * FROM event');
+                $statement = $connection -> prepare('SELECT * FROM results');
 
                 $statement -> execute();
 
