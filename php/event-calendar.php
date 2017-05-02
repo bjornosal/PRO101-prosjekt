@@ -36,6 +36,19 @@
                 while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                     $events[] = $row;
                 }
+
+                ?>
+
+                <?php 
+
+                //Checks whether or not any events are stored in session
+                if($_SESSION["no-events"] == true) {?>
+                <div class="no-event">
+                    <strong class="no-event-text">Ingen arrangementer funnet med valgte kriterier. Alle arrangementer vises.</strong>
+                </div>
+                <?php
+                    $_SESSION["no-events"] = false;
+                }
                 ?>
 
                 <?php foreach($events as $event) { ?>
@@ -89,11 +102,5 @@
         <script async defer
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRfr51h9jrxDI5yfrgQlqNMT6ySvGV6ek&callback=initMap">
         </script>
-
-
-
-
-
-
     </body>
 </html>

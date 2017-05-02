@@ -57,6 +57,7 @@
 $cat = $_POST["category"];
 $from_mon = $_POST["from-month"];
 $to_mon = $_POST["to-month"];
+session_start();
 
 //Checks if button is being pressed and that category is set. 
 if(isset($_POST['search']) && $cat != 0 && $from_mon != 0 && $to_mon != 0)
@@ -65,9 +66,29 @@ if(isset($_POST['search']) && $cat != 0 && $from_mon != 0 && $to_mon != 0)
     $statement = $connection -> prepare("DELETE FROM results");
     $statement -> execute();
 
+    $statement = $connection -> prepare("SELECT * FROM event WHERE category_id = '$cat' AND event_date BETWEEN '2017-$from_mon-01' AND '2017-$to_mon-31'");
+    $statement -> execute;
+
     //Inserts all information to results table
     $statement = $connection -> prepare("INSERT INTO results SELECT * FROM event WHERE category_id = '$cat' AND event_date BETWEEN '2017-$from_mon-01' AND '2017-$to_mon-31'");
     $statement -> execute();
+
+    $res = $connection->query('SELECT COUNT(*) FROM results');
+    $num_rows = $res->fetchColumn();
+    
+    //If no events are found, sets no-events to true and prints out all events
+    if($num_rows == 0) {
+        $_SESSION["no-events"] = true;
+
+        //Clears table    
+        $statement = $connection -> prepare("DELETE FROM results");
+        $statement -> execute();
+
+        //Puts all events in the results table so some information will be shown.
+        $statement = $connection -> prepare("INSERT INTO results SELECT * FROM event");
+        $statement -> execute();
+    }
+
 } else {
     //Clears table    
     $statement = $connection -> prepare("DELETE FROM results");
