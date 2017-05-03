@@ -116,7 +116,6 @@ html * {
     line-height: 90px;  
     font-size: 3.1em;
     float: left;
-
 }
 
 .logo-filler {
@@ -129,13 +128,14 @@ html * {
     height: 100%;
     width: 40px;
     float: left;
-    margin-left: 5%;
+    margin-left: 2.5%;
+    padding-left: 2.5%;
 }
 
 .tag-line-container p{
     position: relative;
-    top: 10%;
-    color: #808080;
+    top: 11.5%;
+    color: #00ADB5;
     font-size: 1em;
 }
 

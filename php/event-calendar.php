@@ -60,32 +60,19 @@
                 }
                 ?>
 
-                <?php foreach($events as $event) {
-    //This gets today's date
-    $today = time (); 
-    $event_date = $event['event_date'];
+                <?php foreach($events as $event) { ?>
 
-    $date = strtotime($event_date);
-    $event_day = date("d", $date);
-    $event_month = date("m",$date);
-    $event_year = date("y",$date);
+                <?php require 'countdown.php'?>
 
-    $target = mktime(0,0,0,$event_month, $event_day, $event_year);
-
-    $difference = ($target - $today);
-    $days = (int) ($difference/86400);
-
-
-
-                ?>
                 <!--Start event showcase-->
                 <div class="event-inner-container">
                     <div class="event-photo-container">
+                        <!--Checks if there is an image present, if not, it will use one of the default images.-->
                         <?php if($event['image_path'] != null) { ?>
                         <img class="event-photo" src="<?= $event['image_path']?>" alt="Bilde fra arrangement">
                         <?php } else {?>
-                        <img class="event-photo" src="../photos/icons/default-icons/<?php echo $event['name']?>-default.png">
-                        
+                        <img class="event-photo" src="../photos/icons/default-icons/<?php echo $event['name']?>-default.png" alt="Bilde fra arrangement">
+
                         <?php } ?>
                     </div>
                     <div id="ev1-map" class="event-map-container"></div>
