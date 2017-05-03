@@ -72,25 +72,22 @@
 
 
 <script>
-    /**Make changes to js so that it animates the movement to be more clean. Also add gray overlay on rest of screen when dropdown is shown.*/
-    //Shows the menu on toggle of the button
-    // Possibly rewrite this?
-    var down = false;
     $(document).ready(function(){
-        $('.menu-button').click(function() {
-            if(!down) {
-                $('.menu-dropdown').slideDown();
+        $('.menu-hamburger').click(function() {
+                $('.menu-dropdown').slideDown("slow");
                 $('.menu-hamburger').hide();
                 $('.menu-x').show();
-                down = true;
-            } else {
-                $('.menu-dropdown').slideUp();
-                $('.menu-hamburger').show();
-                $('.menu-x').hide();
-                down = false;
-            }
         });
     });
+    
+    $(document).ready(function(){
+        $('.menu-x').click(function() {
+                $('.menu-dropdown').slideUp("slow");
+                $('.menu-hamburger').show();
+                $('.menu-x').hide();
+        });
+    });
+    
     //Takes the menu away if one clicks outside the dropdown menu/menu bar
     $(document).mouseup(function (ev) {
         var container = $(".menu-dropdown");

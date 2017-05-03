@@ -7,6 +7,8 @@ body {
     max-width: 100%;
 }
 
+/*Consider using this orange - #FF9A00 for some standout pieces*/
+
 /*COLOURS 1*/
 /*Slightly darker grey*/
 .header-container, .logo-container, .menu-dropdown, option, .tip-container, .back-to-top-middle-area{
@@ -48,41 +50,8 @@ body {
     background-color: #FFF;
 }
 
-/*
 
-.header-container, .logo-container, .menu-dropdown, option, .tip-container, .back-to-top-middle-area{
-    background-color:#3EC1D3;
-}
 
-.menu-container, .tip-bar, .form-button, .back-to-top-button, .search-criteria, .search-button, .language-button  {
-    background-color: #FF9A00;
-}
-
-.menu-line, .navigation-container:hover, .search-info-container, .copy-event-btn:hover, .ticket-event-btn:hover, .no-event{    
-    background-color: #3EC1D3;
-}
-
-.event-photo-container, .event-map-container,.event-description-container, .copy-event-btn, .ticket-event-btn {
-    background-color: #FFF;
-}
-
-/*COLOURS 4*/
-/*
-.header-container, .logo-container, .menu-dropdown, option, .tip-container, .back-to-top-middle-area{
-    background-color:#1AA59A;
-}
-
-.menu-container, .tip-bar, .form-button, .back-to-top-button, .search-criteria, .search-button, .language-button  {
-    background-color: #1B5A7A;
-}
-
-.menu-line, .navigation-container:hover, .search-info-container, .copy-event-btn:hover, .ticket-event-btn:hover, .no-event{    
-    background-color: #A6ED8E;
-}
-
-.event-photo-container, .event-map-container,.event-description-container, .copy-event-btn, .ticket-event-btn {
-    background-color: #FFF;
-}*/
 
 
 /*HEADER CSS*/
@@ -291,7 +260,7 @@ html * {
 /*TIP BOX CSS ENDS*/
 
 /*RETURN TO TOP BUTTON CSS STARTS*/
-.back-to-top-button {
+/*.back-to-top-button {
     position: fixed;
     cursor: pointer;
     bottom: 20px;
@@ -331,7 +300,22 @@ html * {
 }
 #top-button {    
     display: none;
+}*/ 
+
+
+.btn-top {
+    position: fixed;
+    display: none;
+    cursor: pointer;
+    bottom: 0;
+    right: 40px;
+    z-index: 50;
+    width: 50px;
+    height: 55px;
+    background-color: rgba(0,0,0,0.4);
+    box-shadow: 0px 5px 2px 0px #000;
 }
+
 /*RETURN TO TOP BUTTON CSS ENDS*/
 
 /*START OFF SEARCH CSS*/
@@ -543,15 +527,6 @@ html * {
 }
 
 /*END EVENT CSS*/
-.btn-top {
-    position: fixed;
-    display: none;
-    cursor: pointer;
-    bottom: 0;
-    right: 40px;
-    z-index: 50;
-    width: 50px;
-    height: 55px;
-    background-color: rgba(0,0,0,0.4);
-    box-shadow: 0px 5px 2px 0px #000;
+.up-icon {
+    max-width: 100%;
 }
