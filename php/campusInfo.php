@@ -6,10 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="icon" type="image/png" href="../photos/icons/cal-icon.png">
-
+          <link rel="icon" type="image/png" href="../photos/icons/cal-icon.png">
+    
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <title>Campus</title>
+         
+
 
         <link rel = "stylesheet" type = "text/css" href = "../css/campusInfo.css">
 
@@ -23,7 +25,7 @@
         require 'tip-box.php';
         require 'go-to-top.php';
         ?>
-
+        
 
 
         <nav></nav>

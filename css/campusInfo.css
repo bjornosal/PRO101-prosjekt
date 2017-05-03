@@ -31,7 +31,6 @@ html, body {
 
 .photo {
     height: 100%;
-    max-width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -70,10 +69,11 @@ html, body {
     left: 60em;
     top: -8.5em;
     position: fixed;
+    float:right;
 }
 
 .mapBox {
-    background-color: aliceblue;
+    background-color: black;
 }
 
 /*
