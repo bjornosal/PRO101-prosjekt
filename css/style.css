@@ -20,12 +20,12 @@ body {
     background-color: #404040;
 }
 
-.menu-line, .navigation-container:hover, .search-info-container, .copy-event-btn:hover, .ticket-event-btn:hover, .no-event, .x-line{    
+.menu-line, .navigation-container:hover, .search-info-container, .event-btn:hover, .no-event, .x-line, .event-category{    
     background-color: #808080;
 }
 
 /*Slightly less dark grey*/
-.event-photo-container, .event-map-container,.event-description-container, .copy-event-btn, .ticket-event-btn {
+.event-map-container,.event-description-container, .event-btn {
     background-color: #FFF;
 }
 
@@ -37,20 +37,22 @@ body {
 }
 
 /*DARKEST*/
-.menu-container, .tip-bar, .form-button, .back-to-top-button, .search-criteria, .search-button, .language-button  {
+.menu-container, .tip-bar, .form-button, .back-to-top-button, .search-criteria, .search-button, .language-button, .countdown-timer, .event-category, .event-btn  {
     background-color: #222831;
 }
 
 /*Slightly less dark grey*/
-.menu-line, .navigation-container:hover, .search-info-container, .copy-event-btn:hover, .ticket-event-btn:hover, .no-event, .x-line{    
+.menu-line, .navigation-container:hover, .search-info-container, .event-btn:hover, .no-event, .x-line{    
     background-color: #00ADB5;
 }
 
-.event-photo-container, .event-map-container,.event-description-container, .copy-event-btn, .ticket-event-btn {
+.event-photo-container, .event-map-container,.event-description-container {
     background-color: #FFF;
 }
 
-
+.event-photo-container {
+    background-color: transparent;
+}
 
 
 
@@ -114,7 +116,6 @@ html * {
     line-height: 90px;  
     font-size: 3.1em;
     float: left;
-
 }
 
 .logo-filler {
@@ -127,13 +128,14 @@ html * {
     height: 100%;
     width: 40px;
     float: left;
-    margin-left: 5%;
+    margin-left: 2.5%;
+    padding-left: 2.5%;
 }
 
 .tag-line-container p{
     position: relative;
-    top: 10%;
-    color: #808080;
+    top: 11.5%;
+    color: #00ADB5;
     font-size: 1em;
 }
 
@@ -260,48 +262,6 @@ html * {
 /*TIP BOX CSS ENDS*/
 
 /*RETURN TO TOP BUTTON CSS STARTS*/
-/*.back-to-top-button {
-    position: fixed;
-    cursor: pointer;
-    bottom: 20px;
-    right: 20px;
-    z-index: 5;
-
-    width: 5%;
-    height: 9.5%;
-    border-radius: 100%;
-}
-
-.fillbox {
-    width:100%;
-    height:2000px;
-}
-
-.up-icon {
-    position: relative;
-    top: 10%;
-    width: 80%;
-    max-width: 100%;
-    transition: all linear 0.5s;
-}
-
-.back-to-top-middle-area {
-    width:85%;
-    height: 85%;
-    margin: auto;
-    border-radius: 100%;
-    position: relative;
-    top: 7.5%;
-}
-
-.back-to-top-button:hover .up-icon {
-    top: 0%;
-    width: 100%;
-}
-#top-button {    
-    display: none;
-}*/ 
-
 
 .btn-top {
     position: fixed;
@@ -312,8 +272,12 @@ html * {
     z-index: 50;
     width: 50px;
     height: 55px;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(13,16,19,.8);
     box-shadow: 0px 5px 2px 0px #000;
+}
+
+.up-icon {
+    max-width: 100%;
 }
 
 /*RETURN TO TOP BUTTON CSS ENDS*/
@@ -427,9 +391,15 @@ html * {
     top: 10%;
 }
 
-.event-photo-container, .event-map-container,.event-description-container {
+.event-map-container,.event-description-container {
     float: left;
     height: 100%;
+    width: 20%;
+    box-shadow: 0px 5px 20px 0px #000;
+}
+.event-photo-container {
+    max-height: 100%;    
+    float: left;
     width: 20%;
     box-shadow: 0px 5px 20px 0px #000;
 }
@@ -476,30 +446,32 @@ html * {
     height: 15%;
     padding: 2.5% 0 2.5% 0;
 }
-
-.copy-event-btn, .ticket-event-btn {
+.event-btn, .countdown-timer, .event-category{
     width: 100%;
     height: 20%;
     box-shadow: 0px 5px 20px 0px #000;
     margin: auto;
     text-decoration: none;
     color: #000;
-    margin-top: 20%;
+    margin-top: 12.5%;
 }
 
-.copy-event-btn p, .ticket-event-btn p{
-    width: 75%;
+.event-btn p{
+    width: 50%;
     height: 100%;
     margin-top: 7.5%;
+    margin-left: 7.5%;
+    color: #FFF;
 }
 
-.copy-event-btn *, .ticket-event-btn *{
+.event-btn *{
     float: left;
 }
 
 .event-btn-img {
     max-height: 100%;
     width:25%;
+    margin-left: 5%;
 }
 
 .no-event {
@@ -515,7 +487,7 @@ html * {
 .no-event-text {
     color: #FFF;
     font-size: 2.5em;
-    
+
 }
 
 .one-line {
@@ -526,7 +498,105 @@ html * {
     line-height: 1.45em;
 }
 
+.event-category p, .countdown-timer p{
+    color: #FFF;
+    text-align: center;
+    line-height: 2.5em;
+}
+
 /*END EVENT CSS*/
-.up-icon {
+
+.slideshow-container {
+    width:100%;
+    height: 400px;
+}
+
+.event-slide {
+    height: 100%;
+    width: 100%;
+}
+
+.event-slide img {
     max-width: 100%;
+}
+
+.event-info-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width:33%;
+    height: 100%;
+    background-color: rgba(50,50,50,0.5);
+}
+
+.event-info-container *{
+    color: #FFF;
+}
+.event-info-container h2{
+    text-align: center;
+}
+
+.event-info-container p{
+    padding: 0, 5%, 0, 5%;
+}
+
+.event-info {
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+
+.event-info-social {
+    height: 20%;
+    width: 100%;
+    border-top: 2px solid #222831;
+}
+
+.social-icon {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.social-icon * {
+    max-width: 60%;
+    max-height: 60%;
+    margin-left: 12.5%;
+    margin-top: 15%;
+}
+
+.social-icon-middle {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+
+.slideshow-btn {
+    width: 50px;
+    height: 15%;
+    position: absolute;
+    top: 42.5%;
+    cursor: pointer;
+    background-color: rgba(50,50,50,0.8);
+    color: #FFF;
+    font-size: 3.1em;
+    z-index: 3;
+    line-height: 1.25em;
+    text-align: center;
+}
+
+.slideshow-right {
+    right: 0;
+}
+
+.slideshow-photo-container {
+    height:100%;
+    width:100%;
+}
+
+.slideshow-event-container {
+    position: relative;
+    width: 1100px;
+    height: 100%;
+    margin: auto;
 }

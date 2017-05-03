@@ -1,92 +1,54 @@
 body {
   margin: 0;
 }
-
+/*Slideshow CSS*/
 .slideshow-main-container {
     width: 100%;
-    bottom: 0;
-    height: 300px;
+    height: 400px;
 }
 
 .slideshow {
-    border: 2px solid darkgrey;
-    width: 80%;
-    bottom: 0;
+    position: relative;
+    border: 2px solid #595959;
+    width: 1200px;
+    height: 100%;
     margin: 0 auto;
     overflow: hidden;
-    height: 300px;
     box-shadow: 0px 8px 30px 0px #000;
-    
 }
 
 .slide {
-    height: 300px;
+    height: 400px;
     display: flex;
 }
 
 .slideshow-info {
     width: 30%;
     height: 100%;
-    background: grey;
-    opacity: .3;
-    padding: 8px;
+    background-color: rgba(50,50,50,0.2);
     float: right;
-    text-align: left;
-    overflow: scroll;
+    box-shadow: inset 0 0 5px #000000;
 }
 
-.social-fb {
-    bottom: 0;
-    padding: 10px;
-    border: 2px;
-    width: 50px;
-    height: 35px;
+/*SoMe CSS*/
+.social {
+    height: 100%;
+    width: 33%;
     float: left;
-
 }
 
-.social-fb img {
-    width:100%;
-    height:100%;
+.social img{
+    max-width: 55%;
+    max-height: 55%;
+    margin-left: 35%;    
 }
 
-.social-tw {
-    bottom: 0;
-    padding: 10px;
-    border: 2px;
-    width: 50px;
-    height: 35px;
-    display: inline-block;
-    margin-left: 15%;
-    
-}
-
-.social-tw img {
-    width: 100%;
-    height: 100%;
-}
-
-.social-email {
-    bottom: 0;
-    padding: 10px;
-    border: 2px;
-    width: 50px;
-    float: right;
-    
-}
-
-.social-email img {
-    width: 100%;
-    height: 100%;
-}
-
-
+/*Images CSS*/
 .image01 {
     position: relative;
     max-width: 100%;
     background: white;
-    padding: 0;
-    
+    padding: 0;    
 }
 
 .image01 img {
@@ -98,8 +60,7 @@ body {
     position: relative;
     width: 70%;
     background: white;
-    padding: 0;
-    
+    padding: 0;    
 }
 
 .image02 img {
@@ -111,8 +72,7 @@ body {
     position: relative;
     width: 70%;
     background: white;
-    padding: 0;
-    
+    padding: 0;    
 }
 
 .image03 img {
@@ -120,19 +80,45 @@ body {
     height: 100%;
 } 
 
-
+/*Buttons CSS*/
 .button {
-    position: absolute;
-    top: 50%;
-    right: 87.5%;
-    transform: translateY(1500%);
-    height: 20px;
-    background: blue;
-
+    border-width: 0 3px 3px 0;
+    bottom: 15%;
+    right: 95%;
+    background-color: darkgray;   
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 4px 10px;
+    -webkit-border-radius: 5px;
+    opacity: 0.8;
 }
 
-.forward {
-    right: 10%;
+.button.next {
+    position: absolute;
+    right: 30%;
+}
+
+.button.back {
+    position: absolute;
+    left:0%;
+}
+
+.button.grey{
+    background-image: -webkit-gradient(linear, left top, left bottom, 
+        from(#7d828c),
+        color-stop(0.5, #595959), 
+        color-stop(0.5, #404040), 
+        to(#222831));
+    border: solid 1px rgba(79, 79, 79, 0.75);
+}
+
+.button.grey:hover{
+    background-image: -webkit-gradient(linear, left top, left bottom, 
+        from(darkgray), 
+        color-stop(0.5, gray),
+        color-stop(0.5, dimgray),
+        to(lightgrey));
 }
 
 body {
@@ -582,6 +568,13 @@ html * {
     padding: 2.5% 0 2.5% 0;
 }
 
+.slideshow-info-text {
+    height: 80%;
+    width: 100%;
+    text-align: center;
+}
 
-
-
+.slideshow-info-social {
+    height: 20%;
+    width: 100%;
+}

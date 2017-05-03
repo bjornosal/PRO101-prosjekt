@@ -29,15 +29,18 @@
             <div class="event-background">
 
                 <?php 
-                $statement = $connection -> prepare('SELECT * FROM results');
+                // Removed statement and exchanged with a join that uses the category table aswell
+                //$statement = $connection -> prepare('SELECT * FROM results');
+                $statement = $connection -> prepare('SELECT * FROM results JOIN category AS ca ON results.category_id = ca.category_id');
 
                 $statement -> execute();
 
                 while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                     $events[] = $row;
-                }
 
+                }
                 ?>
+
 
                 <?php 
 
@@ -58,10 +61,19 @@
                 ?>
 
                 <?php foreach($events as $event) { ?>
+
+                <?php require 'countdown.php'?>
+
                 <!--Start event showcase-->
                 <div class="event-inner-container">
                     <div class="event-photo-container">
+                        <!--Checks if there is an image present, if not, it will use one of the default images.-->
+                        <?php if($event['image_path'] != null) { ?>
                         <img class="event-photo" src="<?= $event['image_path']?>" alt="Bilde fra arrangement">
+                        <?php } else {?>
+                        <img class="event-photo" src="../photos/icons/default-icons/<?php echo $event['name']?>-default.png" alt="Bilde fra arrangement">
+
+                        <?php } ?>
                     </div>
                     <div id="ev1-map" class="event-map-container"></div>
                     <div class="event-description-container">
@@ -70,19 +82,32 @@
 
                     </div>
                     <div class="event-social-container">
-                        <a href="#">
-                            <div class="copy-event-btn">
-                                <img class="event-btn-img" src="../photos/icons/copy-icon-black.png">
-                                <p><strong>KOPIER LENKE</strong></p>
-                            </div>
-                            <a href="#">
-                                <div class="ticket-event-btn">
-                                    <img class="event-btn-img" src="../photos/icons/ticket-icon-black.png">
-                                    <p><strong>BILLETTER</strong></p>
 
-                                </div>
-                            </a>
-                        </a>
+                        <div class="event-category">
+                            <p><strong><?= $event['name']?></strong></p>                        
+                        </div>
+                        <div class="countdown-timer">
+                            <p><strong>
+                                <!--Prints out time until event according to the date-->
+                                <?php
+                    if($days > 0) { ?>
+                                Om <?= $days ?> 
+                                dager
+                                <?php } elseif($days == 0) {?>
+                                I dag.
+                                <?php } else {?>
+                                Allerede vært.
+
+                                <?php } ?>
+                                </strong></p>
+                        </div>
+                        <a href="<?= $event['event_link']?>">
+                            <div class="event-btn">
+                                <img class="event-btn-img" src="../photos/icons/link-icon.png">
+                                <p><strong>NETTSIDE</strong></p>
+
+                            </div>
+                        </a>  
                     </div>
                 </div>
                 <!--End event showcase-->
