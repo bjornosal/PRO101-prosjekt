@@ -11,27 +11,16 @@ h1  {
 p {
     font-family: monospace;
     margin-left: 20px;
-    text-align: left;
     font-size: 1em;
-    width: 50em;
 }
 
 html, body {
     height: 100%;
 }
 
-.nav {
-    position: fixed;
-    width:100%;
-    height: 100px;
-    background-color: rgba(140, 127, 114, 0.5);
-    z-index: 100;
-    text-align: center;
-} 
 
 .photo {
     height: 100%;
-    max-width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -41,7 +30,7 @@ html, body {
     height: 18em;
     background-color: white;
     text-align: left;
-    max-width: 100%;
+    z-index: auto;
 }
 
 
@@ -67,13 +56,14 @@ html, body {
 #mapFjerdingen {
     height: 15em;
     width: 25em;
-    left: 60em;
-    top: -8.5em;
     position: fixed;
+    float: right;
+    top: -5em;
+    margin-right: 1em;
 }
 
 .mapBox {
-    background-color: aliceblue;
+    background-color: black;
 }
 
 /*
@@ -86,7 +76,7 @@ html, body {
 
 /*HEADER CSS*/
 .header-container, .logo-container, .menu-dropdown, option, .tip-container, .back-to-top-middle-area{
-    background-color: #595959;
+    background-color: rgba(140, 127, 114, 0.2);
 }
 
 .menu-container, .tip-bar, .form-button, .back-to-top-button, .search-criteria, .search-button, .language-button  {
@@ -108,9 +98,10 @@ html, body {
     margin: auto;
     display: inline-flex;
     align-items: center;
-    box-shadow: 0px 0px 6px 1px #000;
-    position: relative;
+    /* box-shadow: 0px 0px 6px 1px #000; */
+    position: fixed;
     z-index:3;
+    background-color: rgba(140, 127, 114, 0.2);
 }
 
 .menu-container {
@@ -225,6 +216,7 @@ html, body {
     width:100%;
     height:50px;
     border-bottom: 1px solid #000;
+    position: fixed;
 }
 
 /*HEADER CSS ENDS*/
@@ -292,7 +284,6 @@ html, body {
     bottom: 20px;
     right: 20px;
     z-index: 5;
-
     width: 5%;
     height: 9.5%;
     border-radius: 100%;
