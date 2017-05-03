@@ -21,7 +21,7 @@
 
         <?php 
         require 'header.php'; 
-        require 'search.php';
+        #require 'search.php';
         require 'tip-box.php';
         require 'go-to-top.php';
         ?>

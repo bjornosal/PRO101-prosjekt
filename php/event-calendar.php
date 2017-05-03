@@ -44,15 +44,16 @@
                 //Checks whether or not any events are stored in session
                 if($_SESSION["no-events"] == true) {?>
                 <div class="no-event">
-                    <strong class="no-event-text">Ingen arrangementer funnet med valgte kriterier. Alle arrangementer vises.</strong>
+                    <strong class="no-event-text two-lines">Ingen arrangementer funnet med valgte kriterier. <br>Alle arrangementer vises.</strong>
                 </div>
                 <?php
                     $_SESSION["no-events"] = false;
-                } else if($_SESSION["no-events"] == false && $_SESSION["searched"] == true) {?>
+                } else if( $_SESSION["lack-criteria"] == true) {?>
                 <div class="no-event">
-                    <strong class="no-event-text">Husk å fylle ut alle kriteriene!</strong>
+                    <strong class="no-event-text one-line">Husk å fylle ut alle kriteriene.</strong>
                 </div>
                 <?php
+                    session_unset();
                 }
                 ?>
 

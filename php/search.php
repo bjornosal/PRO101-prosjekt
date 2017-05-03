@@ -62,6 +62,8 @@ session_start();
 //Checks if button is being pressed and that category is set. 
 if(isset($_POST['search']) && $cat != 0 && $from_mon != 0 && $to_mon != 0)
 {
+    $_SESSION["searched"] = true;
+    
     //Clears table    
     $statement = $connection -> prepare("DELETE FROM results");
     $statement -> execute();
@@ -87,11 +89,9 @@ if(isset($_POST['search']) && $cat != 0 && $from_mon != 0 && $to_mon != 0)
         //Puts all events in the results table so some information will be shown.
         $statement = $connection -> prepare("INSERT INTO results SELECT * FROM event");
         $statement -> execute();
-    }
-
+    } 
 } else if(($_POST['search']) && ($cat == 0 || $from_mon == 0 || $to_mon == 0)){    
-    $_SESSION["no-events"] = false;
-    $_SESSION["searched"] = true;
+    $_SESSION["lack-criteria"] = true;
 
     //Clears table    
     $statement = $connection -> prepare("DELETE FROM results");
@@ -102,7 +102,6 @@ if(isset($_POST['search']) && $cat != 0 && $from_mon != 0 && $to_mon != 0)
     $statement -> execute();
 } else {    
     $_SESSION["no-events"] = false;
-    $_SESSION["searched"] = false;
 
     //Clears table    
     $statement = $connection -> prepare("DELETE FROM results");
