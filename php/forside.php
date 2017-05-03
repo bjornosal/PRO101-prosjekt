@@ -50,19 +50,19 @@ Du kan eventuelt ha faste størrelser på det.
                     <div class="slideshow-info-social">
                         <div class="social">
                             <a href="https://www.facebook.com/sharer/sharer.php?u=">
-                               <img src="../photos/facebook-icon.svg" alt="Facebook">
+                               <img src="../photos/fb_icon.png" alt="Facebook">
                             </a>
                         </div>
 
                         <div class="social">
                             <a href="https://twitter.com/home?status=">
-                                <img src="../photos/twitter-icon-square-logo.png" alt="Twitter"> 
+                                <img src="../photos/twitter_icon.png" alt="Twitter"> 
                             </a>
                         </div>
                         
                         <div class="social">
                             <a href="#">
-                                <img src="../photos/email-icon.svg" alt="Email"> 
+                                <img src="../photos/email_icon.png" alt="Email"> 
                             </a>
 
                         </div>
