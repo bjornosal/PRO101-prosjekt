@@ -1,8 +1,8 @@
 
 <div class="slideshow-container">
     <div class="slideshow-event-container">
-        <a class="slideshow-btn slideshow-left">&#10094;</a>
-        <a class="slideshow-btn slideshow-right">&#10095;</a>
+        <button class="slideshow-btn slideshow-left">&#10094;</button>
+        <button class="slideshow-btn slideshow-right">&#10095;</button>
         <?php
         $statement = $connection -> prepare('SELECT * FROM event JOIN category AS ca ON event.category_id = ca.category_id LIMIT 3');
 
@@ -60,6 +60,18 @@
         slideIndex++;
         if (slideIndex> slides.length) {slideIndex = 1} 
         slides[slideIndex-1].style.display = "block"; 
-        setTimeout(showSlides, 10000); // Change image every 2 seconds
+        setTimeout(showSlides, 10000);
     }
+    
+    //Not functional
+    
+    /*
+    function forwardSlide() {
+        var i;
+        var slides = document.getElementsByClassName("event-slide");
+        if (slideIndex> slides.length) {slideIndex = 1} 
+        slides[slideIndex-1].style.display = "block"; 
+        setTimeout(showSlides, 10000);
+    }*/
+    
 </script>
