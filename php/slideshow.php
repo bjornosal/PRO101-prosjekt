@@ -1,8 +1,8 @@
 
 <div class="slideshow-container">
     <div class="slideshow-event-container">
-        <button class="slideshow-btn slideshow-left">&#10094;</button>
-        <button class="slideshow-btn slideshow-right">&#10095;</button>
+        <button class="slideshow-btn slideshow-left" onclick="nextSlide(-1)">&#10094;</button>
+        <button class="slideshow-btn slideshow-right" onclick="nextSlide(1)">&#10095;</button>
         <?php
         $statement = $connection -> prepare('SELECT * FROM event JOIN category AS ca ON event.category_id = ca.category_id LIMIT 3');
 
@@ -48,30 +48,28 @@
 
 
 <script>
-    var slideIndex = 0;
-    showSlides();
+    var slideIndex = 1;
+    showSlides(slideIndex);
 
-    function showSlides() {
+    function nextSlide(n) {
+        showSlides(slideIndex += n);
+        clearInterval(switching);
+        switching = setInterval("nextSlide(1)", interval);
+    }
+
+    function showSlides(n) {
         var i;
         var slides = document.getElementsByClassName("event-slide");
+        if (n > slides.length) {slideIndex = 1} 
+        if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none"; 
         }
-        slideIndex++;
-        if (slideIndex> slides.length) {slideIndex = 1} 
-        slides[slideIndex-1].style.display = "block"; 
-        setTimeout(showSlides, 10000);
+        slides[slideIndex-1].style.display = "block";
     }
+    var interval = 5000; 
+    var switching = setInterval("nextSlide(1)", interval);
     
-    //Not functional
-    
-    /*
-    function forwardSlide() {
-        var i;
-        var slides = document.getElementsByClassName("event-slide");
-        if (slideIndex> slides.length) {slideIndex = 1} 
-        slides[slideIndex-1].style.display = "block"; 
-        setTimeout(showSlides, 10000);
-    }*/
-    
+
+
 </script>
