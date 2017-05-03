@@ -21,6 +21,7 @@
             require 'search.php';
             require 'tip-box.php';
             require 'go-to-top.php';
+            require 'slideshow.php';
             ?>
         </div>
     </body>
