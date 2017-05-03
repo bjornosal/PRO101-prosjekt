@@ -20,6 +20,7 @@
     <body>
 
         <?php 
+        require 'db-login.php';
         require 'header.php'; 
         require 'search.php';
         require 'tip-box.php';
@@ -39,8 +40,9 @@ Du kan eventuelt ha faste størrelser på det.
 -->
         <div class="slideshow-main-container">
         <div class='slideshow'>
-            <div class='slideshow-info'> 
-                <div class='social-fb'>
+            <div class='slideshow-info'> Phasellus sagittis nunc eu diam facilisis dignissim. Donec pulvinar, enim dignissim gravida condimentum, sem dolor euismod felis, vitae sollicitudin ligula ex a justo. Pellentesque eget pretium nulla, sed dictum odio. Fusce eget eros sollicitudin, feugiat arcu sed, congue tellus. Nam consequat vestibulum dolor, laoreet fringilla nibh sodales ac. Duis blandit, metus malesuada vulputate ultrices, tortor ipsum ornare orci, eu egestas lorem ipsum non est. Sed dapibus gravida sapien, vel aliquet libero. Fusce scelerisque tempus purus sed efficitur. Phasellus et nisl aliquet, tincidunt sapien nec, posuere lacus. In hac habitasse platea dictumst. Mauris suscipit eros eu pharetra pharetra. Donec vel lectus non lacus euismod viverra. In imperdiet posuere nisi vitae ultricies.
+                <br>
+               <div class='social-fb'>
                     <a href="https://www.facebook.com/sharer/sharer.php?u=">
                         <img src="../photos/facebook-icon.svg" alt="Facebook"> 
                     </a>
@@ -80,9 +82,12 @@ Du kan eventuelt ha faste størrelser på det.
                 <div class='image03'> </div>
                 <div class='info'> Yo </div>
             </div>
+            
+            <a href="#" class="button back grey"><span></span>Back</a>
+            <a href="#" class="button next grey"><span></span>Next</a>
 
-            <div class='button back'>Back</div>
-            <div class='button forward'>Forward</div>
+            <!--<div class='button back'>Back</div>
+            <div class='button forward'>Forward</div> -->
         </div>
             </div>
 
