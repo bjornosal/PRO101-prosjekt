@@ -67,7 +67,6 @@ Du kan eventuelt ha faste størrelser på det.
             </div>
 
 
-
             <div class='slide'>
                 <div class='image01'>
                     <img src="../photos/we-event01.jpg">
@@ -86,8 +85,6 @@ Du kan eventuelt ha faste størrelser på det.
             <a href="#" class="button back grey"><span></span>Back</a>
             <a href="#" class="button next grey"><span></span>Next</a>
 
-            <!--<div class='button back'>Back</div>
-            <div class='button forward'>Forward</div> -->
         </div>
             </div>
 
