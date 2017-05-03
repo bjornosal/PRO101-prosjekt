@@ -215,6 +215,23 @@ html * {
     border-bottom: 1px solid #000;
 }
 
+.x-line {
+    width:20%;
+    height: 150%;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 40%;
+    bottom: -25%;
+}
+
+.x-line-two {
+    transform: rotate(-45deg);
+}
+
+.menu-x {
+    display: none;
+}
+
 /*HEADER CSS ENDS*/
 
 /*TIP BOX CSS STARTS*/
@@ -440,7 +457,7 @@ html * {
 .event-description-container {
     width: 40%;
     margin-left: 2.5%;
-    overflow:scroll;
+    overflow: auto;
     overflow-x: hidden;
 }
 
@@ -525,21 +542,16 @@ html * {
     line-height: 1.45em;
 }
 
-.x-line {
-    width:20%;
-    height: 150%;
-    position: absolute;
-    transform: rotate(45deg);
-    left: 40%;
-    bottom: -25%;
-}
-
-.x-line-two {
-    transform: rotate(-45deg);
-}
-
-.menu-x {
+/*END EVENT CSS*/
+.btn-top {
+    position: fixed;
     display: none;
+    cursor: pointer;
+    bottom: 0;
+    right: 40px;
+    z-index: 50;
+    width: 50px;
+    height: 55px;
+    background-color: rgba(0,0,0,0.4);
+    box-shadow: 0px 5px 2px 0px #000;
 }
-
-

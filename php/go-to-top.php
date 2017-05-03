@@ -1,13 +1,15 @@
-
+<!--
 
 <button id="top-button" onclick="goToTopFunction()"  title="Tilbake til toppen">
-    <div class="back-to-top-button">
-        <div class="back-to-top-middle-area">
-            <img class="up-icon" src="../photos/up-arrow-white.png">
-        </div>
-    </div>
+<div class="back-to-top-button">
+<div class="back-to-top-middle-area">
+<img class="up-icon" src="../photos/up-arrow-white.png">
+</div>
+</div>
+</button>-->
+<button id="top-button" onclick="goToTopFunction()" class="btn-top" title="Tilbake til toppen">
+    <img class="up-icon" src="../photos/up-arrow-white.png">
 </button>
-
 
 
 <script>

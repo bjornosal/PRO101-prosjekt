@@ -99,6 +99,7 @@
             container.slideUp();
             $('.menu-hamburger').show();
             $('.menu-x').hide();
+            down = false;
         }
     });
 </script>
