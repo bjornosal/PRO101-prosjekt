@@ -75,11 +75,18 @@
     $difference = ($target - $today);
     $days = (int) ($difference/86400);
 
+
+
                 ?>
                 <!--Start event showcase-->
                 <div class="event-inner-container">
                     <div class="event-photo-container">
+                        <?php if($event['image_path'] != null) { ?>
                         <img class="event-photo" src="<?= $event['image_path']?>" alt="Bilde fra arrangement">
+                        <?php } else {?>
+                        <img class="event-photo" src="../photos/icons/default-icons/<?php echo $event['name']?>-default.png">
+                        
+                        <?php } ?>
                     </div>
                     <div id="ev1-map" class="event-map-container"></div>
                     <div class="event-description-container">
@@ -94,6 +101,7 @@
                         </div>
                         <div class="countdown-timer">
                             <p><strong>
+                                <!--Prints out time until event according to the date-->
                                 <?php
                     if($days > 0) { ?>
                                 Om <?= $days ?> 
@@ -104,7 +112,7 @@
                                 Allerede vært.
 
                                 <?php } ?>
-                            </strong></p>
+                                </strong></p>
                         </div>
                         <a href="<?= $event['event_link']?>">
                             <div class="event-btn">
