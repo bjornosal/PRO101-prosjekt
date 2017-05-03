@@ -54,7 +54,7 @@ Du kan eventuelt ha faste størrelser på det.
                             </a>
                         </div>
 
-                        <div class="social">
+                        <div class="social social-tw">
                             <a href="https://twitter.com/home?status=">
                                 <img src="../photos/twitter_icon.png" alt="Twitter"> 
                             </a>
