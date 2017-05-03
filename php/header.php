@@ -74,7 +74,7 @@
 <script>
     $(document).ready(function(){
         $('.menu-hamburger').click(function() {
-                $('.menu-dropdown').slideDown("slow");
+                $('.menu-dropdown').slideDown();
                 $('.menu-hamburger').hide();
                 $('.menu-x').show();
         });
@@ -82,7 +82,7 @@
     
     $(document).ready(function(){
         $('.menu-x').click(function() {
-                $('.menu-dropdown').slideUp("slow");
+                $('.menu-dropdown').slideUp();
                 $('.menu-hamburger').show();
                 $('.menu-x').hide();
         });

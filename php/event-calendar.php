@@ -90,10 +90,10 @@
                     <div class="event-social-container">
 
                         <div class="event-category">
-                            <p><?= $event['name']?></p>                        
+                            <p><strong><?= $event['name']?></strong></p>                        
                         </div>
                         <div class="countdown-timer">
-                            <p>
+                            <p><strong>
                                 <?php
                     if($days > 0) { ?>
                                 Om <?= $days ?> 
@@ -104,7 +104,7 @@
                                 Allerede vært.
 
                                 <?php } ?>
-                            </p>
+                            </strong></p>
                         </div>
                         <a href="<?= $event['event_link']?>">
                             <div class="event-btn">
