@@ -25,7 +25,7 @@ body {
 }
 
 /*Slightly less dark grey*/
-.event-photo-container, .event-map-container,.event-description-container, .copy-event-btn, .ticket-event-btn {
+.event-map-container,.event-description-container, .copy-event-btn, .ticket-event-btn {
     background-color: #FFF;
 }
 
@@ -50,7 +50,9 @@ body {
     background-color: #FFF;
 }
 
-
+.event-photo-container {
+    background-color: transparent;
+}
 
 
 
@@ -260,48 +262,6 @@ html * {
 /*TIP BOX CSS ENDS*/
 
 /*RETURN TO TOP BUTTON CSS STARTS*/
-/*.back-to-top-button {
-    position: fixed;
-    cursor: pointer;
-    bottom: 20px;
-    right: 20px;
-    z-index: 5;
-
-    width: 5%;
-    height: 9.5%;
-    border-radius: 100%;
-}
-
-.fillbox {
-    width:100%;
-    height:2000px;
-}
-
-.up-icon {
-    position: relative;
-    top: 10%;
-    width: 80%;
-    max-width: 100%;
-    transition: all linear 0.5s;
-}
-
-.back-to-top-middle-area {
-    width:85%;
-    height: 85%;
-    margin: auto;
-    border-radius: 100%;
-    position: relative;
-    top: 7.5%;
-}
-
-.back-to-top-button:hover .up-icon {
-    top: 0%;
-    width: 100%;
-}
-#top-button {    
-    display: none;
-}*/ 
-
 
 .btn-top {
     position: fixed;
@@ -314,6 +274,10 @@ html * {
     height: 55px;
     background-color: rgba(0,0,0,0.4);
     box-shadow: 0px 5px 2px 0px #000;
+}
+
+.up-icon {
+    max-width: 100%;
 }
 
 /*RETURN TO TOP BUTTON CSS ENDS*/
@@ -427,9 +391,15 @@ html * {
     top: 10%;
 }
 
-.event-photo-container, .event-map-container,.event-description-container {
+.event-map-container,.event-description-container {
     float: left;
     height: 100%;
+    width: 20%;
+    box-shadow: 0px 5px 20px 0px #000;
+}
+.event-photo-container {
+    max-height: 100%;    
+    float: left;
     width: 20%;
     box-shadow: 0px 5px 20px 0px #000;
 }
@@ -527,6 +497,3 @@ html * {
 }
 
 /*END EVENT CSS*/
-.up-icon {
-    max-width: 100%;
-}

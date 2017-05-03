@@ -75,7 +75,7 @@
                                 <img class="event-btn-img" src="../photos/icons/copy-icon-black.png">
                                 <p><strong>KOPIER LENKE</strong></p>
                             </div>
-                            <a href="#">
+                            <a href="<?= $event['event_link']?>">
                                 <div class="ticket-event-btn">
                                     <img class="event-btn-img" src="../photos/icons/ticket-icon-black.png">
                                     <p><strong>BILLETTER</strong></p>
