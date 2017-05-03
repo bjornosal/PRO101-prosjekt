@@ -37,10 +37,10 @@
 
                 while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                     $events[] = $row;
+
                 }
-                
                 ?>
-                
+
 
                 <?php 
 
@@ -60,7 +60,22 @@
                 }
                 ?>
 
-                <?php foreach($events as $event) { ?>
+                <?php foreach($events as $event) {
+    //This gets today's date
+    $today = time (); 
+    $event_date = $event['event_date'];
+
+    $date = strtotime($event_date);
+    $event_day = date("d", $date);
+    $event_month = date("m",$date);
+    $event_year = date("y",$date);
+
+    $target = mktime(0,0,0,$event_month, $event_day, $event_year);
+
+    $difference = ($target - $today);
+    $days = (int) ($difference/86400);
+
+                ?>
                 <!--Start event showcase-->
                 <div class="event-inner-container">
                     <div class="event-photo-container">
@@ -73,11 +88,24 @@
 
                     </div>
                     <div class="event-social-container">
-                        
+
                         <div class="event-category">
                             <p><?= $event['name']?></p>                        
                         </div>
-                        <div class="countdown-timer"></div>
+                        <div class="countdown-timer">
+                            <p>
+                                <?php
+                    if($days > 0) { ?>
+                                Om <?= $days ?> 
+                                dager
+                                <?php } elseif($days == 0) {?>
+                                I dag.
+                                <?php } else {?>
+                                Allerede vært.
+
+                                <?php } ?>
+                            </p>
+                        </div>
                         <a href="<?= $event['event_link']?>">
                             <div class="event-btn">
                                 <img class="event-btn-img" src="../photos/icons/link-icon.png">

@@ -498,7 +498,7 @@ html * {
     line-height: 1.45em;
 }
 
-.event-category p{
+.event-category p, .countdown-timer p{
    color: #FFF;
     text-align: center;
     line-height: 2.5em;
