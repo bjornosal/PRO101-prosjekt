@@ -71,7 +71,7 @@
                         <?php if($event['image_path'] != null) { ?>
                         <img class="event-photo" src="<?= $event['image_path']?>" alt="Bilde fra arrangement">
                         <?php } else {?>
-                        <img class="event-photo" src="../photos/icons/default-icons/<?php echo $event['name']?>-default.png" alt="Bilde fra arrangement">
+                        <img class="event-photo event-photo-default" src="../photos/icons/default-icons/<?php echo $event['name']?>-default.png" alt="Bilde fra arrangement">
 
                         <?php } ?>
                     </div>
