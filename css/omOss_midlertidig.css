@@ -373,7 +373,8 @@ body {
     width: 1300px;
     margin: auto;
     position: relative;
-    
+    top: 30px;
+    box-shadow: 1px 5px 20px 0px #000;
 }
 
 #infoTextBox {
