@@ -398,7 +398,8 @@ html * {
     width: 20%;
 }
 .event-photo-container {
-    max-height: 100%;    
+    max-height: 100%; 
+    overflow: hidden;
     float: left;
     width: 20%;
 }
