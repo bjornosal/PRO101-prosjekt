@@ -10,12 +10,13 @@
         while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {?>
 
         <div class="event-slide">
-            <!--Needs to be put outside of event-slide! Needs fixing (tomorrow?)-->
-            <!--<a href="#">-->
             <div class="slideshow-photo-container">
-                <img src="../photos/slideshow-default.png">
+                <?php if($row['image_path'] != null) { ?>
+                <img src="<?= $row['image_path']?>" alt="Bilde fra arrangement">
+                <?php } else {?>
+                <img  src="../photos/slideshow-default.png" alt="Inget bilde fra arrangement">
+                <?php } ?>
             </div>
-            <!--</a>-->
             <!--Start info container-->
             <div class="event-info-container">
                 <div class="event-info">
@@ -23,12 +24,12 @@
                     <p><?=$row['description']?></p>
                 </div>
                 <div class="event-info-social">
-                    <div class="social-icon">
+                    <div class="social-icon social-icon-placing">
                         <a href="#">
                             <img src="../photos/icons/social-icons/fb_icon.png">
                         </a>
                     </div>
-                    <div class="social-icon social-icon-middle">
+                    <div class="social-icon">
                         <a href="#">
                             <img src="../photos/icons/social-icons/twitter_icon.png">
                         </a>
