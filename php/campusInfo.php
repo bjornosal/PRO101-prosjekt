@@ -28,14 +28,18 @@
         
 
 
-        <nav></nav>
-        <div class = "photo sectOne"></div>
+      
+        
+        <div class = "photo sectOne"><div id = "campusHeader">Camphuser<div class = "arrow bounce"></div></div></div>
         <div class = "text"><h1>Fjerdingen</h1><div id = "mapFjerdingen"></div><p>Bacon ipsum dolor amet spare ribs leberkas corned beef brisket tri-tip tail, kielbasa turkey jowl biltong salami filet mignon chicken. Leberkas shoulder short ribs ham, short loin frankfurter turkey landjaeger venison porchetta tri-HDHHDHDHDHDHDHD frankfurter. Burgdoggen shank turducken, frankfurter fatback meaDDDDDDDDball spare ribs t-bone. T-bone pig venison, ribeye spare ribs jerky cupim kielbasa sausage beef meatball. Meatball pastrami jowl, alcatra brisket sirloin tail short loin. Sirloin shoulder beef ribs chuck.Bacon ipsum dolor amet spare ribs leberkas corned beef brisket tri-tip tail, kielbasa turkey jowl biltong salami filet mignon chicken. Leberkas shoulder short ribs ham, short loin frankfurter turkey landjaeger venison porchetta tri-HDHHDHDHDHDHDHD frankfurter. Burgdoggen shank turducken, frankfurter fatback meaDDDDDDDDball spare ribs t-bone. T-bone pig venison, ribeye spare ribs jerky cupim kielbasa sausage beef meatball. Meatball pastrami jowl, alcatra brisket sirloin tail short loin. Sirloin shoulder beef ribs chuck</p></div>
         <div class = "photo sectTwo"></div>
         <div class = "text"><h1>Vulkan</h1><div id = "mapVulkan"></div><p>Bacon ipsum dolor amet spare ribs leberkas corned beef brisket tri-tip tail, kielbasa turkey jowl biltong salami filet mignon chicken. Leberkas shoulder short ribs ham, short loin frankfurter turkey landjaeger venison porchetta tri-tip hamburger biltong chicken. Hamburger pastrami strip steak andouille frankfurter. Burgdoggen shank turducken, frankfurter fatback meatball spare ribs t-bone. T-bone pig venison, ribeye spare ribs jerky cupim kielbasa sausage beef meatball. Meatball pastrami jowl, alcatra brisket sirloin tail short loin. Sirloin shoulder beef ribs chuck.</p></div>
         <div class = "photo sectThree"></div>
         <div class = "text"><h1>Brenneriveien</h1><div id = "mapBrenneriveien"></div><p>Bacon ipsum dolor amet spare ribs leberkas corned beef brisket tri-tip tail, kielbasa turkey jowl biltong salami filet mignon chicken. Leberkas shoulder short ribs ham, short loin frankfurter turkey landjaeger venison porchetta tri-tip hamburger biltong chicken. Hamburger pastrami strip steak andouille frankfurter. Burgdoggen shank turducken, frankfurter fatback meatball spare ribs t-bone. T-bone pig venison, ribeye spare ribs jerky cupim kielbasa sausage beef meatball. Meatball pastrami jowl, alcatra brisket sirloin tail short loin. Sirloin shoulder beef ribs chuck.</p></div>
 
+        
+        
+        
 
 
         <script>
@@ -45,7 +49,7 @@
             function initMap() {
                 var location1 = {lat: 59.916164, lng: 10.759675};
                 var mapFjerdingen = new google.maps.Map(document.getElementById("mapFjerdingen"), {
-                    zoom: 13,
+                    zoom: 14,
                     center: location1
                 });
 
@@ -54,10 +58,35 @@
                     map: mapFjerdingen
                 });
                 
+                var location2 = {lat: 59.923339, lng: 10.752497};
+                var mapVulkan = new google.maps.Map(document.getElementById("mapVulkan"), {
+                    zoom: 14,
+                    center: location2
+                });
+
+                var marker2 = new google.maps.Marker({
+                    position: location2,
+                    map: mapVulkan
+                });
+                
+            
+                var location3 = {lat: 59.920414, lng: 10.752696};
+                var mapBrenneriveien = new google.maps.Map(document.getElementById("mapBrenneriveien"), {
+                    zoom: 14,
+                    center: location3
+                });
+
+                var marker3 = new google.maps.Marker({
+                    position: location3,
+                    map: mapBrenneriveien
+                });
+                
             }
+            
         </script>
 
-        <script async defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDbzIJIgHVAYw4oXACRP_XCt3Mnj_3T0dI&callback=initMap"></script>
+        <script async defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDbzIJIgHVAYw4oXACRP_XCt3Mnj_3T0dI&callback=initMap"></script>   
+
 
 
     </body>
