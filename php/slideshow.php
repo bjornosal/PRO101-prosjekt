@@ -49,15 +49,15 @@
 
 <script>
     var slideIndex = 1;
-    showSlides(slideIndex);
+    runSlideShow(slideIndex);
 
     function nextSlide(n) {
-        showSlides(slideIndex += n);
+        runSlideShow(slideIndex += n);
         clearInterval(switching);
         switching = setInterval("nextSlide(1)", interval);
     }
 
-    function showSlides(n) {
+    function runSlideShow(n) {
         var i;
         var slides = document.getElementsByClassName("event-slide");
         if (n > slides.length) {slideIndex = 1} 
@@ -69,7 +69,5 @@
     }
     var interval = 5000; 
     var switching = setInterval("nextSlide(1)", interval);
-    
-
 
 </script>

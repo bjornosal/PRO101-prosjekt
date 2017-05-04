@@ -526,7 +526,7 @@ html * {
     position: absolute;
     right: 0;
     top: 0;
-    width:33%;
+    width:40%;
     height: 100%;
     background-color: rgba(50,50,50,0.5);
 }
@@ -574,7 +574,7 @@ html * {
 }
 
 .slideshow-btn {
-    width: 50px;
+    width: 40px;
     height: 15%;
     position: absolute;
     top: 42.5%;
@@ -583,7 +583,7 @@ html * {
     color: #FFF;
     font-size: 3.1em;
     z-index: 3;
-    line-height: 1.25em;
+    line-height: 1.15em;
     text-align: center;
 }
 

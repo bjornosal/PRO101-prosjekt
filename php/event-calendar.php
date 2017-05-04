@@ -89,8 +89,7 @@
                         <div class="countdown-timer">
                             <p><strong>
                                 <!--Prints out time until event according to the date-->
-                                <?php
-                    if($days > 0) { ?>
+                                <?php if($days > 0) { ?>
                                 Om <?= $days ?> 
                                 dager
                                 <?php } elseif($days == 0) {?>
