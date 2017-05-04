@@ -51,7 +51,7 @@
             <div class="menu-choice-text">CAMPUS</div>
         </div>
     </a>
-    <a href="eventside.php">
+    <a href="event-calendar.php">
         <div class="navigation-container">
             <div class="icon">
                 <img src="../photos/icons/cal-icon.png">
