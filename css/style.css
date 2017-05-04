@@ -428,8 +428,12 @@ html * {
     background-color: rgba(50,50,50,0.2);
 }
 .event-photo {
+    max-width: 150%;
+    max-height: 150%;
+}
+
+.event-photo-default {
     max-width: 100%;
-    max-height: 100%;
 }
 
 .event-description-title, .event-description-text {
