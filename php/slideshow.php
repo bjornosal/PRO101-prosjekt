@@ -68,7 +68,7 @@
         }
         slides[slideIndex-1].style.display = "block";
     }
-    var interval = 5000; 
+    var interval = 8000; 
     var switching = setInterval("nextSlide(1)", interval);
 
 </script>
