@@ -40,49 +40,20 @@
 
         <script>
             
-            var mapFjerdingen, mapVulkan, mapBrenneriveien;
+            var mapFjerdingen;
 
             function initMap() {
-                var location = {lat: 59.916164, lng: 10.759675};
+                var location1 = {lat: 59.916164, lng: 10.759675};
                 var mapFjerdingen = new google.maps.Map(document.getElementById("mapFjerdingen"), {
                     zoom: 13,
-                    center: location
+                    center: location1
                 });
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
 
-                var marker = new google.maps.Marker({
-                    position: location,
+                var marker1 = new google.maps.Marker({
+                    position: location1,
                     map: mapFjerdingen
                 });
+                
             }
         </script>
 
