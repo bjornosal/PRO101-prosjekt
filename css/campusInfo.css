@@ -50,7 +50,6 @@ html, body {
 #mapVulkan {
     height: 10em;
     width: 20em;
-    
     border: 0.1em solid black;
     float: right;
     margin-right: 1em;
