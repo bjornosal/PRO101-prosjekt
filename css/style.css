@@ -298,7 +298,7 @@ html * {
     width: 700px;    
     min-width: 800px;
     height: 25%;
-    margin: auto;
+    margin-left: 14.125%;
     position: relative;
     top: 30%;
 }
@@ -310,10 +310,8 @@ html * {
 .search-criteria {
     height: 100%;
     width: 22.5%;
-    margin-left: %;
     box-shadow: 0px 0px 0px 3px #00ADB5;    
     border: none;
-    border-radius: px;
     color: #00ADB5;
 }
 
@@ -333,15 +331,12 @@ html * {
 .search-button {
     position: relative;
     width:10%;
-    top: %;
-    margin-left:%;
     height: 100%;
     line-height: 2em;
-    color: white;
+    color: #FFF;
     background-color: #00ADB5;
     box-shadow: 0px 0px 0px 3px #00ADB5;    
     border-style: none;
-    border-radius: px;
 }
 
 .search-button:hover {
