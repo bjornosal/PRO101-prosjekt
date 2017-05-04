@@ -274,6 +274,7 @@ html * {
     height: 55px;
     background-color: rgba(13,16,19,.8);
     box-shadow: 0px 5px 2px 0px #000;
+    border: none;
 }
 
 .up-icon {
@@ -606,3 +607,50 @@ html * {
 }
 
 /*END SLIDESHOW CSS*/
+
+
+
+/*START ABOUT US CSS*/
+.about-container {
+    width: 100%;
+    height: 715px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.photoBox {
+    height: 100%;
+    width: 1300px;
+    margin: auto;
+    position: relative;
+    top: 30px;
+    box-shadow: 1px 5px 20px 0px #000;
+}
+
+#infoTextBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 33%;
+    background-color: rgba(50,50,50,0.8);
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #FFF;
+    text-align: center;
+}
+
+#photo1 {
+    max-width: 100%;
+}
+
+#infoList {
+    text-align: left;
+}
+
+.infoText {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+/*END ABOUT US CSS*/

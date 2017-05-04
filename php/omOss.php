@@ -12,7 +12,7 @@
 
         <title>Hvem er Wevent</title>
 
-        <link rel="stylesheet" type="text/css" href="../css/omOss_midlertidig.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
 
     </head>
 
