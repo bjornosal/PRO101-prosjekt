@@ -518,6 +518,7 @@ html * {
 .event-slide {
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 .event-slide img {
@@ -571,8 +572,8 @@ html * {
 }
 
 .social-icon-middle {
+
     margin-left: 12.5%;
-    margin-right: 12.5%;
 }
 
 .slideshow-btn {
@@ -607,8 +608,6 @@ html * {
 }
 
 /*END SLIDESHOW CSS*/
-
-
 
 /*START ABOUT US CSS*/
 .about-container {
