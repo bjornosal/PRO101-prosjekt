@@ -414,6 +414,7 @@ html * {
     width: 12.5%;    
     float: left;
     height: 100%;
+    margin-left: 2.5%;
 }
 
 .event-background {
