@@ -37,7 +37,13 @@
 
                 while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                     $events[] = $row;
+                    $events_id[] = $row["event_id"];
+                    $lat[] = $row["Latitude"];
+                    $lon[] = $row["Longitude"];
 
+                    $json_id = json_encode($events_id);
+                    $json_lat = json_encode($lat);
+                    $json_lon = json_encode($lon);
                 }
                 ?>
 
@@ -75,7 +81,7 @@
 
                         <?php } ?>
                     </div>
-                    <div id="ev1-map" class="event-map-container"></div>
+                    <div id="ev-map-<?php echo $event['event_id']?>" class="event-map-container"></div>
                     <div class="event-description-container">
                         <h3 class="event-description-title"><?= $event['title'] ?></h3>    
                         <p class="event-description-text"><?= $event['description'] ?></p>
@@ -116,17 +122,32 @@
         </div>
 
         <!--Script needs major changes to support being different for each event from DB-->
+
+        <!--
+Able to use same variable name. Should be fully functional when getting information from db
+Will it work in loop?
+-->
         <script>
+            var idArray = <?php echo $json_id; ?>;
+            var lat = <?php echo $json_lat; ?>;
+            var lon = <?php echo $json_lon; ?>;
+
             function initMap() {
-                var uluru = {lat: 59.916379, lng: 10.761465};
-                var map = new google.maps.Map(document.getElementById('ev1-map'), {
-                    zoom: 14,
-                    center: uluru
-                });
-                var marker = new google.maps.Marker({
-                    position: uluru,
-                    map: map
-                });
+
+                for(i = 0; i < idArray.length; i++) {
+
+                    var latitude = parseFloat(lat[i]);
+                    var longitude = parseFloat(lon[i]);
+                    var uluru = {lat: latitude, lng: longitude};
+                    var map = new google.maps.Map(document.getElementById('ev-map-'+idArray[i]), {
+                        zoom: 14,
+                        center: uluru
+                    });
+                    var marker = new google.maps.Marker({
+                        position: uluru,
+                        map: map
+                    });
+                }
             }
         </script>
         <script async defer
