@@ -152,7 +152,7 @@ html * {
     top:90px;
     bottom:0;
     left: 0;
-    z-index: 2;
+    z-index: 99;
 }
 
 .menu-dropdown a{
@@ -665,3 +665,63 @@ html * {
     margin: auto;
 }
 /*END ABOUT US CSS*/
+
+/* START LOGIN PAGE CSS*/
+.login-link {
+    position: absolute;
+    bottom: 0;
+}
+
+.login-container {
+    margin: 4% auto;
+    width: 400px;
+    height: 600px;
+    background-color: #393E46;
+    box-shadow: 0px 0px 3px 3px #00ADB5; 
+}
+
+.login-container-header {
+    width: 100%;
+    height: 15%;
+}
+
+.login-container-header h2{
+    font-size: 3.1em;
+    color: #FFF;
+    text-align: center;
+    line-height: 2em;
+}
+
+.login-label {
+    font-size: 1em;
+    color: #FFF;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.login-input {
+    font-size: 1em;
+    width:80%;
+    margin-left: 10%;
+    border: none;
+}
+
+.login-form {
+    width: 100%;
+    height:85%;
+}
+
+.login-button {
+    width: 80%;
+    height: 10%;
+    margin: 30% 10%;
+    background-color: #00ADB5;  
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    
+    
+}
+
+/*END LOGIN PAGE CSS*/
