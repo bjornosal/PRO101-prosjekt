@@ -67,6 +67,14 @@
             <div class="menu-choice-text">OM WEVENT</div>
         </div>
     </a>
+    <a href="login.php">
+        <div class="navigation-container login-link">
+            <div class="icon">
+                <img src="../photos/icons/login-icon.png">
+            </div>
+            <div class="menu-choice-text">ADMINISTRATOR</div>
+        </div>
+    </a>
 </div>
 
 
@@ -74,20 +82,20 @@
 <script>
     $(document).ready(function(){
         $('.menu-hamburger').click(function() {
-                $('.menu-dropdown').slideDown();
-                $('.menu-hamburger').hide();
-                $('.menu-x').show();
+            $('.menu-dropdown').slideDown();
+            $('.menu-hamburger').hide();
+            $('.menu-x').show();
         });
     });
-    
+
     $(document).ready(function(){
         $('.menu-x').click(function() {
-                $('.menu-dropdown').slideUp();
-                $('.menu-hamburger').show();
-                $('.menu-x').hide();
+            $('.menu-dropdown').slideUp();
+            $('.menu-hamburger').show();
+            $('.menu-x').hide();
         });
     });
-    
+
     //Takes the menu away if one clicks outside the dropdown menu/menu bar
     $(document).mouseup(function (ev) {
         var container = $(".menu-dropdown");
