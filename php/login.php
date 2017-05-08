@@ -20,22 +20,49 @@
         require 'header.php';
         require 'go-to-top.php';
         ?>
-        <div class="login-container">
+        <div class="login-container" id="lg" style="display:block">
             <div class="login-container-header">
                 <h2>LOGG PÅ</h2>
             </div>
 
 
-            <form method="POST" action="#" class="login-form">
+            <form method="POST" class="login-form">
                 <div class="login-label"><b>BRUKERNAVN</b></div>
-                <input class="login-input"type="text" name="user" placeholder="Skriv inn brukernavn">
+                <input class="login-input"type="text" name="username" placeholder="Skriv inn brukernavn">
                 <div class="login-label"><b>PASSORD</b></div>
-                <input class="login-input" type="password" name="pass" placeholder="Skriv inn passord">
-                <input class="login-button" type="submit" name="submit" value="LOGG PÅ">
-
-
-
+                <input class="login-input" type="password" name="password" placeholder="Skriv inn passord">
+                <input class="login-button" type="button" name="submit" value="LOGG PÅ" onclick="logOn()">
             </form>
         </div>
+
+        <?php
+
+        session_start();
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+
+        if(isset($_POST['submit'])) {
+            $statement = $connection -> prepare("SELECT * FROM users WHERE username ='$username' AND password ='$password'");
+            $statement -> execute();
+            if ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
+                $_SESSION['user_id'] = $row['user_id'];
+            }
+        } 
+        
+        if($_SESSION['user_id'] == 1 || $_SESSION['user_id'] == 2) {
+            include 'database-management.php';
+        } else {
+            include 'info-error.php';
+        }
+
+        ?>
+        
+        
+        <script>
+            function logOn() {
+                document.getElementById("lg").style.display="none";
+            }
+        
+        </script>
     </body>
 </html>
