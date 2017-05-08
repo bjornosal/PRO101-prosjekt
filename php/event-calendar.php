@@ -121,12 +121,6 @@
             </div>
         </div>
 
-        <!--Script needs major changes to support being different for each event from DB-->
-
-        <!--
-Able to use same variable name. Should be fully functional when getting information from db
-Will it work in loop?
--->
         <script>
             var idArray = <?php echo $json_id; ?>;
             var lat = <?php echo $json_lat; ?>;

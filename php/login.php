@@ -20,7 +20,7 @@
         require 'header.php';
         require 'go-to-top.php';
         ?>
-        <div class="login-container" id="lg" style="display:block">
+        <div class="login-container">
             <div class="login-container-header">
                 <h2>LOGG PÅ</h2>
             </div>
@@ -31,7 +31,7 @@
                 <input class="login-input"type="text" name="username" placeholder="Skriv inn brukernavn">
                 <div class="login-label"><b>PASSORD</b></div>
                 <input class="login-input" type="password" name="password" placeholder="Skriv inn passord">
-                <input class="login-button" type="button" name="submit" value="LOGG PÅ" onclick="logOn()">
+                <input class="login-button" type="button" name="submit" value="LOGG PÅ">
             </form>
         </div>
 
@@ -48,21 +48,37 @@
                 $_SESSION['user_id'] = $row['user_id'];
             }
         } 
-        
-        if($_SESSION['user_id'] == 1 || $_SESSION['user_id'] == 2) {
-            include 'database-management.php';
-        } else {
-            include 'info-error.php';
-        }
 
+        if($_SESSION['user_id'] == 1 || $_SESSION['user_id'] == 2) {
+            require 'database-management.php';
         ?>
-        
-        
-        <script>
-            function logOn() {
-                document.getElementById("lg").style.display="none";
-            }
-        
+
+        <script>    
+            $(document).ready(function(){
+                $('.login-button').click(function() {
+                    $('.database-management-container').show();
+                });
+            });
         </script>
+        <?php
+        } else {
+            require 'info-error.php';?>
+        <script>    
+            $(document).ready(function(){
+                $('.login-button').click(function() {
+                    $('.login-error').show();
+                });
+            });
+        </script>
+        <?php
+        }
+        ?>
     </body>
 </html>
+<!--<script>
+function logOn() {
+document.getElementById("lg").style.display="none";
+document.getElementById("database-management-container").style.display="block";
+//add logOff button
+}
+</script>-->
