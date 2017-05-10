@@ -20,6 +20,7 @@
         require 'header.php';
         require 'go-to-top.php';
         ?>
+        
         <div class="login-container">
             <div class="login-container-header">
                 <h2>LOGG PÅ</h2>
@@ -57,6 +58,7 @@
             $(document).ready(function(){
                 $('.login-button').click(function() {
                     $('.database-management-container').show();
+                    $('.login-container').hide();
                 });
             });
         </script>
@@ -67,6 +69,7 @@
             $(document).ready(function(){
                 $('.login-button').click(function() {
                     $('.login-error').show();
+                    $('.login-container').hide();
                 });
             });
         </script>
@@ -75,10 +78,3 @@
         ?>
     </body>
 </html>
-<!--<script>
-function logOn() {
-document.getElementById("lg").style.display="none";
-document.getElementById("database-management-container").style.display="block";
-//add logOff button
-}
-</script>-->
