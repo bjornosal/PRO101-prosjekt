@@ -7,6 +7,10 @@ body {
     max-width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*Consider using this orange - #FF9A00 for some standout pieces*/
 
 /*COLOURS 1*/
@@ -444,6 +448,12 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
     width: 20%;
 }
 
+.event-photo-container, .event-map-container, .event-description-container {
+    border: 0.1%;
+    border-style: groove;
+    border-color: rgba(50,50,50,0.2);
+}
+
 
 .event-description-container {
     width: 40%;
@@ -735,6 +745,7 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
 .login-form {
     width: 100%;
     height:85%;
+    z-index: 5;
 }
 
 .login-button {
@@ -750,6 +761,23 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
     
 }
 
+.login-button:hover {
+    font-size: 1.1em;
+}
+
+.return-login-btn {
+    width:80%;
+    height: 10%;
+    margin-top: 80%;
+    margin-left: 10%;
+    font-size: 2.5em;
+    background-color: #00ADB5;  
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    line-height: 1.5em;
+}
 /*END LOGIN PAGE CSS*/
 
 /*DB MANAGEMENT PAGE CSS*/
@@ -760,9 +788,6 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
     display: none;
 }
 
-.login-button:hover {
-    font-size: 1.1em;
-}
 
 .login-error {
     width: 500px;
@@ -771,7 +796,6 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
     margin: -550px auto;
     display: none;
 }
-
 
 
 

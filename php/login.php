@@ -20,6 +20,7 @@
         require 'header.php';
         require 'go-to-top.php';
         ?>
+
         <div class="login-container">
             <div class="login-container-header">
                 <h2>LOGG PÅ</h2>
@@ -48,37 +49,27 @@
                 $_SESSION['user_id'] = $row['user_id'];
             }
         } 
+        ?>
 
+        <?php
         if($_SESSION['user_id'] == 1 || $_SESSION['user_id'] == 2) {
-            require 'database-management.php';
         ?>
 
         <script>    
-            $(document).ready(function(){
-                $('.login-button').click(function() {
-                    $('.database-management-container').show();
-                });
-            });
+            window.location.href = "login-success.php";
         </script>
+        
         <?php
-        } else {
-            require 'info-error.php';?>
+        } else { 
+
+        ?>
         <script>    
-            $(document).ready(function(){
-                $('.login-button').click(function() {
-                    $('.login-error').show();
-                });
-            });
+            window.location.href = "login-error.php";
         </script>
         <?php
         }
-        ?>
+        ?>        
+
+
     </body>
 </html>
-<!--<script>
-function logOn() {
-document.getElementById("lg").style.display="none";
-document.getElementById("database-management-container").style.display="block";
-//add logOff button
-}
-</script>-->
