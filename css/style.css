@@ -7,6 +7,10 @@ body {
     max-width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*Consider using this orange - #FF9A00 for some standout pieces*/
 
 /*COLOURS 1*/
@@ -715,6 +719,7 @@ html * {
 .login-form {
     width: 100%;
     height:85%;
+    z-index: 5;
 }
 
 .login-button {
@@ -730,6 +735,23 @@ html * {
     
 }
 
+.login-button:hover {
+    font-size: 1.1em;
+}
+
+.return-login-btn {
+    width:80%;
+    height: 10%;
+    margin-top: 80%;
+    margin-left: 10%;
+    font-size: 2.5em;
+    background-color: #00ADB5;  
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    line-height: 1.5em;
+}
 /*END LOGIN PAGE CSS*/
 
 /*DB MANAGEMENT PAGE CSS*/
@@ -740,14 +762,5 @@ html * {
     display: none;
 }
 
-.login-button:hover {
-    font-size: 1.1em;
-}
 
-.login-error {
-    width: 500px;
-    height:300px;
-    background-color: yellow;
-    margin: -550px auto;
-    display: none;
-}
+
