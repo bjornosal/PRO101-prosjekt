@@ -14,10 +14,9 @@ h1  {
     position: absolute;
     text-align: center;
     top: 50%;
-    font-family: monospace;
+    font-family: sans-serif;
     width: 100%;
     font-size: 5em;
-    {transition: all .2s ease-in-out;}
 }
 
 #campusHeader:hover {
@@ -80,27 +79,22 @@ h1  {
 
 
 
-p {
-    font-family: monospace;
-    margin-left: 20px;
-    font-size: 1em;
-    text-align: left;
-}
 
-html, body {
+html, body, p {
     height: 100%;
+    font-size: 10
 }
-
 
 .photo {
     height: 100%;
     background-size: cover;
     background-repeat: round;
     background-attachment: fixed;
+
 }
 
 .text {
-    height: 18em;
+    height: 40%;
     background-color: white;
     text-align: left;
 }
@@ -143,24 +137,64 @@ html, body {
 }
 
 
-/*HEADER CSS*/
+/*Consider using this orange - #FF9A00 for some standout pieces*/
+
+/*COLOURS 1*/
+/*Slightly darker grey*/
 .header-container, .logo-container, .menu-dropdown, option, .tip-container, .back-to-top-middle-area{
-    background-color: rgba(140, 127, 114, 0.2);
+    background-color: #595959;
 }
 
+/*DARKEST*/
 .menu-container, .tip-bar, .form-button, .back-to-top-button, .search-criteria, .search-button, .language-button  {
     background-color: #404040;
 }
 
-.menu-line, .navigation-container:hover, .search-info-container, .copy-event-btn:hover, .ticket-event-btn:hover, .no-event{    
+.menu-line, .navigation-container:hover, .search-info-container, .event-btn:hover, .no-event, .x-line, .event-category{    
     background-color: #808080;
 }
 
-.event-photo-container, .event-map-container,.event-description-container, .copy-event-btn, .ticket-event-btn {
+/*Slightly less dark grey*/
+.event-map-container,.event-description-container, .event-btn {
     background-color: #FFF;
 }
 
+/*COLOURS 2*/
 
+/*Slightly darker grey*/
+.header-container, .logo-container, .menu-dropdown, option, .tip-container, .back-to-top-middle-area{
+    background-color:#393E46;
+}
+
+/*DARKEST*/
+.menu-container, .tip-bar, .form-button, .back-to-top-button, .search-criteria, .search-button, .language-button, .countdown-timer, .event-category, .event-btn  {
+    background-color: #222831;
+}
+
+/*Slightly less dark grey*/
+.menu-line, .navigation-container:hover, .event-btn:hover, .no-event, .x-line{    
+    background-color: #00ADB5;
+}
+
+.search-info-container {
+    background-color: #393E46;
+}
+
+.event-photo-container, .event-map-container,.event-description-container {
+    background-color: #FFF;
+}
+
+.event-photo-container {
+    background-color: transparent;
+}
+
+
+
+/*HEADER CSS*/
+html * {
+
+    font-family: monospace;
+}
 .header-container {
     height:90px;
     width:100%;
@@ -169,6 +203,7 @@ html, body {
     align-items: center;
     position: fixed;
     z-index:3;
+    border: solid black 0.05em;
 }
 
 .menu-container {
@@ -180,12 +215,13 @@ html, body {
 
 }
 
-.menu-button {
+.menu-button{
     width:50%;
     height:50%;
     position: relative;
     top: 25%;
     left: 25%;
+    cursor: pointer;
 }
 
 .menu-line {
@@ -195,19 +231,17 @@ html, body {
 }
 
 .filler {
-   background-color: transparent;
+    background-color: transparent;
 }
 
 .logo-container {
-    float: left;
+    float:left;
     height: 100%;
-    width: 100%;
-    background-color: rgba(140, 127, 114, 0.2);
+    width: 300px;
 }
 
-.logo-container * {
-    text-align: left;
-    font-family: monospace;
+.logo-container *{
+    font-family: sans-serif;
     color: #FFF;
     position: relative;
 }
@@ -216,7 +250,6 @@ html, body {
     line-height: 90px;  
     font-size: 3.1em;
     float: left;
-
 }
 
 .logo-filler {
@@ -229,15 +262,16 @@ html, body {
     height: 100%;
     width: 40px;
     float: left;
-    position: relative;
-    left: 1%;
-
+    margin-left: 2.5%;
+    padding-left: 2.5%;
 }
 
 .tag-line-container p{
     position: relative;
-    top: 30%;
-    color: #000000;
+    top: 25%;
+    color: #00ADB5;
+    font-size: 1em;
+
 }
 
 .menu-dropdown {
@@ -249,14 +283,14 @@ html, body {
     top:90px;
     bottom:0;
     left: 0;
-    z-index: 2;
+    z-index: 99;
 }
 
 .menu-dropdown a{
     color: #FFF;
     font-family: sans-serif;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 
@@ -285,7 +319,23 @@ html, body {
     width:100%;
     height:50px;
     border-bottom: 1px solid #000;
-    position: fixed;
+}
+
+.x-line {
+    width:20%;
+    height: 150%;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 40%;
+    bottom: -25%;
+}
+
+.x-line-two {
+    transform: rotate(-45deg);
+}
+
+.menu-x {
+    display: none;
 }
 
 /*HEADER CSS ENDS*/
@@ -312,7 +362,7 @@ html, body {
     top: 0;
     text-align: center;
     font-family: sans-serif;
-    font-size: 1.1em;
+    font-size: 1em;
     line-height: 30px;
     cursor: pointer;    
     color: #FFF;
@@ -347,46 +397,25 @@ html, body {
 /*TIP BOX CSS ENDS*/
 
 /*RETURN TO TOP BUTTON CSS STARTS*/
-.back-to-top-button {
-    position: fixed;
-    cursor: pointer;
-    bottom: 20px;
-    right: 20px;
-    z-index: 5;
-    width: 5%;
-    height: 9.5%;
-    border-radius: 100%;
-}
 
-.fillbox {
-    width:100%;
-    height:2000px;
+.btn-top {
+    position: fixed;
+    display: none;
+    cursor: pointer;
+    bottom: 0;
+    right: 40px;
+    z-index: 50;
+    width: 50px;
+    height: 55px;
+    background-color: rgba(13,16,19,.8);
+    box-shadow: 0px 5px 2px 0px #000;
+    border: none;
 }
 
 .up-icon {
-    position: relative;
-    top: 10%;
-    width: 80%;
     max-width: 100%;
-    transition: all linear 0.5s;
 }
 
-.back-to-top-middle-area {
-    width:85%;
-    height: 85%;
-    margin: auto;
-    border-radius: 100%;
-    position: relative;
-    top: 7.5%;
-}
-
-.back-to-top-button:hover .up-icon {
-    top: 0%;
-    width: 100%;
-}
-#top-button {    
-    display: none;
-}
 /*RETURN TO TOP BUTTON CSS ENDS*/
 
 /*START OFF SEARCH CSS*/
@@ -397,10 +426,10 @@ html, body {
 
 .search-box {
     max-width: 100%;
-    width: 800px;    
+    width: 700px;    
     min-width: 800px;
     height: 25%;
-    margin: auto;
+    margin-left: 14.125%;
     position: relative;
     top: 30%;
 }
@@ -412,29 +441,39 @@ html, body {
 .search-criteria {
     height: 100%;
     width: 22.5%;
-    margin-left: 2.5%;
-    box-shadow: 2px 2px 5px 1px #000;
+    box-shadow: 0px 0px 0px 3px #00ADB5;    
     border: none;
+    color: #00ADB5;
+}
+
+.search-criteria:hover {
+    font-size: 1.1em;
 }
 
 .search-criteria, .search-button {
-    color: white;
+    background-color: whitesmoke;
     text-align: center;
     font-family: sans-serif;
-    font-size: 1.5em;
+    font-size: 1em;
     float: left;
     cursor: pointer;
 }
 
 .search-button {
     position: relative;
-    width:17.5%;
-    top: 9%;
-    margin-left:5%;
-    height: 80%;
+    width:10%;
+    height: 100%;
     line-height: 2em;
-    box-shadow: 2px 2px 5px 1px #000;
+    color: #FFF;
+    background-color: #00ADB5;
+    box-shadow: 0px 0px 0px 3px #00ADB5;    
     border-style: none;
+}
+
+.search-button:hover {
+    
+    font-size: 1.1em;
+    box-shadow: 0px 0px 0px 3px #00ADB5;
 }
 
 .search-info-container {
@@ -443,7 +482,7 @@ html, body {
     position: relative;
     margin: auto;
     top: 10%;
-    box-shadow: 3px 3px 10px 1px #000;   
+    box-shadow: 0px 1px 1px 0px #000;   
 
 }
 
@@ -453,7 +492,8 @@ html, body {
     position: relative;
     top:25%;
     font-family: sans-serif;
-    font-size: 3.1em;
+    font-size: 2.5em;
+    line-height: 0.4em;
 }
 /*SEARCH CSS ENDS*/
 
@@ -497,29 +537,30 @@ html, body {
     top: 10%;
 }
 
-.event-photo-container, .event-map-container,.event-description-container {
+.event-map-container,.event-description-container {
     float: left;
     height: 100%;
     width: 20%;
-    box-shadow: 0px 5px 20px 0px #000;
+}
+.event-photo-container {
+    max-height: 100%; 
+    overflow: hidden;
+    float: left;
+    width: 20%;
 }
 
-.event-map-container{
-    margin-left: 2.5%;
-}
 
 .event-description-container {
     width: 40%;
-    margin-left: 2.5%;
-    overflow:scroll;
+    overflow: auto;
     overflow-x: hidden;
 }
 
 .event-social-container {
-    width: 12.5%;
-    margin-left: 2.5%;    
+    width: 12.5%;    
     float: left;
     height: 100%;
+    margin-left: 2.5%;
 }
 
 .event-background {
@@ -532,8 +573,12 @@ html, body {
     background-color: rgba(50,50,50,0.2);
 }
 .event-photo {
+    max-width: 150%;
+    max-height: 150%;
+}
+
+.event-photo-default {
     max-width: 100%;
-    max-height: 100%;
 }
 
 .event-description-title, .event-description-text {
@@ -546,30 +591,32 @@ html, body {
     height: 15%;
     padding: 2.5% 0 2.5% 0;
 }
-
-.copy-event-btn, .ticket-event-btn {
+.event-btn, .countdown-timer, .event-category{
     width: 100%;
     height: 20%;
     box-shadow: 0px 5px 20px 0px #000;
     margin: auto;
     text-decoration: none;
     color: #000;
-    margin-top: 20%;
+    margin-top: 12.5%;
 }
 
-.copy-event-btn p, .ticket-event-btn p{
-    width: 75%;
+.event-btn p{
+    width: 50%;
     height: 100%;
     margin-top: 7.5%;
+    margin-left: 7.5%;
+    color: #FFF;
 }
 
-.copy-event-btn *, .ticket-event-btn *{
+.event-btn *{
     float: left;
 }
 
 .event-btn-img {
     max-height: 100%;
     width:25%;
+    margin-left: 5%;
 }
 
 .no-event {
@@ -584,7 +631,22 @@ html, body {
 
 .no-event-text {
     color: #FFF;
-    font-size: 2em;
-    line-height: 3.1em;
+    font-size: 2.5em;
+
 }
 
+.one-line {
+    line-height: 2.5em;
+}
+
+.two-lines {
+    line-height: 1.45em;
+}
+
+.event-category p, .countdown-timer p{
+    color: #FFF;
+    text-align: center;
+    line-height: 2.5em;
+}
+
+/*END EVENT CSS*/
