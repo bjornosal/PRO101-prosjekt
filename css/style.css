@@ -418,6 +418,12 @@ html * {
     width: 20%;
 }
 
+.event-photo-container, .event-map-container, .event-description-container {
+    border: 0.1%;
+    border-style: groove;
+    border-color: rgba(50,50,50,0.2);
+}
+
 
 .event-description-container {
     width: 40%;
