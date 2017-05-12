@@ -36,22 +36,28 @@ a {
 /*COLOURS 2*/
 
 /*Slightly darker grey*/
-.header-container, .logo-container, .menu-dropdown, option, .tip-container, .back-to-top-middle-area{
+.header-container, .logo-container, .menu-dropdown, .tip-container, .back-to-top-middle-area{
     background-color:#393E46;
 }
 
 /*DARKEST*/
-.menu-container, .tip-bar, .form-button, .back-to-top-button, .search-criteria, .search-button, .language-button, .countdown-timer, .event-category, .event-btn  {
+.menu-container, .tip-bar, .form-button, .back-to-top-button, .search-button, .language-button, .countdown-timer, .event-category, .event-btn  {
     background-color: #222831;
 }
 
 /*Slightly less dark grey*/
-.menu-line, .navigation-container:hover, .event-btn:hover, .no-event, .x-line{    
+.menu-line, .navigation-container:hover, .event-btn:hover, .no-event, .x-line {    
     background-color: #00ADB5;
 }
 
+/*White*/
+option, .search-criteria {
+    background-color: whitesmoke;
+}
+
 .search-info-container {
-    background-color: #393E46;
+    /*background-color: #393E46;*/
+    background-color: rgba(50,50,50,0.0);
 }
 
 .event-photo-container, .event-map-container,.event-description-container {
@@ -61,7 +67,6 @@ a {
 .event-photo-container {
     background-color: transparent;
 }
-
 
 
 /*HEADER CSS*/
@@ -300,9 +305,10 @@ html * {
 .search-box {
     max-width: 100%;
     width: 700px;    
-    min-width: 800px;
-    height: 25%;
-    margin-left: 14.125%;
+    min-width: 1200px;
+    height: 40%;
+    /*margin-left: 14.125%;*/
+    margin-left: ;
     position: relative;
     top: 30%;
 }
@@ -314,24 +320,33 @@ html * {
 .search-criteria {
     height: 100%;
     width: 22.5%;
-    box-shadow: 0px 0px 0px 3px #00ADB5;    
+    box-shadow: 0px 0px 0px 4px #00ADB5;    
     border: none;
     color: #00ADB5;
+    border-style: none;
 }
 
-.search-criteria:hover {
-    font-size: 1.1em;
+#category {
+    border-style: none;
+    border-radius: 10px 0px 0px 10px;
+    text-align-last:center;
+}
+
+#category, .search-criteria {
+    text-align-last:center;
 }
 
 .search-criteria, .search-button {
-    background-color: whitesmoke;
     text-align: center;
     font-family: sans-serif;
-    font-size: 1em;
+    font-size: 2em;
     float: left;
     cursor: pointer;
 }
 
+.search-criteria{
+    padding: .5em; 
+}
 .search-button {
     position: relative;
     width:10%;
@@ -339,14 +354,14 @@ html * {
     line-height: 2em;
     color: #FFF;
     background-color: #00ADB5;
-    box-shadow: 0px 0px 0px 3px #00ADB5;    
+    box-shadow: 0px 0px 0px 4px #00ADB5;    
     border-style: none;
+    border-radius: 0 10px 10px 0px;
 }
 
 .search-button:hover {
-    
-    font-size: 1.1em;
-    box-shadow: 0px 0px 0px 3px #00ADB5;
+    font-size: 2.5em;
+    box-shadow: 0px 0px 0px 4px #00ADB5;
 }
 
 .search-info-container {
@@ -355,19 +370,30 @@ html * {
     position: relative;
     margin: auto;
     top: 10%;
-    box-shadow: 0px 1px 1px 0px #000;   
-
 }
 
 .search-info-header {
     text-align: center;
-    color: #FFF;
+    /*color: #FFF;*/
+    color: #595959;
     position: relative;
     top:25%;
     font-family: sans-serif;
-    font-size: 2.5em;
+    font-size: 3em;
     line-height: 0.4em;
 }
+
+
+
+select.search-criteria { /*Fjerner dropdown pil i chrome/firefox*/
+        -moz-appearance: none;
+        -webkit-appearance:none;
+      }
+
+select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
+    display: none;
+}
+
 /*SEARCH CSS ENDS*/
 
 
@@ -759,6 +785,15 @@ html * {
     width: 100%;
     height: 300px;
     background-color: blue;
+    display: none;
+}
+
+
+.login-error {
+    width: 500px;
+    height:300px;
+    background-color: yellow;
+    margin: -550px auto;
     display: none;
 }
 
