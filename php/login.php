@@ -16,9 +16,15 @@
     </head>
     <body>
         <?php
+
+
+        ob_start();
+        session_start();
+
         require 'db-login.php';
         require 'header.php';
         require 'go-to-top.php';
+        include 'session.php';
         ?>
 
         <div class="login-container">
@@ -29,7 +35,7 @@
 
             <form method="POST" class="login-form">
                 <div class="login-label"><b>BRUKERNAVN</b></div>
-                <input class="login-input"type="text" name="username" placeholder="Skriv inn brukernavn">
+                <input class="login-input" type="text" name="username" placeholder="Skriv inn brukernavn">
                 <div class="login-label"><b>PASSORD</b></div>
                 <input class="login-input" type="password" name="password" placeholder="Skriv inn passord">
                 <input class="login-button" type="button" name="submit" value="LOGG PÅ">
@@ -37,7 +43,18 @@
         </div>
 
         <?php
+        if (isset($_POST['submit']) && !empty($_POST['username']) 
+            && !empty($_POST['password'])) {
 
+            if ($_POST['username'] == 'admin' && 
+                $_POST['password'] == 'admin') {
+                $_SESSION['valid'] = true;
+                $_SESSION['timeout'] = time();
+                $_SESSION['username'] = 'admin';
+                echo 'You have entered valid use name and password';
+            }
+        }
+        /*
         session_start();
         $username = $_POST['username'];
         $password = $_POST['password'];
@@ -49,27 +66,36 @@
                 $_SESSION['user_id'] = $row['user_id'];
             }
         } 
-        ?>
 
-        <?php
         if($_SESSION['user_id'] == 1 || $_SESSION['user_id'] == 2) {
         ?>
 
         <script>    
-            window.location.href = "login-success.php";
+            $(document).ready(function(){
+                $('.login-button').click(function() {
+                    <?php session_destroy();?>
+                    $('.login-container').hide();
+                });
+            });
         </script>
-        
         <?php
-        } else { 
-
+        } else {
         ?>
         <script>    
-            window.location.href = "login-error.php";
+
+            $(document).ready(function(){
+                $('.login-button').click(function() { 
+                    console.log("BLERGH")
+                });
+            });
         </script>
         <?php
-        }
-        ?>        
-
-
+        }*/
+        ?>
+        
+        <script>
+            var user = <?php echo json_encode($_SESSION['username']);?>;
+            console.log(user);
+        </script>
     </body>
 </html>

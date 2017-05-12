@@ -735,7 +735,7 @@ html * {
     
 }
 
-.login-button:hover {
+.login-button:hover, .return-login-btn:hover {
     font-size: 1.1em;
 }
 
@@ -744,13 +744,13 @@ html * {
     height: 10%;
     margin-top: 80%;
     margin-left: 10%;
-    font-size: 2.5em;
+    font-size: 1em;
     background-color: #00ADB5;  
     color: #FFF;
     border: none;
     cursor: pointer;
     text-align: center;
-    line-height: 1.5em;
+    line-height: 3.2em;
 }
 /*END LOGIN PAGE CSS*/
 
