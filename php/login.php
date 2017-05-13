@@ -18,13 +18,38 @@
         <?php
 
 
-        ob_start();
         session_start();
 
         require 'db-login.php';
         require 'header.php';
         require 'go-to-top.php';
         include 'session.php';
+ 
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        $message = "";
+        
+        if (isset($_POST['submit']) && !empty($_POST['username']) 
+            && !empty($_POST['password'])) {
+            $statement = $connection -> prepare("SELECT * FROM users WHERE username ='$username' AND password ='$password'");
+            $statement -> execute();
+            if ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
+                $_SESSION['user_id'] = $row['user_id'];
+            }
+        } 
+
+        if($_SESSION['user_id'] != null) {
+            $message = "LOGGER PÅ..."
+        ?>
+
+        <script>   
+            //window.location.href = "database-management.php";
+        </script>
+        <?php
+        } else {
+            $message = "FEIL PÅLOGGINGSINFO";
+
+        }
         ?>
 
         <div class="login-container">
@@ -33,69 +58,33 @@
             </div>
 
 
-            <form method="POST" class="login-form">
+            <form method="POST" class="login-form" action="">
                 <div class="login-label"><b>BRUKERNAVN</b></div>
                 <input class="login-input" type="text" name="username" placeholder="Skriv inn brukernavn">
                 <div class="login-label"><b>PASSORD</b></div>
                 <input class="login-input" type="password" name="password" placeholder="Skriv inn passord">
-                <input class="login-button" type="button" name="submit" value="LOGG PÅ">
+                <input class="login-button" type="submit" name="submit" value="LOGG PÅ">
             </form>
+
+            <div class="login-message">
+                <p><?php
+                    echo $message;
+                    ?>
+                </p>
+            </div>
+
         </div>
 
-        <?php
-        if (isset($_POST['submit']) && !empty($_POST['username']) 
-            && !empty($_POST['password'])) {
 
-            if ($_POST['username'] == 'admin' && 
-                $_POST['password'] == 'admin') {
-                $_SESSION['valid'] = true;
-                $_SESSION['timeout'] = time();
-                $_SESSION['username'] = 'admin';
-                echo 'You have entered valid use name and password';
-            }
-        }
-        /*
-        session_start();
-        $username = $_POST['username'];
-        $password = $_POST['password'];
 
-        if(isset($_POST['submit'])) {
-            $statement = $connection -> prepare("SELECT * FROM users WHERE username ='$username' AND password ='$password'");
-            $statement -> execute();
-            if ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
-                $_SESSION['user_id'] = $row['user_id'];
-            }
-        } 
-
-        if($_SESSION['user_id'] == 1 || $_SESSION['user_id'] == 2) {
-        ?>
-
-        <script>    
-            $(document).ready(function(){
-                $('.login-button').click(function() {
-                    <?php session_destroy();?>
-                    $('.login-container').hide();
-                });
-            });
-        </script>
-        <?php
-        } else {
-        ?>
-        <script>    
-
-            $(document).ready(function(){
-                $('.login-button').click(function() { 
-                    console.log("BLERGH")
-                });
-            });
-        </script>
-        <?php
-        }*/
-        ?>
-        
         <script>
-            var user = <?php echo json_encode($_SESSION['username']);?>;
+            var user = <?php echo json_encode($username);?>;
+            var msg = <?php echo json_encode($message);?>;
+            var uid = <?php echo json_encode($_SESSION['user_id']);?>;
+            console.log(uid);
+            console.log(msg);
             console.log(user);
+
         </script>
     </body>
 </html>
