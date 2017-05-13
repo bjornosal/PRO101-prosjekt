@@ -32,10 +32,18 @@
         if($table == "event") {
             $statement = $connection -> prepare("SELECT * FROM event");
 
-            $statement -> execute();
-            while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
-                $events[] = $row;
-            }
+
+        } else if($table == "tips") {
+            $statement = $connection -> prepare("SELECT * FROM tips");
+
+        } 
+        else if($table == "category") {
+            $statement = $connection -> prepare("SELECT * FROM category");
+        } 
+
+        $statement -> execute();
+        while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
+            $events[] = $row;
         }
         ?>
 
@@ -43,16 +51,21 @@
 
         <div class="database-management-container">
             <div class="info-top-container">
-                <select name="table" class="search-criteria table-search">
-                    <option selected disabled hidden>VELG TABELL</option>
-                    <option value="events">Arrangementer</option>
-                    <option value="category">Kategori</option>
-                    <option value="tip">Tips</option>
-                    <option value="users">Brukere</option>
-                </select>
+
+                <!--Needed if multiple tables in one location with dropdown is what we will go for.-->
+                <?php/*     <form>
+                    <select name="table" class="search-criteria table-search">
+                        <option selected disabled hidden>VELG TABELL</option>
+                        <option value="event">Arrangementer</option>
+                        <option value="category">Kategorier</option>
+                        <option value="tips">Tips</option>
+                    </select>
+                    <input type="submit" value="SØK" class="search-criteria table-search">
+                </form>*/?>
                 <div class="table-name">
-                    <?php $tbl = strtoupper($table);
-                    echo $tbl?>
+                    ARRANGEMENTER
+                    <?php/* $tbl = strtoupper($table);
+                    echo $tbl*/?>
                 </div>
 
             </div>
@@ -67,20 +80,71 @@
                 <div class="table-info-column table-title"><?php echo $event['title']?></div>
                 <!--Solution required for updating the page on deletion that updates when the post has happened.-->
                 <form method="POST" action="" onsubmit="setTimeout(function () { window.location.reload(); }, 10)">
-                    <input type="submit" value="X" name="delete">
+                    <input type="submit" value="X" name="delete_event">
                     <input type="hidden" name="del_id" value="<?php echo $event["event_id"]?>"/> 
                 </form>
 
             </div>
             <?php }
-                    if(isset($_POST['delete'])){
-                        $id = $_POST['del_id'];
-                        $statement = $connection -> prepare("DELETE FROM event WHERE event_id=$id");
-                        $statement -> execute();
-            
+            if(isset($_POST['delete_event'])){
+                $id = $_POST['del_id'];
+                $statement = $connection -> prepare("DELETE FROM event WHERE event_id=$id");
+                $statement -> execute();
+
             }
             ?>
 
+
+        </div>
+
+        <div class="database-management-container">
+            <div class="info-top-container">
+                <?php 
+                $statement = $connection -> prepare("SELECT * FROM tips");
+                $statement -> execute();
+
+                while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
+                    $tips[] = $row;
+                }?>
+
+                <!--Needed if multiple tables in one location with dropdown is what we will go for.-->
+                <?php/*     <form>
+                    <select name="table" class="search-criteria table-search">
+                        <option selected disabled hidden>VELG TABELL</option>
+                        <option value="event">Arrangementer</option>
+                        <option value="category">Kategorier</option>
+                        <option value="tips">Tips</option>
+                    </select>
+                    <input type="submit" value="SØK" class="search-criteria table-search">
+                </form>*/?>
+                <div class="table-name">
+                    TIPS
+                </div>
+            </div>
+            <!--One header for each table? -->
+            <div class="table-info-container">
+                <div class="table-info-column table-event_id">tip_id</div>
+                <div class="table-info-column table-title">event_link</div>
+            </div>
+            <?php foreach($tips as $tip) {?>
+            <div class="table-info-container">
+                <div class="table-info-column table-event_id"><?php echo $tip["tip_id"]?></div>
+                <div class="table-info-column table-title"><?php echo $tip['event_link']?></div>
+                <!--Solution required for updating the page on deletion that updates when the post has happened.-->
+                <form method="POST" action="" onsubmit="setTimeout(function () { window.location.reload(); }, 10)">
+                    <input type="submit" value="X" name="delete_tip">
+                    <input type="hidden" name="del_id" value="<?php echo $tip["tip_id"]?>"/> 
+                </form>
+
+            </div>
+            <?php }
+            if(isset($_POST['delete_tip'])){
+                $id = $_POST['del_id'];
+                $statement = $connection -> prepare("DELETE FROM tips WHERE tip_id=$id");
+                $statement -> execute();
+
+            }
+            ?>
 
         </div>
     </body>
