@@ -29,8 +29,6 @@
             <div class="event-background">
 
                 <?php 
-                // Removed statement and exchanged with a join that uses the category table aswell
-                //$statement = $connection -> prepare('SELECT * FROM results');
                 $statement = $connection -> prepare('SELECT * FROM results JOIN category AS ca ON results.category_id = ca.category_id');
 
                 $statement -> execute();

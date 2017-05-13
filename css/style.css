@@ -50,14 +50,13 @@ a {
     background-color: #00ADB5;
 }
 
-/*White*/
+/*White #### FIND HEXA COLOR FOR THIS*/ 
 option, .search-criteria {
     background-color: whitesmoke;
 }
 
-.search-info-container {
+.search-info-container{
     /*background-color: #393E46;*/
-    background-color: rgba(50,50,50,0.0);
 }
 
 .event-photo-container, .event-map-container,.event-description-container {
@@ -324,6 +323,7 @@ html * {
     border: none;
     color: #00ADB5;
     border-style: none;
+    padding: .5em; 
 }
 
 #category {
@@ -344,9 +344,7 @@ html * {
     cursor: pointer;
 }
 
-.search-criteria{
-    padding: .5em; 
-}
+
 .search-button {
     position: relative;
     width:10%;
@@ -791,6 +789,59 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
 
 /*DB MANAGEMENT PAGE CSS*/
 
+.database-management-container {
+    width: 1000px;
+    /*Needs to be removed later and change size depending on */
+    min-height: 600px;
+    background-color: rgba(50,50,50,0.5);
+    margin: 5% auto;
+}
 
+.table-search {
+    width: 150px;
+    height: 100%;
+    font-size: 1em;
+    box-shadow: none;
+    display: block;
+    border: 2px solid #00ADB5;
+}
 
+.table-info-container {
+    width: 98%;
+    height: 35px;
+    background-color: white;
+    margin: 10px auto;
+}
 
+.table-name {
+    width: 998px;
+    height:100%;
+    background-color: whitesmoke;
+    border: 2px solid #00ADB5;
+    line-height: 2em;
+    color: #00ADB5;
+    text-align: center;
+}
+
+.table-info-container *{
+    float: left;
+}
+
+.table-info-column{
+    height: 100%;
+    background-color: blue;
+    margin: 0 2.5px 0 2.5px;
+    padding: 0 5px 0 5px;
+    line-height: 2em;
+    
+}
+
+.info-top-container {
+    width: 100%;
+    height: 35px;
+}
+
+.table-info {
+    width:100%;
+    margin-top: 35px;
+}

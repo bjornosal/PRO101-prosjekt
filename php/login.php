@@ -43,7 +43,7 @@
         ?>
 
         <script>   
-            //window.location.href = "database-management.php";
+            window.location.href = "database-management.php";
         </script>
         <?php
         } else {
