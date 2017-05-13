@@ -26,9 +26,17 @@
 
         $table = $_POST['table'];
         if($table == 0) {
-            $table = 'event';
+            $table = "event";
         }
 
+        if($table == "event") {
+            $statement = $connection -> prepare("SELECT * FROM event");
+
+            $statement -> execute();
+            while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
+                $events[] = $row;
+            }
+        }
         ?>
 
         <!--CHANGE DEPENDING ON CHOSEN TABLEs-->
@@ -49,56 +57,30 @@
 
             </div>
             <!--One header for each table? -->
-            <!--   <div class="table-info-container">
-<div class="table-info-column">event_id</div>
-<div class="table-info-column">title</div>
-<div class="table-info-column">start_time</div>
-<div class="table-info-column">event_date</div>
-<div class="table-info-column">description</div>
-<div class="table-info-column">price</div>
-<div class="table-info-column">event_link</div>
-<div class="table-info-column">image_path</div>
-<div class="table-info-column">age_limit</div>
-<div class="table-info-column">category_id</div>
-<div class="table-info-column">Latitude</div>
-<div class="table-info-column">Longitude</div>
+            <div class="table-info-container">
+                <div class="table-info-column table-event_id">EVENT_ID</div>
+                <div class="table-info-column table-title">TITLE</div>
+            </div>
+            <?php foreach($events as $event) {?>
+            <div class="table-info-container">
+                <div class="table-info-column table-event_id"><?php echo $event["event_id"]?></div>
+                <div class="table-info-column table-title"><?php echo $event['title']?></div>
 
-</div>-->
+                <form method="POST">
+                    <input type="submit" value="X" name="delete" action="">
+                    <input type="hidden" name="del_id" value="<?php echo $event["event_id"]?>"/> 
+                </form>
 
-            <div class="table-info"></div>
-            <table>
-                <?php
-                    $statement = $connection -> prepare("SELECT * FROM '$table'");
-                    $statement -> execute();
-                    while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
-                        echo "<tr><td>"$row['event_id']"</td>
-                        <td>"$row['title']"</td>
-                        <td>""</td>
-                        <td>""</td>
-                        <td>""</td>
-                        <tr> "
+            </div>
+            <?php }
+                    if(isset($_POST['delete'])){
+                        $id = $_POST['del_id'];
+                        $statement = $connection -> prepare("DELETE FROM event WHERE event_id=$id");
+                        $statement -> execute();
+                    }
+            ?>
 
-                    }?>
 
-            </table>
-
-            <table>
-                <tr>
-                    <th>Firstname</th>
-                    <th>Lastname</th> 
-                    <th>Age</th>
-                </tr>
-                <tr>
-                    <td>Jill</td>
-                    <td>Smith</td> 
-                    <td>50</td>
-                </tr>
-                <tr>
-                    <td>Eve</td>
-                    <td>Jackson</td> 
-                    <td>94</td>
-                </tr>
-            </table>
         </div>
     </body>
 </html>

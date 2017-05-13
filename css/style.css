@@ -795,6 +795,7 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
     min-height: 600px;
     background-color: rgba(50,50,50,0.5);
     margin: 5% auto;
+    padding-bottom: 2%;
 }
 
 .table-search {
@@ -807,10 +808,10 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
 }
 
 .table-info-container {
-    width: 98%;
+    width: 800px;
     height: 35px;
     background-color: white;
-    margin: 10px auto;
+    margin: 10px 100px;
 }
 
 .table-name {
@@ -829,11 +830,8 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
 
 .table-info-column{
     height: 100%;
-    background-color: blue;
-    margin: 0 2.5px 0 2.5px;
-    padding: 0 5px 0 5px;
     line-height: 2em;
-    
+    text-align: center;
 }
 
 .info-top-container {
@@ -844,4 +842,17 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
 .table-info {
     width:100%;
     margin-top: 35px;
+}
+
+.table-event_id {
+    width:100px;
+}
+
+.table-title {
+    width: 599px;
+    border-left: 1px solid #000;
+}
+
+.table-delete-row {
+    width: 100px;
 }
