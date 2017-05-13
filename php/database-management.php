@@ -65,9 +65,9 @@
             <div class="table-info-container">
                 <div class="table-info-column table-event_id"><?php echo $event["event_id"]?></div>
                 <div class="table-info-column table-title"><?php echo $event['title']?></div>
-
-                <form method="POST">
-                    <input type="submit" value="X" name="delete" action="">
+                <!--Solution required for updating the page on deletion that updates when the post has happened.-->
+                <form method="POST" action="" onsubmit="setTimeout(function () { window.location.reload(); }, 10)">
+                    <input type="submit" value="X" name="delete">
                     <input type="hidden" name="del_id" value="<?php echo $event["event_id"]?>"/> 
                 </form>
 
@@ -77,7 +77,8 @@
                         $id = $_POST['del_id'];
                         $statement = $connection -> prepare("DELETE FROM event WHERE event_id=$id");
                         $statement -> execute();
-                    }
+            
+            }
             ?>
 
 
