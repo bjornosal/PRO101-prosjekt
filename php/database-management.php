@@ -17,59 +17,25 @@
     <body>
 
         <?php 
-        session_destroy();
 
         require 'db-login.php';
         require 'header.php';
         require 'go-to-top.php';
         include 'session.php';
 
-        $table = $_POST['table'];
-        if($table == 0) {
-            $table = "event";
-        }
-
-        if($table == "event") {
-            $statement = $connection -> prepare("SELECT * FROM event");
-
-
-        } else if($table == "tips") {
-            $statement = $connection -> prepare("SELECT * FROM tips");
-
-        } 
-        else if($table == "category") {
-            $statement = $connection -> prepare("SELECT * FROM category");
-        } 
-
+        $statement = $connection -> prepare("SELECT * FROM event");
         $statement -> execute();
         while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
             $events[] = $row;
         }
         ?>
 
-        <!--CHANGE DEPENDING ON CHOSEN TABLEs-->
 
+        <a href="login.php"><div class="logout-btn">LOGG UT</div></a>
         <div class="database-management-container">
             <div class="info-top-container">
-
-                <!--Needed if multiple tables in one location with dropdown is what we will go for.-->
-                <?php/*     <form>
-                    <select name="table" class="search-criteria table-search">
-                        <option selected disabled hidden>VELG TABELL</option>
-                        <option value="event">Arrangementer</option>
-                        <option value="category">Kategorier</option>
-                        <option value="tips">Tips</option>
-                    </select>
-                    <input type="submit" value="SØK" class="search-criteria table-search">
-                </form>*/?>
-                <div class="table-name">
-                    ARRANGEMENTER
-                    <?php/* $tbl = strtoupper($table);
-                    echo $tbl*/?>
-                </div>
-
+                <div class="table-name">ARRANGEMENTER</div>
             </div>
-            <!--One header for each table? -->
             <div class="table-info-container">
                 <div class="table-info-column table-event_id">EVENT_ID</div>
                 <div class="table-info-column table-title">TITLE</div>
@@ -90,11 +56,8 @@
                 $id = $_POST['del_id'];
                 $statement = $connection -> prepare("DELETE FROM event WHERE event_id=$id");
                 $statement -> execute();
-
             }
             ?>
-
-
         </div>
 
         <div class="database-management-container">
@@ -107,21 +70,8 @@
                     $tips[] = $row;
                 }?>
 
-                <!--Needed if multiple tables in one location with dropdown is what we will go for.-->
-                <?php/*     <form>
-                    <select name="table" class="search-criteria table-search">
-                        <option selected disabled hidden>VELG TABELL</option>
-                        <option value="event">Arrangementer</option>
-                        <option value="category">Kategorier</option>
-                        <option value="tips">Tips</option>
-                    </select>
-                    <input type="submit" value="SØK" class="search-criteria table-search">
-                </form>*/?>
-                <div class="table-name">
-                    TIPS
-                </div>
+                <div class="table-name">TIPS</div>
             </div>
-            <!--One header for each table? -->
             <div class="table-info-container">
                 <div class="table-info-column table-event_id">tip_id</div>
                 <div class="table-info-column table-title">event_link</div>
@@ -147,5 +97,7 @@
             ?>
 
         </div>
+
+        <div class="logout-btn"></div>
     </body>
 </html>

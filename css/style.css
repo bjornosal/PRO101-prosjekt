@@ -792,9 +792,9 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
 .database-management-container {
     width: 1000px;
     /*Needs to be removed later and change size depending on */
-    min-height: 600px;
+    min-height: 200px;
     background-color: rgba(50,50,50,0.5);
-    margin: 5% auto;
+    margin: 2% auto;
     padding-bottom: 2%;
 }
 
@@ -855,4 +855,17 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
 
 .table-delete-row {
     width: 100px;
+}
+
+.logout-btn {
+    width: 100px;
+    height: 50px;
+    margin: 2% auto;    
+    line-height: 3em;
+    text-align: center;
+    color: #FFF;
+    background-color: #222831; 
+    box-shadow: 0px 0px 4px 2px #00ADB5;
+    border-style: none;
+    border-radius: 10px;
 }

@@ -16,19 +16,20 @@
     </head>
     <body>
         <?php
-
-
         session_start();
+        unset($_SESSION['username']);
+        unset($_SESSION['password']);
+        unset($_SESSION['user_id']);
 
         require 'db-login.php';
         require 'header.php';
         require 'go-to-top.php';
         include 'session.php';
- 
+
         $username = $_POST['username'];
         $password = $_POST['password'];
         $message = "";
-        
+
         if (isset($_POST['submit']) && !empty($_POST['username']) 
             && !empty($_POST['password'])) {
             $statement = $connection -> prepare("SELECT * FROM users WHERE username ='$username' AND password ='$password'");
@@ -41,7 +42,6 @@
         if($_SESSION['user_id'] != null) {
             $message = "LOGGER PÅ..."
         ?>
-
         <script>   
             window.location.href = "database-management.php";
         </script>
