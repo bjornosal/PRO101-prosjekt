@@ -780,9 +780,11 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
 .login-message{
     width: 90%;
     height: 20%;
-    background-color: #FFF;
-    color: #000;
-    margin: -50% 0 0 5%;
+    color: #FFF;
+    margin: -60% 0 0 5%;
+    text-align: center;
+    line-height: 1em;
+    font-size: 2.5em;
 }
 
 /*END LOGIN PAGE CSS*/

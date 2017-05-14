@@ -37,19 +37,22 @@
             if ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
                 $_SESSION['user_id'] = $row['user_id'];
             }
-        } 
-
-        if($_SESSION['user_id'] != null) {
-            $message = "LOGGER PÅ..."
+            if($_SESSION['user_id'] != null) {
+                $message = "LOGGER PÅ..."
         ?>
         <script>   
             window.location.href = "database-management.php";
         </script>
         <?php
-        } else {
-            $message = "FEIL PÅLOGGINGSINFO";
+            } else {
+                $message = "FEIL PÅLOGGINGSINFO";
 
+            }
+        } else if(isset($_POST['submit']) && empty($_POST['username']) 
+            && empty($_POST['password'])) {
+            $message = "MANGLER INFO";
         }
+
         ?>
 
         <div class="login-container">
