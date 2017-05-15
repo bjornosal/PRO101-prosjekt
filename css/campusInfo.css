@@ -2,11 +2,23 @@
     margin: 0;
 }
 
+
+html, body {
+    height: 100%;
+}
+
 h1  {
     font-family: monospace;
     text-align: left; 
     padding: 0.75em;
     color: orange;
+}
+
+p {
+    text-align: justify;
+    font-size: 100%;
+    margin-left: 20px;
+    text-indent: 20px;
 }
 
 #campusHeader {
@@ -26,7 +38,7 @@ h1  {
 .arrow {
   position: absolute;
   left: 50%;
-  margin-left:-20px;
+  margin-left: -20px;
   margin-top: 20px;
   width: 40px;
   height: 40px;
@@ -76,17 +88,29 @@ h1  {
     -o-transform: translateY(-15px);
     transform: translateY(-15px); } }
 
+#Fjerdingen, #Vulkan, #Brenneriveien {
+    font-family: monospace;
+    color: black;
+    font-size: 0.5em;
+    position: relative;
+    top: 2em;
+    transition: color 0.3s linear;
+    -webkit-transition: color 0.3s linear;
+    -moz-transition: color 0.3s linear;
+    background-color: white;
+    border: solid black 0.05em;
+    padding: 0.5em;
+    
 
-html, body {
-    height: 100%;
 }
 
-p {
-    text-align: justify;
-    font-size: 100%;
-    margin-left: 20px;
-    text-indent: 20px;
+
+#Fjerdingen:hover, #Vulkan:hover, #Brenneriveien:hover {
+    color: orange;
+    cursor: pointer;
+   
 }
+
 
 
 .photo {
