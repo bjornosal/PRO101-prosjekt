@@ -18,6 +18,8 @@
     </head>
 
     <body> 
+        
+     
 
         <?php 
         require 'header.php'; 
@@ -29,12 +31,26 @@
 
 
     
-        <div class = "photo sectOne"><div id = "campusHeader">Campuser<div class = "arrow bounce"></div><h2 id = "Fjerdingen">Fjerdingen</h2><h2 id = "Vulkan">Vulkan</h2><h2 id = "Brenneriveien">Brenneriveien</h2></div></div>
-        <div class = "text"><h1>Fjerdingen</h1><div id = "mapFjerdingen"></div><p>Bacon ipsum dolor amet spare ribs leberkas corned beef brisket tri-tip tail, kielbasa turkey jowl biltong salami filet mignon chicken. Leberkas shoulder short ribs ham, short loin frankfurter turkey landjaeger venison porchetta tri-HDHHDHDHDHDHDHD frankfurter. Burgdoggen shank turducken, frankfurter fatback meaDDDDDDDDball spare ribs t-bone. T-bone pig venison, ribeye spare ribs jerky cupim kielbasa sausage beef meatball. Meatball pastrami jowl, alcatra brisket sirloin tail short loin. Sirloin shoulder beef ribs chuck.Bacon ipsum dolor amet spare ribs leberkas corned beef brisket tri-tip tail, kielbasa turkey jowl biltong salami filet mignon chicken. Leberkas shoulder short ribs ham, short loin frankfurter turkey landjaeger venison porchetta tri-HDHHDHDHDHDHDHD frankfurter. Burgdoggen shank turducken, frankfurter fatback meaDDDDDDDDball spare ribs t-bone. T-bone pig venison, ribeye spare ribs jerky cupim kielbasa sausage beef meatball. Meatball pastrami jowl, alcatra brisket sirloin tail short loin. Sirloin shoulder beef ribs chuck</p></div>
+        <div class = "photo sectOne">
+            
+            <h2 id = "Fjerdingen" a onclick= "initScroll('text'); return false;" href = "#">Fjerdingen</h2>
+            <h2 id = "Vulkan" a onclick= "initScroll('vulkan'); return false;" href = "#">Vulkan</h2>
+            <h2 id = "Brenneriveien" a onclick= "initScroll('brenneriveien'); return false;" href = "#">Brenneriveien</h2>
+            
+        </div>
+        
+            <div class = "text"><h1>Fjerdingen</h1><div id = "mapFjerdingen"></div><p>Bacon ipsum dolor amet spare ribs leberkas corned beef brisket tri-tip tail, kielbasa turkey jowl biltong salami filet mignon chicken. Leberkas shoulder short ribs ham, short loin frankfurter turkey landjaeger venison porchetta tri-HDHHDHDHDHDHDHD frankfurter. Burgdoggen shank turducken, frankfurter fatback meaDDDDDDDDball spare ribs t-bone. T-bone pig venison, ribeye spare ribs jerky cupim kielbasa sausage beef meatball. Meatball pastrami jowl, alcatra brisket sirloin tail short loin. Sirloin shoulder beef ribs chuck.Bacon ipsum dolor amet spare ribs leberkas corneLOLd beef brisket tri-tip tail, kielbasa turkey jowl biltong salami filet mignon chicken. Leberkas shoulder short ribs ham, short loin frankfurter turkey landjaeger venison porchetta tri-HDHHDHDHDHDHDHD frankfurter. Burgdoggen shank turducken, frankfurter fatback meaDDDDDDDDball spare ribs t-bone. T-bone pig venison, ribeye spare ribs jerky cupim kielbasa sausage beef meatball. Meatball pastrami jowl, alcatra brisket sirloin tail short loin. Sirloin shoulder beef ribs chuck</p></div>
+        
         <div class = "photo sectTwo"></div>
-        <div class = "text"><h1>Vulkan</h1><div id = "mapVulkan"></div><p>Bacon ipsum dolor amet spare ribs leberkas corned beef brisket tri-tip tail, kielbasa turkey jowl biltong salami filet mignon chicken. Leberkas shoulder short ribs ham, short loin frankfurter turkey landjaeger venison porchetta tri-tip hamburger biltong chicken. Hamburger pastrami strip steak andouille frankfurter. Burgdoggen shank turducken, frankfurter fatback meatball spare ribs t-bone. T-bone pig venison, ribeye spare ribs jerky cupim kielbasa sausage beef meatball. Meatball pastrami jowl, alcatra brisket sirloin tail short loin. Sirloin shoulder beef ribs chuck.</p></div>
+        
+        
+        <div id = "vulkan">
+            <div class = "text"><h1>Vulkan</h1><div id = "mapVulkan"></div><p>Bacon ipsum dolor amet spare ribs leberkas corned beef brisket tri-tip tail, kielbasa turkey jowl biltong salami filet mignon chicken. Leberkas shoulder short ribs ham, short loin frankfurter turkey landjaeger venison porchetta tri-tip hamburger biltong chicken. Hamburger pastrami strip steak andouille frankfurter. Burgdoggen shank turducken, frankfurter fatback meatball spare ribs t-bone. T-bone pig venison, ribeye spare ribs jerky cupim kielbasa sausage beef meatball. Meatball pastrami jowl, alcatra brisket sirloin tail short loin. Sirloin shoulder beef ribs chuck.</p></div></div>
+        
         <div class = "photo sectThree"></div>
-        <div class = "text"><h1>Brenneriveien</h1><div id = "mapBrenneriveien"></div><p>Bacon ipsum dolor amet spare ribs leberkas corned beef brisket tri-tip tail, kielbasa turkey jowl biltong salami filet mignon chicken. Leberkas shoulder short ribs ham, short loin frankfurter turkey landjaeger venison porchetta tri-tip hamburger biltong chicken. Hamburger pastrami strip steak andouille frankfurter. Burgdoggen shank turducken, frankfurter fatback meatball spare ribs t-bone. T-bone pig venison, ribeye spare ribs jerky cupim kielbasa sausage beef meatball. Meatball pastrami jowl, alcatra brisket sirloin tail short loin. Sirloin shoulder beef ribs chuck.</p></div>
+        
+        <div id = "brenneriveien">
+            <div class = "text"><h1>Brenneriveien</h1><div id = "mapBrenneriveien"></div><p>Bacon ipsum dolor amet spare ribs leberkas corned beef brisket tri-tip tail, kielbasa turkey jowl biltong salami filet mignon chicken. Leberkas shoulder short ribs ham, short loin frankfurter turkey landjaeger venison porchetta tri-tip hamburger biltong chicken. Hamburger pastrami strip steak andouille frankfurter. Burgdoggen shank turducken, frankfurter fatback meatball spare ribs t-bone. T-bone pig venison, ribeye spare ribs jerky cupim kielbasa sausage beef meatball. Meatball pastrami jowl, alcatra brisket sirloin tail short loin. Sirloin shoulder beef ribs chuck.</p></div></div>
 
         
         
@@ -82,9 +98,45 @@
                 
             }
             
+
+
+            
+            
+            
         </script>
 
-        <script async defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDbzIJIgHVAYw4oXACRP_XCt3Mnj_3T0dI&callback=initMap"></script>   
+        <script async defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDbzIJIgHVAYw4oXACRP_XCt3Mnj_3T0dI&callback=initMap"></script>  
+        
+        <script>
+            
+      
+            var marginY = 0;
+            var destination = 0;
+            var speed = 13;
+            var scroller = null;
+            
+            
+            function initScroll(elementId){
+                destination = document.getElementById(elementId).offsetTop;
+                
+                scroller = setTimeout(function() {
+                    initScroll(elementId);
+                }, 1);
+                
+                marginY = marginY + speed;
+                
+                if (marginY >= destination){
+                    clearTimeout();
+                }
+                
+                window.scroll(0, marginY);
+                                      
+                                      
+                                      
+                //console.log(destination);
+            }
+        
+        </script>
 
 
 
