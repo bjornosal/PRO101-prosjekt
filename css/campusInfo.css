@@ -76,7 +76,7 @@ p {
 
 }
 
-.text {
+.text1, .text2, .text3 {
     height: 35%;
     background-color: #393E46;
     text-align: left;
@@ -260,7 +260,7 @@ html * {
     bottom:0;
     left: 0;
     z-index: 100;
-    height: 250px;
+    height: 255px;
 }
 
 .menu-dropdown a{

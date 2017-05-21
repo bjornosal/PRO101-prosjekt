@@ -161,6 +161,7 @@ html * {
     bottom:0;
     left: 0;
     z-index: 99;
+    height: 255px;
 }
 
 .menu-dropdown a{
