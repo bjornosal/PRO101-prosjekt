@@ -27,15 +27,13 @@
         require 'tip-box.php';
         require 'go-to-top.php';
         ?>
-        
-
 
     
         <div class = "photo sectOne">
+            <div id = "buttonContainer"><h2 id = "Fjerdingen" onclick = "initScroll('text1'); return false;"  href = "#">Fjerdingen</h2>
+            <h2 id = "Vulkan" onclick = "initScroll('text2'); return false;"  href = "#">Vulkan</h2>
+                <h2 id = "Brenneriveien" onclick = "initScroll('text3'); return false;" href = "#">Brenneriveien</h2></div>
             
-            <h2 id = "Fjerdingen" a href = "#" onclick ="return false;" onmousedown="autoScrollTo('text1');">Fjerdingen</h2>
-            <h2 id = "Vulkan" a href = "#" onclick ="return false;" onmousedown="autoScrollTo('text2');">Vulkan</h2>
-            <h2 id = "Brenneriveien" a href = "#" onclick ="return false;" onmousedown="autoScrollTo('text3');">Brenneriveien</h2>
             
         </div>
         
@@ -109,59 +107,51 @@
         
         <script>
             
-      
-            var marginY = 0;
-            var destination = 0;
-            var speed = 13;
-            var scroller = null;
+var marginY = 0;
+var destination = 0;
+var speed = 10;
+var scroller = null;
+
+function initScroll(elementId){
+	destination = document.getElementById(elementId).offsetTop;
+	
+	scroller = setTimeout(function(){
+		initScroll(elementId);
+	}, 1);
+
+	marginY = marginY + speed;
+
+	if(marginY >= destination){
+		clearTimeout(scroller);
+	}	
+
+	window.scroll(0, marginY);
+
+	//console.log(destination);
+}
+
+window.onscroll = function(){
+	marginY = this.pageYOffset;	
+};
+
+function toTop(){
+	scroller = setTimeout(function(){
+		toTop();
+	}, 1);
+
+	marginY = marginY - speed;
+
+	if(marginY <= 0){
+		clearTimeout(scroller);
+	}	
+
+	window.scroll(0, marginY);
+}
+
             
             
-            function initScroll(elementId){
-                destination = document.getElementById(elementId).offsetTop;
-                
-                scroller = setTimeout(function() {
-                    initScroll(elementId);
-                }, 1);
-                
-                marginY = marginY + speed;
-                
-                if (marginY >= destination){
-                    clearTimeout();
-                }
-                
-                window.scroll(0, marginY);
-                                      
-                                      
-                                      
-                //console.log(destination);
-            }
-        
-            
-            /*
-                 var scrollY = 0;
-            var distance = 40;
-            var speed = 24;
-            
-            function autoScrollTo(el) {
-                var currentY = window.pageYOffset;
-                var targetY = document.getElementById(el).offsetTop;
-                var bodyHeight = document.body.offsetHeight;
-                var yPos = currentY + window.innerHeight;
-                var animator = setTimeout('autoScrollTo(\''+el+'\')', speed);
-                
-            if (yPos > bodyHeight) {
-                clearTimeout(animator); 
-            } else {
-                if (currentY < targetY - distance) {
-                    scrollY = currentY + distance;
-                    window.scroll(0, scrollY);
-                } else {
-                    clearTimeout(animator);
-                }
-            }
-                
-            }  */
-            
+               
+       
         </script>
 
 
