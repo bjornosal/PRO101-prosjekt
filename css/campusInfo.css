@@ -4,7 +4,7 @@
 }
 
 html, body {
-    height: 100%;
+   
 }
 
 h1  {
@@ -23,6 +23,7 @@ p {
     text-indent: 20px;
     letter-spacing: 0.1em;
     color: white;
+    font-weight: bold;
 }
 
 #buttonContainer {
@@ -90,6 +91,7 @@ p {
     background-color: #393E46;
     text-align: left;
     display: inline-table;
+
 
 }
 
@@ -177,7 +179,7 @@ p {
 /*HEADER CSS*/
 html * {
 
-    font-family: monospace;
+    font-family: sans-serif;
 }
 .header-container {
     height:90px;

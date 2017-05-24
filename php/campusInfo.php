@@ -37,13 +37,13 @@
             
         </div>
         
-            <div class = "text1"><h1>Fjerdingen</h1><div id = "mapFjerdingen"></div><p>Bacon ipsum dolor amet spare ribs leberkas corned beef brisket tri-tip tail, kielbasa turkey jowl biltong salami filet mignon chicken. Leberkas shoulder short ribs ham, short loin frankfurter turkey landjaeger venison porchetta tri-HDHHDHDHDHDHDHD frankfurter. Burgdoggen shank turducken, frankfurter fatback meaDDDDDDDDball spare ribs t-bone. T-bone pig venison, ribeye spare ribs jerky cupim kielbasa sausage beef meatball. Meatball pastrami jowl, alcatra brisket sirloin tail short loin. Sirloin shoulder beef ribs chuck.Bacon ipsum dolor amet spare ribs leberkas corneLOLd beef brisket tri-tip tail, kielbasa turkey jowl biltong salami filet mignon chicken. Leberkas shoulder short ribs ham, short loin frankfurter turkey landjaeger venison porchetta tri-HDHHDHDHDHDHDHD frankfurter. Burgdoggen shank turducken, frankfurter fatback meaDDDDDDDDball spare ribs t-bone. T-bone pig venison, ribeye spare ribs jerky cupim kielbasa sausage beef meatball. Meatball pastrami jowl, alcatra brisket sirloin tail short loin. Sirloin shoulder beef ribs chuck</p></div>
+            <div class = "text1"><h1>Fjerdingen</h1><div id = "mapFjerdingen"></div><p>Fjerdingen er Westerdals ACT sitt nye tilskudd til campus-familien, og stod ferdig til bruk høsten 2016. Navnet stammer fra gaten campusen ligger i, Christian Krohgs gate, som helt tilbake til 1600-tallet het Fjerdingens gate. Nå yrer gaten med studenter fra både kommunikasjon, teknologi og kunst. Mangfoldet av studenter fra maskedesign til programmering skaper et unikt miljø. Du sitter sjeldent alene i kantina på Fjerdingen. Fra torsdag-fredag er det dessuten også mulig å nyte en iskald pils i kantina som forvandles til Sjenkestua kl 17:00. Fjerdingen er dessuten også et steinkast unna Grünerløkka, Oslos svar på Soho i New York. Det skal ikke mer en enn liten spasertur ut av Fjerdingen for å utforske hva Oslo's hippeste strøk har å by på.</p></div>
         
         <div class = "photo sectTwo"></div>
         
         
      
-            <div class = "text2"><h1>Vulkan</h1><div id = "mapVulkan"></div><p>Bacon ipsum dolor amet spare ribs leberkas corned beef brisket tri-tip tail, kielbasa turkey jowl biltong salami filet mignon chicken. Leberkas shoulder short ribs ham, short loin frankfurter turkey landjaeger venison porchetta tri-tip hamburger biltong chicken. Hamburger pastrami strip steak andouille frankfurter. Burgdoggen shank turducken, frankfurter fatback meatball spare ribs t-bone. T-bone pig venison, ribeye spare ribs jerky cupim kielbasa sausage beef meatball. Meatball pastrami jowl, alcatra brisket sirloin tail short loin. Sirloin shoulder beef ribs chuck.</p></div>
+            <div class = "text2"><h1>Vulkan</h1><div id = "mapVulkan"></div><p>Vulkan er Fjerdingen's kule og litt eldre storesøster, og befinner seg 5-10 minutters gange unna. Miljøet rundt Vulkan er preget av </p></div>
         
         <div class = "photo sectThree"></div>
         
