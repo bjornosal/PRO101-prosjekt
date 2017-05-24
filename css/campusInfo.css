@@ -3,10 +3,6 @@
     margin: 0;
 }
 
-html, body {
-    height: 100%;
-}
-
 h1  {
     font-family: sans-serif;
     text-align: left; 
@@ -26,17 +22,16 @@ p {
 }
 
 #buttonContainer {
-    height: auto;
-    width: 80%;
+    width: 860px;
+    margin-top: 500px;
     margin: auto;
-    margin-left: 20%;
     
 }
 
 
-#Fjerdingen, #Vulkan, #Brenneriveien {
+.button {
     font-family: sans-serif;
-    color: white;
+    color: #FFF;
     font-size: 2em;
     width: 8em;
     background: #393E46;
@@ -51,21 +46,6 @@ p {
     -moz-transition: color 0.15s linear;
     margin-top: 40%;
     display: inline-block;
-
-
-
-}
-
-#Fjerdingen {
-
-}
-
-#Vulkan {
-    
-}
-
-#Brenneriveien {
-    
 }
 
 #Fjerdingen:hover, #Vulkan:hover, #Brenneriveien:hover {
