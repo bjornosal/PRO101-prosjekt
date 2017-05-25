@@ -363,9 +363,10 @@ html * {
 
 
 select.search-criteria { /*Fjerner dropdown pil i chrome/firefox*/
-        -moz-appearance: none;
-        -webkit-appearance:none;
-      }
+  -moz-appearance: none;
+  -webkit-appearance:none;
+  -webkit-border-radius: 0px;
+}
 
 select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
     display: none;
