@@ -8,7 +8,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <link rel="icon" type="image/png" href="../photos/icons/cal-icon.png">
 
-        <title>Pålogging ADMIN</title>
+        <title>Database Pålogging</title>
 
         <link href="../css/style.css" rel="stylesheet" type="text/css">
 
@@ -77,17 +77,5 @@
             </div>
 
         </div>
-
-
-
-        <script>
-            var user = <?php echo json_encode($username);?>;
-            var msg = <?php echo json_encode($message);?>;
-            var uid = <?php echo json_encode($_SESSION['user_id']);?>;
-            console.log(uid);
-            console.log(msg);
-            console.log(user);
-
-        </script>
     </body>
 </html>
