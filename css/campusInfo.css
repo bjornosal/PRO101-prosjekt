@@ -27,7 +27,6 @@ p {
     width: 860px;
     margin-top: 500px;
     margin: auto;
-    
 }
 
 
@@ -38,7 +37,6 @@ p {
     width: 8em;
     background: #393E46;
     padding: 0.3em;
-    border-radius: 1em;
     z-index: 99;
     text-align: center;
     text-shadow: 1.5px 1.5px black;
