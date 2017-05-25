@@ -6,7 +6,7 @@
         <div class="search-box">
 
             <form method="post" action="event-calendar.php" class="search-form">
-                <select name="category" class="search-criteria" id="category">
+                <select name="category" class="search-criteria">
                     <option selected disabled hidden>Kategori</option>
                     <option value="1">Mat</option>
                     <option value="2">Kultur</option>
