@@ -2,7 +2,7 @@
 body {
     margin: 0; 
     padding: 0;
-    background-image: url(../Bilder/testBackground.jpg);
+    background-image: url(../photos/background.jpg);
     min-height: 100%;
     max-width: 100%;
 }
@@ -363,9 +363,10 @@ html * {
 
 
 select.search-criteria { /*Fjerner dropdown pil i chrome/firefox*/
-        -moz-appearance: none;
-        -webkit-appearance:none;
-      }
+  -moz-appearance: none;
+  -webkit-appearance:none;
+  -webkit-border-radius: 0px;
+}
 
 select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
     display: none;
@@ -436,6 +437,7 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
     width: 40%;
     overflow: auto;
     overflow-x: hidden;
+    background-color: rgba(50,50,50,0.2);
 }
 
 .event-social-container {

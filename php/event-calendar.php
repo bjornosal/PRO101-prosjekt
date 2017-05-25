@@ -104,7 +104,7 @@
                                 <?php } ?>
                                 </strong></p>
                         </div>
-                        <a href="<?= $event['event_link']?>">
+                        <a href="<?= $event['event_link']?>" target="_blank">
                             <div class="event-btn">
                                 <img class="event-btn-img" src="../photos/icons/link-icon.png">
                                 <p><strong>NETTSIDE</strong></p>
