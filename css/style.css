@@ -2,7 +2,7 @@
 body {
     margin: 0; 
     padding: 0;
-    background-image: url(../Bilder/testBackground.jpg);
+    background-image: url(../photos/background.jpg);
     min-height: 100%;
     max-width: 100%;
 }
