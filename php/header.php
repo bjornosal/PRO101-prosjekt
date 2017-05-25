@@ -81,7 +81,7 @@
 
 <script>
     $('.menu-dropdown').children().hide();
-    
+
     $(document).ready(function(){
         $('.menu-hamburger').click(function() {
             $('.menu-dropdown').children().show();
@@ -93,6 +93,7 @@
 
     $(document).ready(function(){
         $('.menu-x').click(function() {
+            $('.menu-dropdown').children().hide();
             $('.menu-dropdown').slideUp();
             $('.menu-hamburger').show();
             $('.menu-x').hide();
@@ -107,16 +108,18 @@
             $('.menu-dropdown').slideUp();
             $('.menu-hamburger').show();
             $('.menu-x').hide();
+            $('.menu-dropdown').children().hide();
         }
     });
 
     $(window).scroll(function () {
-          if ($(this).scrollTop()>75) {
+        if ($(this).scrollTop()>75) {
             $('.menu-dropdown').slideUp();
             $('.menu-hamburger').show();
             $('.menu-x').hide();
-          }   
-              
+            $('.menu-dropdown').children().hide();
+        }   
+
     });
 
 </script>
