@@ -80,8 +80,11 @@
 
 
 <script>
+    $('.menu-dropdown').children().hide();
+    
     $(document).ready(function(){
         $('.menu-hamburger').click(function() {
+            $('.menu-dropdown').children().show();
             $('.menu-dropdown').slideDown();
             $('.menu-hamburger').hide();
             $('.menu-x').show();
@@ -98,13 +101,22 @@
 
     //Takes the menu away if one clicks outside the dropdown menu/menu bar
     $(document).mouseup(function (ev) {
-        var container = $(".menu-dropdown");
+        var container = $('.menu-dropdown');
         if (!container.is(ev.target) && container.has(ev.target).length === 0) 
         {
-            container.slideUp();
+            $('.menu-dropdown').slideUp();
             $('.menu-hamburger').show();
             $('.menu-x').hide();
-            down = false;
         }
     });
+
+    $(window).scroll(function () {
+          if ($(this).scrollTop()>75) {
+            $('.menu-dropdown').slideUp();
+            $('.menu-hamburger').show();
+            $('.menu-x').hide();
+          }   
+              
+    });
+
 </script>
