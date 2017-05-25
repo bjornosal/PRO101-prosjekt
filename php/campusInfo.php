@@ -40,7 +40,7 @@
         </div>
         
             
-            <div class = "text1"><h1>Fjerdingen</h1><div id = "mapFjerdingen"></div><p>Fjerdingen er Westerdals ACT sitt nye tilskudd til campus-familien, og stod ferdig til bruk høsten 2016. Navnet stammer fra gaten campusen ligger i, Christian Krohgs gate, som helt tilbake til 1600-tallet het Fjerdingens gate. Nå fylles gaten med studenter fra alle avdelinger: Kommunikasjon, teknologi og kunst. Mangfoldet av studenter helt fra maskedesign til programmering skaper et unikt miljø. Fra torsdag-fredag er det dessuten også mulig å nyte en iskald pils i kantina som forvandles til Sjenkestua på kvelden. Fjerdingen ligger heller ikke langt unna Grünerløkka, Oslos svar på Soho i New York. Det skal ikke mer en enn liten spasertur ut av Fjerdingen for å utforske hva Oslo's hippeste strøk har å by på.</p></div>
+            <div class = "text1"><h1>Fjerdingen</h1><div id = "mapFjerdingen"></div><p>Fjerdingen er Westerdals ACT sitt nye tilskudd til campus-familien, og stod ferdig til bruk høsten 2016. Navnet stammer fra gaten campusen ligger i, Christian Krohgs gate, som helt tilbake til 1600-tallet het Fjerdingens gate. Nå fylles gaten med studenter fra alle avdelinger: Kommunikasjon, teknologi og kunst. Mangfoldet av studenter helt fra maskedesign til programmering skaper et unikt miljø. På torsdager og fredager er det dessuten også mulig å nyte en iskald pils i kantina som forvandles til Sjenkestua på kvelden. Her er det gode muligheter for å bli kjent med andre studenter på tvers av linjer. Baren er også åpen for folk som ikke går på Westerdals. Fjerdingen ligger heller ikke langt unna Grünerløkka, Oslos svar på Soho i New York. Det skal ikke mer en enn liten spasertur ut av Fjerdingen for å utforske hva Oslo's hippeste strøk har å by på av shopping, kultur, mat og uteliv.</p></div>
         
         <div class = "photo sectTwo"></div>
         
@@ -54,6 +54,8 @@
 
 
             <div class = "text3"><h1>Brenneriveien</h1><div id = "mapBrenneriveien"></div><p>Brenneriveien er Westerdals sin minste Campus, kun et steinkast unna Vulkan. På Brenneriveien hører studentene fra hår- og maskedesign til, samt enkelte deler av film, TV og spill avdelingen. Her finnes plattformene for de studentene som ønsker å uttrykke seg på en mer kreativ måte; både green-screen, verksted og klipperom er tilgjengelig for studentene. Dersom du skal være interessert i å utforske nærområdet rundt Brenneriveien, er kvelden tiden å utforske på. Det yrer av natteliv med gamle veteraner som Blå, og friske pust som Ingensteds. Om du er nysgjerrig på Oslo's gjemte perler finner du også disse i nærheten, som Bortenfor bak Ingensteds og Taxi Take Away på toppen av Brenneriveien.</p></div>
+        
+        <div class = "photo sectFour"></div>
 
 
 
@@ -111,27 +113,27 @@
 
             $("#Fjerdingen").click(function() {
                 var top = $('.text1').offset().top
-                top -= 150;
+                top -= 80;
                 $("html, body").animate({
                     scrollTop: top
-                }, 1000);
+                }, 750);
             });
 
             
             $("#Vulkan").click(function() {
                 var top = $('.text2').offset().top
-                top -= 150;
+                top -= 80;
                 $("html, body").animate({
                     scrollTop: top
-                }, 2100);
+                }, 1000);
             });
 
             $("#Brenneriveien").click(function() {
                 var top = $('.text3').offset().top
-                top -= 150;
+                top -= 80;
                 $("html, body").animate({
                     scrollTop: top
-                }, 3200);
+                }, 1250);
             });
         </script>
 

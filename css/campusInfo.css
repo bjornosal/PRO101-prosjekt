@@ -10,17 +10,18 @@ h1  {
     padding: 0.75em;
     color: #00ADB5;
     letter-spacing: -0.1em;
+    margin-left: 1.25em;
 }
 
 p {
     font-family: sans-serif;
     text-align: justify;
     font-size: 100%;
-    margin-left: 20px;
+    margin-left: 3.5em;
     text-indent: 20px;
     letter-spacing: 0.1em;
     color: white;
-    font-weight: bold;
+    font-weight: 150;
 }
 
 #buttonContainer {
@@ -39,19 +40,19 @@ p {
     padding: 0.3em;
     z-index: 99;
     text-align: center;
-    text-shadow: 1.5px 1.5px black;
-    border: 0.05em solid black;
+    border: 0.1em solid black;
     transition: color 0.15s linear;
     -webkit-transition: color 0.15s linear;
     -moz-transition: color 0.15s linear;
     margin-top: 40%;
-    display: inline-block;
+    float: left;
+    letter-spacing: 0.05em;
 }
 
 #Fjerdingen:hover, #Vulkan:hover, #Brenneriveien:hover {
     cursor: pointer;
-    text-shadow: 1.5px 1.5px black;
-    border: 0.1em solid #00ADB5;
+    color: #00ADB5;
+
    
 }
 
@@ -61,8 +62,6 @@ p {
     background-size: cover;
     background-repeat: round;
     background-attachment: fixed;
-
-
 }
 
 .text1, .text2, .text3 {
@@ -70,8 +69,6 @@ p {
     background-color: #393E46;
     text-align: left;
     display: inline-table;
-
-
 }
 
 
@@ -87,6 +84,9 @@ p {
     background-image: url("../Bilder/westerdals3.jpg")
 }
 
+.sectFour {
+    background-image: url("../Bilder/westerdals2.jpg")
+}
 
 
 #mapFjerdingen, #mapVulkan, #mapBrenneriveien {
@@ -94,10 +94,9 @@ p {
     width: 20em;
     border: 0.05em solid black;
     float: right;
-    margin-right: 1em;
-    margin-left: 1em;
-    margin-bottom: 1em;
-
+    margin-right: 3.5em;
+    margin-left: 2em;
+    margin-bottom: 2.5em;
 }
 
 
@@ -617,3 +616,8 @@ html * {
 }
 
 /*END EVENT CSS*/
+
+#Vulkan {
+    border-left: 0px;
+    border-right: 0px;
+}
