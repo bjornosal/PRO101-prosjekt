@@ -31,11 +31,12 @@
         ?>
 
 
-        <a href="login.php"><div class="logout-btn">LOGG UT</div></a>
+        
         <div class="database-management-container">
             <div class="info-top-container">
                 <div class="table-name">ARRANGEMENTER</div>
             </div>
+        <a href="login.php"><div class="logout-btn">LOGG UT</div></a>
             <div class="table-info-container">
                 <div class="table-info-column table-event_id">EVENT_ID</div>
                 <div class="table-info-column table-title">TITLE</div>
