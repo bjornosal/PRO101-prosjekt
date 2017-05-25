@@ -860,7 +860,7 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
     line-height: 1.8em;
 }
 
-input[type=submit] {
+.delete_tip, .delete_event {
     width: 70%;
     margin: 7px 20px;
     cursor: pointer;
