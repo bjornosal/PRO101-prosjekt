@@ -8,7 +8,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <link rel="icon" type="image/png" href="../photos/icons/cal-icon.png">
 
-        <title>Pålogging ADMIN</title>
+        <title>Databasehåndtering</title>
 
         <link href="../css/style.css" rel="stylesheet" type="text/css">
 
@@ -98,6 +98,6 @@
 
         </div>
 
-        <div class="logout-btn"></div>
+        <a href="login.php"><div class="logout-btn">LOGG UT</div></a>
     </body>
 </html>
