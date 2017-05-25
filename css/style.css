@@ -436,6 +436,7 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
     width: 40%;
     overflow: auto;
     overflow-x: hidden;
+    background-color: rgba(50,50,50,0.2);
 }
 
 .event-social-container {
