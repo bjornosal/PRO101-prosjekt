@@ -24,7 +24,7 @@ a {
     background-color: #404040;
 }
 
-.menu-line, .navigation-container:hover, .search-info-container, .event-btn:hover, .no-event, .x-line, .event-category{    
+.menu-line, .navigation-container:hover, .event-btn:hover, .no-event, .x-line, .event-category{    
     background-color: #808080;
 }
 
@@ -55,9 +55,7 @@ option, .search-criteria {
     background-color: whitesmoke;
 }
 
-.search-info-container{
-    /*background-color: #393E46;*/
-}
+
 
 .event-photo-container, .event-map-container,.event-description-container {
     background-color: #FFF;

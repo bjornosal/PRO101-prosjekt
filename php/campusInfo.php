@@ -118,7 +118,6 @@
             $("#Fjerdingen").click(function() {
                 var top = $('.text1').offset().top
                 top -= 150;
-                console.log(top);
                 $("html, body").animate({
                     scrollTop: top
                 }, 1000);
@@ -128,7 +127,6 @@
             $("#Vulkan").click(function() {
                 var top = $('.text2').offset().top
                 top -= 150;
-                console.log(top);
                 $("html, body").animate({
                     scrollTop: top
                 }, 2100);
@@ -137,7 +135,6 @@
             $("#Brenneriveien").click(function() {
                 var top = $('.text3').offset().top
                 top -= 150;
-                console.log(top);
                 $("html, body").animate({
                     scrollTop: top
                 }, 3200);
