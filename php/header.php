@@ -1,3 +1,51 @@
+
+<script>
+    $('.menu-dropdown').children().hide();
+    $('.menu-dropdown').children().show();
+    
+
+    $(document).ready(function(){
+        $('.menu-hamburger').click(function() {
+            $('.menu-dropdown').children().show();
+            $('.menu-dropdown').slideDown();
+            $('.menu-hamburger').hide();
+            $('.menu-x').show();
+        });
+    });
+
+    $(document).ready(function(){
+        $('.menu-x').click(function() {
+            $('.menu-dropdown').children().hide();
+            $('.menu-dropdown').slideUp();
+            $('.menu-hamburger').show();
+            $('.menu-x').hide();
+        });
+    });
+
+    //Takes the menu away if one clicks outside the dropdown menu/menu bar
+    $(document).mouseup(function (ev) {
+        var container = $('.menu-dropdown');
+        if (!container.is(ev.target) && container.has(ev.target).length === 0) 
+        {
+            $('.menu-dropdown').slideUp();
+            $('.menu-hamburger').show();
+            $('.menu-x').hide();
+            $('.menu-dropdown').children().hide();
+        }
+    });
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop()>75) {
+            $('.menu-dropdown').slideUp();
+            $('.menu-hamburger').show();
+            $('.menu-x').hide();
+            $('.menu-dropdown').children().hide();
+        }   
+
+    });
+
+</script>
+
 <div class="header-container">
     <!--Container with hamburgermenu-->
     <!--Disappears if viewport too small-->
@@ -78,48 +126,3 @@
 </div>
 
 
-
-<script>
-    $('.menu-dropdown').children().hide();
-
-    $(document).ready(function(){
-        $('.menu-hamburger').click(function() {
-            $('.menu-dropdown').children().show();
-            $('.menu-dropdown').slideDown();
-            $('.menu-hamburger').hide();
-            $('.menu-x').show();
-        });
-    });
-
-    $(document).ready(function(){
-        $('.menu-x').click(function() {
-            $('.menu-dropdown').children().hide();
-            $('.menu-dropdown').slideUp();
-            $('.menu-hamburger').show();
-            $('.menu-x').hide();
-        });
-    });
-
-    //Takes the menu away if one clicks outside the dropdown menu/menu bar
-    $(document).mouseup(function (ev) {
-        var container = $('.menu-dropdown');
-        if (!container.is(ev.target) && container.has(ev.target).length === 0) 
-        {
-            $('.menu-dropdown').slideUp();
-            $('.menu-hamburger').show();
-            $('.menu-x').hide();
-            $('.menu-dropdown').children().hide();
-        }
-    });
-
-    $(window).scroll(function () {
-        if ($(this).scrollTop()>75) {
-            $('.menu-dropdown').slideUp();
-            $('.menu-hamburger').show();
-            $('.menu-x').hide();
-            $('.menu-dropdown').children().hide();
-        }   
-
-    });
-
-</script>

@@ -14,12 +14,11 @@ a {
 /*Consider using this orange - #FF9A00 for some standout pieces*/
 
 /*COLOURS 1*/
-/*Slightly darker grey*/
+/*
 .header-container, .logo-container, .menu-dropdown, option, .tip-container, .back-to-top-middle-area{
     background-color: #595959;
 }
 
-/*DARKEST*/
 .menu-container, .tip-bar, .form-button, .back-to-top-button, .search-criteria, .search-button, .language-button  {
     background-color: #404040;
 }
@@ -28,24 +27,20 @@ a {
     background-color: #808080;
 }
 
-/*Slightly less dark grey*/
 .event-map-container,.event-description-container, .event-btn {
     background-color: #FFF;
 }
-
+*/
 /*COLOURS 2*/
 
-/*Slightly darker grey*/
 .header-container, .logo-container, .menu-dropdown, .tip-container, .back-to-top-middle-area{
     background-color:#393E46;
 }
 
-/*DARKEST*/
 .menu-container, .tip-bar, .form-button, .back-to-top-button, .search-button, .language-button, .countdown-timer, .event-category, .event-btn  {
     background-color: #222831;
 }
 
-/*Slightly less dark grey*/
 .menu-line, .navigation-container:hover, .event-btn:hover, .no-event, .x-line {    
     background-color: #00ADB5;
 }
