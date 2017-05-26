@@ -410,7 +410,7 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
 .event-photo-container, .event-map-container, .event-description-container {
     border-width: 1%;
     border-style: solid;
-    border-color: #00ADB5;
+    border-color: #222831;
     /*border-color: rgba(50,50,50,0.2);*/
 }
 
@@ -419,7 +419,8 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
     width: 40%;
     overflow: auto;
     overflow-x: hidden;
-    background-color: rgba(50,50,50,0.2);
+    background-color: #222831;
+    color: white;
 }
 
 .event-social-container {
@@ -459,11 +460,19 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
 .event-btn, .countdown-timer, .event-category{
     width: 100%;
     height: 20%;
-    box-shadow: 0px 5px 20px 0px #000;
+    box-shadow: 0px 3px 5px 0px #000;
     margin: auto;
     text-decoration: none;
     color: #000;
     margin-top: 12.5%;
+}
+
+.event-btn {
+    background-color: #00ADB5;
+}
+
+.event-btn:hover {
+    box-shadow: 0px 2px 4px 0px #000;
 }
 
 .event-btn p{
