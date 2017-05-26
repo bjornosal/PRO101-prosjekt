@@ -864,13 +864,11 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
 /*CAMPUS PAGE CSS*/
 
 
-
-h1  {
+.campusHeader{
     font-family: sans-serif;
     text-align: left; 
     padding: 0.75em;
     color: #00ADB5;
-    letter-spacing: -0.1em;
     margin-left: 1em;
 }
 
@@ -937,19 +935,19 @@ h1  {
 
 
 .sectOne {
-    background-image: url("../Bilder/westerdals1.jpg")
+    background-image: url("../photos/campus/woa_fjerdingen01.jpg")
 }
 
 .sectTwo {
-    background-image: url("../Bilder/westerdals2.jpg")
+    background-image: url("../photos/campus/woa_fjerdingen02.jpg")
 }
 
 .sectThree {
-    background-image: url("../Bilder/westerdals3.jpg")
+     background-image: url("../photos/campus/woa_vulkan.jpg")
 }
 
 .sectFour {
-    background-image: url("../Bilder/westerdals2.jpg")
+      background-image: url("../photos/campus/woa_brenneriveien.jpg")
 }
 
 
@@ -964,4 +962,3 @@ h1  {
 }
 
 /*END CAMPUS PAGE CSS*/ 
-
