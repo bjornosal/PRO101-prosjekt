@@ -1,5 +1,5 @@
 <button id="top-button" onclick="goToTopFunction()" class="btn-top" title="Tilbake til toppen">
-    <img class="up-icon" src="../photos/up-arrow-white.png">
+    <img class="up-icon" src="../photos/up-arrow-white.png" alt="Pil opp ikon">
 </button>
 
 

@@ -26,17 +26,17 @@
                 <div class="event-info-social">
                     <div class="social-icon social-icon-placing">
                         <a href="https://www.facebook.com/sharer/sharer.php?u=">
-                            <img src="../photos/icons/social-icons/fb_icon.png">
+                            <img src="../photos/icons/social-icons/fb_icon.png" alt="Facebook ikon">
                         </a>
                     </div>
                     <div class="social-icon">
                         <a href="https://twitter.com/home?status=">
-                            <img src="../photos/icons/social-icons/twitter_icon.png">
+                            <img src="../photos/icons/social-icons/twitter_icon.png" alt="Twitter ikon">
                         </a>
                     </div>
                     <div class="social-icon">
                         <a href="mailto:?">
-                            <img src="../photos/icons/social-icons/email_icon.png">
+                            <img src="../photos/icons/social-icons/email_icon.png" alt="E-post ikon">
                         </a>
                     </div>
                 </div>

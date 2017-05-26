@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="nb">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -106,7 +106,7 @@
                         </div>
                         <a href="<?= $event['event_link']?>" target="_blank">
                             <div class="event-btn">
-                                <img class="event-btn-img" src="../photos/icons/link-icon.png">
+                                <img class="event-btn-img" src="../photos/icons/link-icon.png" alt="Event lenke ikon">
                                 <p><strong>NETTSIDE</strong></p>
 
                             </div>

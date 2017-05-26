@@ -963,3 +963,6 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
 }
 
 /*END CAMPUS PAGE CSS*/ 
+.infoText p, .infoText li{
+    font-weight: bold;
+}

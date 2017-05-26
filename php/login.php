@@ -61,7 +61,7 @@
             </div>
 
 
-            <form method="POST" class="login-form" action="">
+            <form method="POST" class="login-form" action="#">
                 <div class="login-label"><b>BRUKERNAVN</b></div>
                 <input class="login-input" type="text" name="username" placeholder="Skriv inn brukernavn">
                 <div class="login-label"><b>PASSORD</b></div>
