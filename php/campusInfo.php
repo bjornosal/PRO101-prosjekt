@@ -45,7 +45,6 @@
         <div class = "photo sectTwo"></div>
         
         
-     
             <div class = "text2"><h1>Vulkan</h1><div id = "mapVulkan"></div><p>Fem til ti minutter unna Fjerdingen finner du eksentriske Vulkan, Fjerdingen's "storesøster". Her ligger campusen som tilbyr skuespillerlinje samt film, TV og spill. I nærmiljøet rundt Vulkan finner du tilbud for både den matglade og kulturlystne, med Mathallen og konsertlokalet Vulkan Arena som nabobygg. Det finnes også anlegg for klatring og dans like ved, samt en rekke hyggelige kafeér, restauranter og barer. På vulkan finner du noe for en hver smak. Rett utenfor bygget ligger dessuten også Kuba-parken, en populær avkobling for studentene fra studiene om sommeren. I midten av Kuba-parken er det også mulig å nyte alkoholholdig drikke til en studentvennlig pris på Fyrhuset Kuba.</p></div>
         
 
@@ -56,8 +55,6 @@
             <div class = "text3"><h1>Brenneriveien</h1><div id = "mapBrenneriveien"></div><p>Brenneriveien er Westerdals' minste Campus, og ligger kun et steinkast unna Vulkan. På Brenneriveien hører studentene fra hår- og maskedesign til, samt enkelte deler av film-, TV- og spillavdelingen. Her finnes plattformer for de studentene som ønsker å uttrykke seg på en enda mer kreativ måte; både green-screen, forskjellige verksted og klipperom er tilgjengelig for studentene. Dersom du skal være interessert i å utforske nærområdet rundt Brenneriveien og er glad i en tur ut på byen, er kvelden desidert den beste tiden å utforske på. Det yrer av natteliv i gatene med gamle veteraner som Blå, i tillegg til friske pust som Ingensteds. Om du er nysgjerrig på Oslo's gjemte perler finner du også disse i nærheten. Blant annet ligger baren Bortenfor gjemt bak Ingensteds, og baren Taxi Take Away finner du der Brenneriveien går inn i Maridalsveien, gjemt bak en sliten fasade.</p></div>
         
         <div class = "photo sectFour"></div>
-
-
 
         <script>
 
@@ -99,15 +96,9 @@
                 });
 
             }
-
-
-
-
-
-
         </script>
 
-        <script async defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDbzIJIgHVAYw4oXACRP_XCt3Mnj_3T0dI&callback=initMap"></script>  
+            <script async defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDbzIJIgHVAYw4oXACRP_XCt3Mnj_3T0dI&callback=initMap"></script>  
 
         <script>
 
@@ -135,6 +126,7 @@
                     scrollTop: top
                 }, 1250);
             });
+            
         </script>
 
 
