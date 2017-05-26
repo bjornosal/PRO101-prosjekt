@@ -107,7 +107,7 @@
             <div class="menu-choice-text">KALENDER</div>
         </div>
     </a>
-    <a href="omOss.php">
+    <a href="aboutWevent.php">
         <div class="navigation-container">
             <div class="icon">
                 <img src="../photos/icons/about-us.png">

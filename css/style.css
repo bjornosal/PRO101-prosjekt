@@ -632,6 +632,7 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
     height: 715px;
     margin-top: 2%;
     margin-bottom: 3%;
+    overflow: hidden;
 }
 
 .photoBox {

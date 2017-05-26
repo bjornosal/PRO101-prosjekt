@@ -10,7 +10,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <link rel="icon" type="image/png" href="../photos/icons/cal-icon.png">
 
-        <title>Hvem er Wevent</title>
+        <title>Om Wevent</title>
 
         <link rel="stylesheet" type="text/css" href="../css/style.css">
 
@@ -31,7 +31,7 @@
 
             <div class="photoBox">
 
-                <img id="photo1" src="../Bilder/westerdals1.jpg">
+                <img id="photo1" src="../photos/campus/woa_fjerdingen04.jpg">
 
                 <div id="infoTextBox">
                     <div class="infoText">
