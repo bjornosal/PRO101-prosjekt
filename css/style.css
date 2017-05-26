@@ -859,3 +859,109 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
     font-size: 1em;
 }
 
+/*DB MANAGEMENT CSS END*/
+
+/*CAMPUS PAGE CSS*/
+
+
+
+h1  {
+    font-family: sans-serif;
+    text-align: left; 
+    padding: 0.75em;
+    color: #00ADB5;
+    letter-spacing: -0.1em;
+    margin-left: 1em;
+}
+
+.campusText p{
+    font-family: sans-serif;
+    text-align: justify;
+    font-size: 100%;
+    margin-left: 3.5em;
+    text-indent: 20px;
+    letter-spacing: 0.1em;
+    color: #FFF;
+    font-weight: 150;
+    line-height: 130%;
+}
+
+#campusButtonContainer {
+    width: 800px;
+    margin: auto;
+}
+
+.campusButton {
+    font-family: sans-serif;
+    color: #FFF;
+    font-size: 2em;
+    height: 50px;
+    width: 250px;
+    background-color: #393E46;
+    z-index: 99;
+    text-align: center;
+    border: 3px solid #222831;
+    transition: color 0.15s linear;
+    -webkit-transition: color 0.15s linear;
+    -moz-transition: color 0.15s linear;
+    margin-top: 40%;
+    float: left;
+    line-height: 1.5em;
+}
+
+#Vulkan {
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.campusButton:hover {
+    cursor: pointer;
+    color: #00ADB5;
+    font-size: 2.2em;
+   
+}
+
+.campusPhoto {
+    height: 100%;
+    background-size: cover;
+    background-repeat: round;
+    background-attachment: fixed;
+}
+
+.campusText {
+    height: 35%;
+    background-color: #393E46;
+    text-align: left;
+    display: inline-table;
+}
+
+
+.sectOne {
+    background-image: url("../Bilder/westerdals1.jpg")
+}
+
+.sectTwo {
+    background-image: url("../Bilder/westerdals2.jpg")
+}
+
+.sectThree {
+    background-image: url("../Bilder/westerdals3.jpg")
+}
+
+.sectFour {
+    background-image: url("../Bilder/westerdals2.jpg")
+}
+
+
+#mapFjerdingen, #mapVulkan, #mapBrenneriveien {
+    height: 10em;
+    width: 20em;
+    border: 0.05em solid black;
+    float: right;
+    margin-right: 3.5em;
+    margin-left: 2em;
+    margin-bottom: 2.5em;
+}
+
+/*END CAMPUS PAGE CSS*/ 
+
