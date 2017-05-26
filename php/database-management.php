@@ -30,9 +30,8 @@ session_start();
         $statement -> execute();
         while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
             $events[] = $row;
-        }
-        if($_SESSION['user_id'] != null) {?>
-
+        }?>
+        
         <div class="database-management-container">
             <div class="info-top-container">
                 <div class="table-name">ARRANGEMENTER</div>
@@ -102,10 +101,5 @@ session_start();
 
         <a href="login.php"><div class="logout-btn">LOGG UT</div></a>
 
-        <?php }
-        else { 
-            header('Location: login.php');
-        }
-        ?>
     </body>
 </html>

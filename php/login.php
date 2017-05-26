@@ -40,7 +40,7 @@
             if($_SESSION['user_id'] != null) {
                 $message = "LOGGER PÅ...";
                 
-                header("Location: database-management.php");
+                header("Location: http://tek.westerdals.no/~salbjo16/PRO101/php/database-management.php");
             } else {
                 $message = "FEIL PÅLOGGINGSINFO";
             }
