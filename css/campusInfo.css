@@ -50,6 +50,11 @@ p {
     letter-spacing: 0.05em;
 }
 
+#Vulkan {
+    border-left: 0px;
+    border-right: 0px;
+}
+
 #Fjerdingen:hover, #Vulkan:hover, #Brenneriveien:hover {
     cursor: pointer;
     color: #00ADB5;
