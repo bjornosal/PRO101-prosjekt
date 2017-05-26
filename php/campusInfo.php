@@ -53,7 +53,7 @@
         <div class = "photo sectThree"></div>
 
 
-            <div class = "text3"><h1>Brenneriveien</h1><div id = "mapBrenneriveien"></div><p>Brenneriveien er Westerdals sin minste Campus, kun et steinkast unna Vulkan. På Brenneriveien hører studentene fra hår- og maskedesign til, samt enkelte deler av film, TV og spill avdelingen. Her finnes plattformene for de studentene som ønsker å uttrykke seg på en mer kreativ måte; både green-screen, verksted og klipperom er tilgjengelig for studentene. Dersom du skal være interessert i å utforske nærområdet rundt Brenneriveien, er kvelden tiden å utforske på. Det yrer av natteliv med gamle veteraner som Blå, og friske pust som Ingensteds. Om du er nysgjerrig på Oslo's gjemte perler finner du også disse i nærheten, som Bortenfor bak Ingensteds og Taxi Take Away på toppen av Brenneriveien.</p></div>
+            <div class = "text3"><h1>Brenneriveien</h1><div id = "mapBrenneriveien"></div><p>Brenneriveien er Westerdals' minste Campus, og ligger kun et steinkast unna Vulkan. På Brenneriveien hører studentene fra hår- og maskedesign til, samt enkelte deler av film-, TV- og spillavdelingen. Her finnes plattformene for de studentene som ønsker å uttrykke seg på en mer kreativ måte; både green-screen, verksted og klipperom er tilgjengelig for studentene. Dersom du skal være interessert i å utforske nærområdet rundt Brenneriveien, er kvelden tiden å utforske på. Det yrer av natteliv med gamle veteraner som Blå, og friske pust som Ingensteds. Om du er nysgjerrig på Oslo's gjemte perler finner du også disse i nærheten, som Bortenfor bak Ingensteds og Taxi Take Away på toppen av Brenneriveien.</p></div>
         
         <div class = "photo sectFour"></div>
 
