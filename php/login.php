@@ -39,8 +39,11 @@
             }
             if($_SESSION['user_id'] != null) {
                 $message = "LOGGER PÅ...";
-                
-                header("Location: http://tek.westerdals.no/~salbjo16/PRO101/php/database-management.php");
+        ?>
+        <script>
+            window.location.href="http://tek.westerdals.no/~salbjo16/PRO101/php/database-management.php";
+        </script>
+        <?php
             } else {
                 $message = "FEIL PÅLOGGINGSINFO";
             }
@@ -57,7 +60,7 @@
             </div>
 
 
-            <form method="POST" class="login-form" action="">
+            <form method="POST" class="login-form" action="#">
                 <div class="login-label"><b>BRUKERNAVN</b></div>
                 <input class="login-input" type="text" name="username" placeholder="Skriv inn brukernavn">
                 <div class="login-label"><b>PASSORD</b></div>

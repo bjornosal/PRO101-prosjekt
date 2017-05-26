@@ -11,11 +11,6 @@ a {
     text-decoration: none;
 }
 
-/*
-.event-map-container,.event-description-container, .event-btn, .event-photo-container {
-    background-color: #FFF;
-}*/
-
 .header-container, .logo-container, .menu-dropdown, .tip-container, .back-to-top-middle-area{
     background-color:#393E46;
 }
@@ -24,10 +19,10 @@ a {
     background-color: #222831;
 }
 
-.menu-line, .navigation-container:hover, .event-btn:hover, .no-event, .x-line {    
+.menu-line, .navigation-container:hover, .no-event, .x-line, .event-btn {    
     background-color: #00ADB5;
 }
- 
+
 option, .search-criteria {
     background-color: #f5f5f5;
 }
@@ -167,12 +162,16 @@ html * {
     width:20%;
     height: 150%;
     position: absolute;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     left: 40%;
     bottom: -25%;
 }
 
 .x-line-two {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
 
@@ -271,8 +270,6 @@ html * {
     width: 700px;    
     min-width: 1200px;
     height: 40%;
-    /*margin-left: 14.125%;*/
-    margin-left: ;
     position: relative;
     top: 30%;
 }
@@ -339,13 +336,14 @@ html * {
 
 
 
-select.search-criteria { /*Fjerner dropdown pil i chrome/firefox*/
-  -moz-appearance: none;
-  -webkit-appearance:none;
-  -webkit-border-radius: 0px;
+select.search-criteria { 
+    /*Removes dropdown arrow in firefox and chrome/safari*/
+    -moz-appearance: none;
+    -webkit-appearance:none;
+    border-radius: 0px;
 }
 
-select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
+select.search-criteria::-ms-expand { /*Removes dropdown arrow in IE*/
     display: none;
 }
 
@@ -408,10 +406,9 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
 }
 
 .event-photo-container, .event-map-container, .event-description-container {
-    border-width: 1%;
+    border-width: 3px;
     border-style: solid;
     border-color: #222831;
-    /*border-color: rgba(50,50,50,0.2);*/
 }
 
 
@@ -420,7 +417,7 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
     overflow: auto;
     overflow-x: hidden;
     background-color: #222831;
-    color: white;
+    color: #FFF;
 }
 
 .event-social-container {
@@ -467,13 +464,7 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
     margin-top: 12.5%;
 }
 
-.event-btn {
-    background-color: #00ADB5;
-}
 
-.event-btn:hover {
-    box-shadow: 0px 2px 4px 0px #000;
-}
 
 .event-btn p{
     width: 50%;
@@ -560,7 +551,7 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
 }
 
 .event-info-container p{
-    padding: 0, 5%, 0, 5%;
+    padding: 0 5% 0 5%;
 }
 
 .event-info {
@@ -727,8 +718,8 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
     border: none;
     cursor: pointer;
     font-size: 1em;
-    
-    
+
+
 }
 
 .login-button:hover, .return-login-btn:hover {
@@ -844,7 +835,6 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
     background-color: #222831; 
     box-shadow: 0px 0px 1.5px 1.5px #00ADB5;
     border-style: none;
-    border-radius: px;
 }
 
 .logout-btn:hover {
@@ -881,8 +871,7 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
     text-indent: 20px;
     letter-spacing: 0.1em;
     color: #FFF;
-    font-weight: 150;
-    line-height: 130%;
+    font-weight: bold;
 }
 
 #campusButtonContainer {
@@ -917,7 +906,7 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
     cursor: pointer;
     color: #00ADB5;
     font-size: 2.2em;
-   
+
 }
 
 .campusPhoto {
@@ -944,11 +933,11 @@ select.search-criteria::-ms-expand { /*Fjerner dropdown pil i IE10*/
 }
 
 .sectThree {
-     background-image: url("../photos/campus/woa_vulkan.jpg")
+    background-image: url("../photos/campus/woa_vulkan.jpg")
 }
 
 .sectFour {
-      background-image: url("../photos/campus/woa_brenneriveien.jpg")
+    background-image: url("../photos/campus/woa_brenneriveien.jpg")
 }
 
 
