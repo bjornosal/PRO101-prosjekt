@@ -33,9 +33,7 @@ session_start();
         }
 
         if($_SESSION['user_id'] != null) {
-
             require 'show-database.php';
-
         }
         else { ?>
         <script>        

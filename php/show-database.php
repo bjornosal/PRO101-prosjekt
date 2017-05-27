@@ -11,7 +11,7 @@
     <div class="table-info-container">
         <div class="table-info-column table-event_id"><?php echo $event["event_id"]?></div>
         <div class="table-info-column table-title"><?php echo $event['title']?></div>
-        \
+        
         <form method="POST" action="" onsubmit="setTimeout(function () { window.location.reload(); }, 10)">
             <input type="submit" value="Slett" name="delete_event" class="delete_event">
             <input type="hidden" name="del_id" value="<?php echo $event["event_id"]?>"/> 
@@ -47,7 +47,6 @@
     <div class="table-info-container">
         <div class="table-info-column table-event_id"><?php echo $tip["tip_id"]?></div>
         <div class="table-info-column table-title"><?php echo $tip['event_link']?></div>
-        <!--Solution required for updating the page on deletion that updates when the post has happened.-->
         <form method="POST" action="" onsubmit="setTimeout(function () { window.location.reload(); }, 10)">
             <input type="submit" value="Slett" name="delete_tip" class="delete_tip">
             <input type="hidden" name="del_id" value="<?php echo $tip["tip_id"]?>"/> 
