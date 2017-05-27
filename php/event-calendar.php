@@ -70,7 +70,7 @@
                     */
                 } else if( $_SESSION["lack-criteria"] == true) {?>
                 <div class="no-event">
-                    <strong class="no-event-text one-line">Husk å fylle ut alle kriteriene.</strong>
+                    <strong class="no-event-text two-lines">Husk å fylle ut alle kriteriene.<br>Alle arrangementer vises.</strong>
                 </div>
                 <?php
                     session_unset();
