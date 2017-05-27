@@ -29,13 +29,13 @@
             <div class="event-background">
 
                 <?php 
-                
+
                 /**
                 * Gets all events from results table
                 * Uses the event_id, Latitude and Longitude later in Google Maps Implementation
                 * through JS. Encodes with json to be usable in JS. 
                 */
-                
+
                 $statement = $connection -> prepare('SELECT * FROM results JOIN category AS ca ON results.category_id = ca.category_id');
 
                 $statement -> execute();
@@ -76,7 +76,7 @@
                     session_unset();
                 }
                 ?>
-                
+
                 <?php 
                 /** Loops through events array and portrays all events with corresponding information. 
                 *
@@ -110,9 +110,13 @@
                         <div class="countdown-timer">
                             <p><strong>
                                 <!--Prints out time until event according to the date-->
-                                <?php if($days > 0) { ?>
+                                <?php if($days > 1) { ?>
                                 Om <?= $days ?> 
                                 dager
+                                <?php } else if($days == 1) { ?>
+                                Om <?= $days ?>
+                                dag
+                                
                                 <?php } elseif($days == 0) {?>
                                 I dag.
                                 <?php } else {?>
@@ -162,7 +166,7 @@
                 }
             }
         </script>
-        
+
         <script async defer
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRfr51h9jrxDI5yfrgQlqNMT6ySvGV6ek&callback=initMap">
         </script>

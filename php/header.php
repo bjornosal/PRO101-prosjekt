@@ -44,7 +44,8 @@
             $('.menu-dropdown').children().hide();
         }
     });
-
+    
+    // Takes the menu away if the user scrolls down
     $(window).scroll(function () {
         if ($(this).scrollTop()>75) {
             $('.menu-dropdown').slideUp();
