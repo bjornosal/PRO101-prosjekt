@@ -103,20 +103,20 @@
             <div class="menu-choice-text">HJEM</div>
         </div>
     </a>
-    <a href="campusInfo.php">
-        <div class="navigation-container">
-            <div class="icon">
-                <img src="../photos/icons/uni-icon.png" alt="Campus ikon">
-            </div>
-            <div class="menu-choice-text">CAMPUS</div>
-        </div>
-    </a>
     <a href="event-calendar.php">
         <div class="navigation-container">
             <div class="icon">
                 <img src="../photos/icons/cal-icon.png" alt="Kalender ikon">
             </div>
             <div class="menu-choice-text">KALENDER</div>
+        </div>
+    </a>
+    <a href="campusInfo.php">
+        <div class="navigation-container">
+            <div class="icon">
+                <img src="../photos/icons/uni-icon.png" alt="Campus ikon">
+            </div>
+            <div class="menu-choice-text">CAMPUS</div>
         </div>
     </a>
     <a href="aboutWevent.php">
