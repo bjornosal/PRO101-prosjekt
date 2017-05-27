@@ -534,6 +534,10 @@ select.search-criteria::-ms-expand { /*Removes dropdown arrow in IE*/
     max-width: 100%;
 }
 
+.slideshow-photo-container img{
+    width: 100%;
+}
+
 .event-info-container {
     position: absolute;
     right: 0;
