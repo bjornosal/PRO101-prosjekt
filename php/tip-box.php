@@ -18,7 +18,9 @@
 </div>
 
 <?php
-
+/**
+* Posts the info submitted by the user into the tip database
+*/
 $event_name = $_POST['event-name'];
 $event_link = $_POST['hyperlink'];
 $event_desc = $_POST['description'];

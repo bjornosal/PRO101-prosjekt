@@ -129,8 +129,6 @@ html * {
     font-size: 1em;
 }
 
-
-
 .icon {
     float: left;
     width:25%;
@@ -207,7 +205,6 @@ html * {
     line-height: 30px;
     cursor: pointer;    
     color: #FFF;
-
 }
 
 #tip-form {
@@ -333,8 +330,6 @@ html * {
     font-size: 3em;
     line-height: 0.4em;
 }
-
-
 
 select.search-criteria { 
     /*Removes dropdown arrow in firefox and chrome/safari*/
@@ -463,8 +458,6 @@ select.search-criteria::-ms-expand { /*Removes dropdown arrow in IE*/
     color: #000;
     margin-top: 12.5%;
 }
-
-
 
 .event-btn p{
     width: 50%;
@@ -927,7 +920,6 @@ select.search-criteria::-ms-expand { /*Removes dropdown arrow in IE*/
     display: inline-table;
 }
 
-
 .sectOne {
     background-image: url("../photos/campus/woa_fjerdingen01.jpg")
 }
@@ -943,7 +935,6 @@ select.search-criteria::-ms-expand { /*Removes dropdown arrow in IE*/
 .sectFour {
     background-image: url("../photos/campus/woa_brenneriveien.jpg")
 }
-
 
 #mapFjerdingen, #mapVulkan, #mapBrenneriveien {
     height: 10em;

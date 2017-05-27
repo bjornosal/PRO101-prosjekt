@@ -46,7 +46,6 @@
                     <option value="11">November</option>
                     <option value="12">Desember</option>
                 </select>
-                <!--<a href="#"><div class="search-button">SØK</div></a>-->
                 <input type="submit" value="SØK" name="search" class="search-button">
             </form>
         </div>

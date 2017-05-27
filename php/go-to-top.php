@@ -4,8 +4,11 @@
 
 
 <script>
+    /**
+    * Calls the scrollFunction on scroll and checks if it should show the top-button or not
+    */
     window.onscroll = function() {scrollFunction()};
-
+    
     function scrollFunction() {
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
             document.getElementById("top-button").style.display = "block";
@@ -16,7 +19,7 @@
 
     // When the user clicks on the button, scroll to the top of the document
     function goToTopFunction() {
-        document.body.scrollTop = 0; // For Chrome, Safari and Opera 
-        document.documentElement.scrollTop = 0; // For IE and Firefox
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0;
     }
 </script>

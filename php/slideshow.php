@@ -49,6 +49,9 @@
 
 
 <script>
+    /**
+    * Two functions, one for switching slides and one for doing so automaticly.
+    */
     var slideIndex = 1;
     runSlideShow(slideIndex);
 

@@ -29,7 +29,10 @@
         $username = $_POST['username'];
         $password = $_POST['password'];
         $message = "";
-
+        /** Checks if username and password is filled in when submit button is pressed and does a search through the database 
+        * for a user with the corresponding information. If correct info is found, will redirect to database management page. if not,
+        * it will show an error depending on what the issue was.*
+        */
         if (isset($_POST['submit']) && !empty($_POST['username']) 
             && !empty($_POST['password'])) {
             $statement = $connection -> prepare("SELECT * FROM users WHERE username ='$username' AND password ='$password'");

@@ -29,6 +29,13 @@
             <div class="event-background">
 
                 <?php 
+                
+                /**
+                * Gets all events from results table
+                * Uses the event_id, Latitude and Longitude later in Google Maps Implementation
+                * through JS. Encodes with json to be usable in JS. 
+                */
+                
                 $statement = $connection -> prepare('SELECT * FROM results JOIN category AS ca ON results.category_id = ca.category_id');
 
                 $statement -> execute();
@@ -48,13 +55,19 @@
 
                 <?php 
 
-                //Checks whether or not any events are stored in session
+                /**Checks whether or not any events are stored in session
+                * If there are no events, an error will be shown. 
+                * All events will be shown together with the error message.
+                */
                 if($_SESSION["no-events"] == true) {?>
                 <div class="no-event">
                     <strong class="no-event-text two-lines">Ingen arrangementer funnet med valgte kriterier. <br>Alle arrangementer vises.</strong>
                 </div>
                 <?php
                     $_SESSION["no-events"] = false;
+                    /** Checks if there is a lack of criterias when search is pushed
+                    * If missing, an error message will be shown together with all events. 
+                    */
                 } else if( $_SESSION["lack-criteria"] == true) {?>
                 <div class="no-event">
                     <strong class="no-event-text one-line">Husk å fylle ut alle kriteriene.</strong>
@@ -63,8 +76,12 @@
                     session_unset();
                 }
                 ?>
-
-                <?php foreach($events as $event) { ?>
+                
+                <?php 
+                /** Loops through events array and portrays all events with corresponding information. 
+                *
+                */
+                foreach($events as $event) { ?>
 
                 <?php require 'countdown.php'?>
 
@@ -120,6 +137,9 @@
         </div>
 
         <script>
+            /**
+            * Uses json values to put into variables for use in initialization of all Google Maps
+            */
             var idArray = <?php echo $json_id; ?>;
             var lat = <?php echo $json_lat; ?>;
             var lon = <?php echo $json_lon; ?>;
@@ -142,6 +162,7 @@
                 }
             }
         </script>
+        
         <script async defer
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRfr51h9jrxDI5yfrgQlqNMT6ySvGV6ek&callback=initMap">
         </script>

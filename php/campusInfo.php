@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="icon" type="image/png" href="../photos/icons/cal-icon.png">
-
+        <!--Importing JQuery lib-->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <title>Campus</title>
 
@@ -68,6 +68,9 @@
         <div class = "campusPhoto sectFour"></div>
 
         <script>
+            /**
+            * Initalization of Google Maps API for each campus
+            */
 
             var mapFjerdingen;
 
@@ -112,7 +115,9 @@
         <script async defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDbzIJIgHVAYw4oXACRP_XCt3Mnj_3T0dI&callback=initMap"></script>  
 
         <script>
-
+            /**
+            * Scripts so that clicking the campus buttons will slide the user down to the corresponding campus
+            */
             $("#Fjerdingen").click(function() {
                 var top = $('.campusTextFjerdingen').offset().top
                 top -= 0;

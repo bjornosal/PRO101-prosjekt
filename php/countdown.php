@@ -1,4 +1,7 @@
 <?php
+/**
+* Calculates the time between now and whenever the event is. 
+*/
 $today = time();
 $event_date = $event['event_date'];
 

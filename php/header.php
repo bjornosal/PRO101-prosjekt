@@ -1,8 +1,14 @@
 
 <script>
+    /**
+    * Added to remove lag on first load.
+    */
     $('.menu-dropdown').children().hide();
     $('.menu-dropdown').children().show();
     
+    /**
+    * Shows the children, and slides the dropdown menu down, self-explanatory code.
+    */
 
     $(document).ready(function(){
         $('.menu-hamburger').click(function() {
@@ -13,6 +19,11 @@
         });
     });
 
+    
+    /**
+    * Three methods, all do the same. 
+    * Hides the dropdown menu whenever clicked on the menu-x, outside of the container, or if the user scrolls down.
+    */
     $(document).ready(function(){
         $('.menu-x').click(function() {
             $('.menu-dropdown').children().hide();

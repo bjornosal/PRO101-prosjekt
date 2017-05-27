@@ -31,7 +31,9 @@ session_start();
         while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {
             $events[] = $row;
         }
-
+        /** Requires and shows the database if user is logged in
+        * else it will redirect to login page
+        */
         if($_SESSION['user_id'] != null) {
             require 'show-database.php';
         }
