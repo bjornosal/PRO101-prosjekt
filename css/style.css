@@ -671,7 +671,6 @@ select.search-criteria::-ms-expand { /*Removes dropdown arrow in IE*/
     width: 400px;
     height: 600px;
     background-color: #393E46;
-    box-shadow: 0px 0px 3px 3px #00ADB5; 
 }
 
 .login-container-header {
@@ -830,14 +829,12 @@ select.search-criteria::-ms-expand { /*Removes dropdown arrow in IE*/
     text-align: center;
     color: #FFF;
     background-color: #222831; 
-    box-shadow: 0px 0px 1.5px 1.5px #00ADB5;
     border-style: none;
 }
 
 .logout-btn:hover {
     font-size: 0.95em;
     line-height: 1.8em;
-    box-shadow: 0px 0px 1.5px 1.5px #00ADB5;
 }
 
 .delete_tip, .delete_event {

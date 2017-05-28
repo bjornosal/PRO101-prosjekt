@@ -8,40 +8,41 @@
 
         $statement -> execute();
         while ($row = $statement -> fetch(PDO::FETCH_ASSOC)) {?>
-
-        <div class="event-slide">
-            <div class="slideshow-photo-container">
-                <?php if($row['image_path'] != null) { ?>
-                <img src="<?= $row['image_path']?>" alt="Bilde fra arrangement">
-                <?php } else {?>
-                <img  src="../photos/slideshow-default.png" alt="Inget bilde fra arrangement">
-                <?php } ?>
-            </div>
-            <!--Start info container-->
-            <div class="event-info-container">
-                <div class="event-info">
-                    <h2><?=$row['title']?></h2>
-                    <p><?=$row['description']?></p>
+        <a href="<?= $row['event_link'] ?>" target="_blank">
+            <div class="event-slide">
+                <div class="slideshow-photo-container">
+                    <?php if($row['image_path'] != null) { ?>
+                    <img src="<?= $row['image_path']?>" alt="Bilde fra arrangement">
+                    <?php } else {?>
+                    <img  src="../photos/slideshow-default.png" alt="Inget bilde fra arrangement">
+                    <?php } ?>
                 </div>
-                <div class="event-info-social">
-                    <div class="social-icon social-icon-placing">
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=">
-                            <img src="../photos/icons/social-icons/fb_icon.png" alt="Facebook ikon">
-                        </a>
+                <!--Start info container-->
+                <div class="event-info-container">
+                    <div class="event-info">
+                        <h2><?=$row['title']?></h2>
+                        <p><?=$row['description']?></p>
                     </div>
-                    <div class="social-icon">
-                        <a href="https://twitter.com/home?status=">
-                            <img src="../photos/icons/social-icons/twitter_icon.png" alt="Twitter ikon">
-                        </a>
-                    </div>
-                    <div class="social-icon">
-                        <a href="mailto:?">
-                            <img src="../photos/icons/social-icons/email_icon.png" alt="E-post ikon">
-                        </a>
+                    <div class="event-info-social">
+                        <div class="social-icon social-icon-placing">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=">
+                                <img src="../photos/icons/social-icons/fb_icon.png" alt="Facebook ikon">
+                            </a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="https://twitter.com/home?status=">
+                                <img src="../photos/icons/social-icons/twitter_icon.png" alt="Twitter ikon">
+                            </a>
+                        </div>
+                        <div class="social-icon">
+                            <a href="mailto:?">
+                                <img src="../photos/icons/social-icons/email_icon.png" alt="E-post ikon">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </a>
         <!--End event slide -->
         <?php } ?>
     </div>
