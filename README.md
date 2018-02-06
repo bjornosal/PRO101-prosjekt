@@ -11,15 +11,15 @@ Before we started on the coding of the project, we went through a small sprint a
 There were many technical and non-technical requirements. 
 A general overview: 
 - Techincal: 
--- Use multiple PHP-pages
--- Set up a database which we would need to communicate with through PHP.
--- Following a clean code principle, at least in general.
--- Use GitHub through our project. 
+  - Use multiple PHP-pages
+  - Set up a database which we would need to communicate with through PHP.
+  - Following a clean code principle, at least in general.
+  - Use GitHub through our project. 
 - Non-technical:
--- Use Kanban
--- Create an introductory video to the tool chosen to use with Kanban. <link>https://youtu.be/vbl8-kAJ3GU<link>
--- Create a prototype for the project
--- Document the targetgroup
+  - Use Kanban
+  - Create an introductory video to the tool chosen to use with Kanban. <link>https://youtu.be/vbl8-kAJ3GU<link>
+  - Create a prototype for the project
+  - Document the targetgroup
 
 #### Result
 At the end of the project we had a webpage that was focused on a single part of the assignment. We chose to focus on events in the nearby community, with events that could be added by everyone, but that was to be managed by a small part of the community with an easy-to-use database management within the page itself for a non-technical user to be able to grasp. 
@@ -27,6 +27,6 @@ At the end of the project we had a webpage that was focused on a single part of 
 ###### We used the following technologies: 
 - PHP 
 - JavaScript
--- jQuery
+   - jQuery
 - HTML
 - CSS
